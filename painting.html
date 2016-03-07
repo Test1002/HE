@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <title>Painting</title>
+       <meta charset="utf-8">
+       <link href="public/stylesheet/style-painting.css" rel="stylesheet" type="text/css">
+       <script type="text/javascript">
+            window.onresize = function(event) {
+                var html = document.documentElement;
+                /*if (html.clientWidth < 1350) {
+                    document.getElementById("block-margin").style.marginRight = "80px";    
+                } else { 
+                    document.getElementById("block-margin").style.marginRight = "0px";  
+                }*/
+                if (html.clientWidth < 1170) {
+                    document.getElementById("main-menu-font").style.fontSize = "16px";
+                    
+                } else {
+                    document.getElementById("main-menu-font").style.fontSize = "20px";
+                
+                }
+                if (html.clientWidth < 1300) {
+                    document.getElementById("block1").style.height= "290px";   
+                    document.getElementById("block1").style.width = "341px";
+                    document.getElementById("block2").style.height = "290px";   
+                    document.getElementById("block2").style.width = "341px"; 
+                    document.getElementById("block3").style.height = "290px";   
+                    document.getElementById("block3").style.width = "341px"
+                    document.getElementById("teacher_id").style.height = "390px";
+                    document.getElementById("teacher_id").style.width = "335px";
+                    document.getElementById("teacher_id2").style.height = "390px";
+                    document.getElementById("teacher_id2").style.width = "335px";
+                    document.getElementById("teacher_id3").style.height = "390px";
+                    document.getElementById("teacher_id3").style.width = "335px";
+                    document.getElementById("words1").style.display = "none"
+                    document.getElementById("words2").style.display = "none"
+                } else {
+                    document.getElementById("block1").style.height = "350px";     
+                    document.getElementById("block1").style.width = "429px";   
+                    document.getElementById("block2").style.height = "350px";     
+                    document.getElementById("block2").style.width = "429px"; 
+                    document.getElementById("block3").style.height = "350px";     
+                    document.getElementById("block3").style.width = "429px";
+                    document.getElementById("block3").style.marginRight = "0px"; 
+                    document.getElementById("teacher_id").style.height = "532px"; 
+                    document.getElementById("teacher_id").style.width = "424px";
+                    document.getElementById("teacher_id2").style.height = "532px"; 
+                    document.getElementById("teacher_id2").style.width = "424px";
+                    document.getElementById("teacher_id3").style.height = "532px"; 
+                    document.getElementById("teacher_id3").style.width = "424px";
+                    document.getElementById("words1").style.display = "block"
+                    document.getElementById("words2").style.display = "block"
+                }
+            };
+        </script>
+        <script type="text/javascript">
+            function a() {
+                var html = document.documentElement;
+                /*if (html.clientWidth < 1350) {
+                    document.getElementById("block-margin").style.marginRight = "80px";    
+                } else { 
+                    document.getElementById("block-margin").style.marginRight = "0px";  
+                }*/
+                if (html.clientWidth < 1170) {
+                    document.getElementById("main-menu-font").style.fontSize = "16px";
+                    
+                } else {
+                    document.getElementById("main-menu-font").style.fontSize = "20px";
+                
+                }
+                if (html.clientWidth < 1300) {
+                    document.getElementById("words1").style.display = "none"
+                    document.getElementById("words2").style.display = "none"
+                    document.getElementById("block1").style.height= "290px";   
+                    document.getElementById("block1").style.width = "341px";
+                    document.getElementById("block2").style.height = "290px";   
+                    document.getElementById("block2").style.width = "341px"; 
+                    document.getElementById("block3").style.height = "290px";   
+                    document.getElementById("block3").style.width = "341px"
+                    document.getElementById("teacher_id").style.height = "390px";
+                    document.getElementById("teacher_id").style.width = "335px";
+                    document.getElementById("teacher_id2").style.height = "390px";
+                    document.getElementById("teacher_id2").style.width = "335px";
+                    document.getElementById("teacher_id3").style.height = "390px";
+                    document.getElementById("teacher_id3").style.width = "335px";
+                } else {
+                    document.getElementById("words1").style.display = "block"
+                    document.getElementById("words2").style.display = "block"
+                    document.getElementById("block1").style.height = "350px";     
+                    document.getElementById("block1").style.width = "429px";   
+                    document.getElementById("block2").style.height = "350px";     
+                    document.getElementById("block2").style.width = "429px"; 
+                    document.getElementById("block3").style.height = "350px";     
+                    document.getElementById("block3").style.width = "429px";
+                    document.getElementById("block3").style.marginRight = "0px"; 
+                    document.getElementById("teacher_id").style.height = "532px"; 
+                    document.getElementById("teacher_id").style.width = "424px";
+                    document.getElementById("teacher_id2").style.height = "532px"; 
+                    document.getElementById("teacher_id2").style.width = "424px";
+                    document.getElementById("teacher_id3").style.height = "532px"; 
+                    document.getElementById("teacher_id3").style.width = "424px";
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            var scrolly = 0;
+            var distance = 40;
+            var speed = 24;
+            function autoScrollTo(el) {
+                var currentY = window.pageYOffset;
+                var targetY = document.getElementById(el).offsetTop;
+                var bodeHeight = document.body.offsetHeight;
+                var yPos = currentY + window.innerHeight;
+                var animator = setTimeout('autoScrollTo(\''+el+'\')', 24);
+                if (yPos > bodeHeight) {
+                    clearTimeout(animator);
+                } else {
+                    if(currentY < targetY-distance) {
+                        scrollY = currentY+distance;
+                        window.scroll(0, scrollY);
+                    } else {
+                        clearTimeout(animator);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body onload="a()">
+        <header class="page-header">
+            <div class="header-1">
+                <div class="layout-positioner">
+
+                    <div class="layout-column layout-column-1">
+                        <ul>
+                            <li><a href="#">Войти</a></li>
+                        </ul>
+                    </div>
+                   <div class="layout-column layout-column-2">
+                        <ul>
+                            <li><a href="#"><img src="public/images/youtube.png" alt="Поиск" title="YouTube"></a></li>
+                            <li><a href="#"><img src="public/images/vk.png" alt="Корзина" title="ВКонтакте"></a></li>
+                            <li><a href="#"><img src="public/images/fb.png" alt="Авторизация" title="Фейсбук"></a></li>
+                            <li><a href="#"><img src="public/images/ok.png" alt="Корзина" title="Одноклассники"></a></li>
+                            <li><a href="#"><img src="public/images/inst.png" alt="Поиск" title="Инстаграм"></a></li>
+                            <li>
+                                <form action="/echo" method="post">
+                                    <div class="search">
+                                        <input name="search" id="search-header" type="search" placeholder="Поиск">
+                                        
+                                   </div>
+                                </form> 
+                            </li>   
+                        </ul>
+                    </div>
+                </div>  
+            </div> 
+            <div class="header-2">
+                <div class="layout-positioner">
+                    <nav class="main-menu clearfix" id="main-menu-font">
+                        <div class="orange-line-header"></div>
+                        <div class="menu-left">
+                            <ul> 
+                                <li>
+                                    <a href="/courses.html">Курсы</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/painting.html">Рисование и бумага</a></li>
+                                        <li><a href="#">Кройка и шитье</a></li>
+                                        <li><a href="#">Вязание и вышивка</a></li>
+                                        <li><a href="#">Кулинария</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Статьи</a></li>
+                            </ul> 
+                        </div>
+                        <div class="menu-right">
+                            <ul> 
+                                <li>
+                                    <div class="buttons">
+                                        <input type="submit" value="Попробовать">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                     <div class="logo"> 
+                        <a href="/"><img src="public/images/logo1.png"></a>
+                    </div> 
+                    
+                </div>
+            </div> 
+        </header>
+        <div class="bread-pieces">
+            <div class="layout-positioner">
+                <span>Курсы >> Рисование и бумага >> Realistic Watercolors Step By Step</span>
+                <div class="bread-pieces-line"></div>
+            </div>
+        </div>
+        <div class="main-contain clearfix">
+            <div class="layout-positioner">
+                <div class="left-contain">
+                    <div class="title-author clearfix">
+                        <div class="photo"></div>
+                        <div class="text">
+                            <div class="title">Realistic Watercolors Step By Step</div>
+                            <div class="author">от Анисимовой Светланы</div>
+                            <div class="rating">(28)</div>
+                        </div>
+                    </div>
+                    <div class="video">
+                        <div class="video-player"></div>
+                        <nav class="video-navigation">
+                            <ul>
+                                <li>Описание</li>
+                                <li>Материалы</li>
+                                <li>Отзывы</li>
+                                <li>Информация</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="layout-column-text">
+                        <section>
+                            Create lifelike watercolors without a lifetime of practice! Use easy-to-replicate techniques to achieve results you're proud to say you painted.
+                        </section>
+                        <section>
+                            Learn how to paint watercolor flowers and more step by step with online video lessons from award-winning artist Anna Mason. Start with how to choose a reference photo, set up your workspace and outline your subject matter: a rose. With your outline complete, see how to create petals by layering tones from light to dark. Next, paint a lifelike stamen and build skills for balancing tones. Move on to rendering a lovely flower bud and get tips for avoiding muddy colors, increasing contrast and creating highlights that add depth to your work. Expand the number of greens on your palette as Anna guides you through painting convincing leaves, stems and thorns. Plus, discover tricks for finishing your painting beautifully by establishing crisp edges, using color-correcting techniques and refining the level of contrast in your piece.
+                        </section>
+                        <div class="course-plan">
+                            <h1>План занятий</h1>
+                            <div class="block">
+                                <div class="title">Lesson 1. Working With Watercolor </div>
+                                <div class="lenght">31:02</div>
+                            </div>
+                            <div class="block">
+                                <div class="title">Lesson 1. Working With Watercolor </div>
+                                <div class="lenght">31:02</div>
+                            </div>
+                            <div class="block">
+                                <div class="title">Lesson 1. Working With Watercolor </div>
+                                <div class="lenght">31:02</div>
+                            </div>
+                            <div class="block">
+                                <div class="title">Lesson 1. Working With Watercolor </div>
+                                <div class="lenght">31:02</div>
+                            </div>
+                            <div class="block">
+                                <div class="title">Lesson 1. Working With Watercolor </div>
+                                <div class="lenght">31:02</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-contain">
+                    <div class="subscribe">
+                        <div class="course-price">Подписка на курс 1200₽</div>
+                        <div class="old-price">старая цена <strike>1500</strike></div>
+                        <button>В корзину</button>
+                        <button><img src="public/images/painting/+.png">Добавить в список желаний</button>
+                        <button><img src="public/images/painting/gift.png">Купить в подарок</button>
+                    </div>
+                    <div class="right-contain-line"></div>
+                    <div class="what-you-get">
+                        <h2><span>За 1200 руб</span> вы получаете:</h2>
+                        <ul>
+                            <li>5 HD видеоуроков с постоянным доступом</li>
+                            <li>Полный перечень матералов, включая подробное описание их применения</li>
+                            <li>Часы полноценного обучения</li>
+                        </ul>
+                    </div>
+                    <div class="circle">
+                        <ul>
+                            <li>Сложность: <span>Новичок</span></li>
+                            <li>Категория: <span>Рисование</span></li>
+                            <li>Помощь</li>
+                        </ul>                   
+                    </div>
+                    <div class="we-guarantee">
+                        <h2>HandyEd гарантирует:</h2>
+                        <ul>
+                            <li>Смотрите уроки в удобное для Вас время</li>
+                            <li>Имейте постоянный доступ</li>
+                            <li>Гарантируем возврат денег</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recommended">
+            <div class="layout-positioner">
+                <h1>Курсы, которые могут быть вам интересны:</h1>
+                <div class="gallery">
+                    <div class="course course-1"></div>
+                    <div class="course course-2"></div>
+                    <div class="course course-3"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="layout-positioner">
+   
+                <img src="public/images/logo_footer.png" height="170px" width="175px">
+               
+               
+                <div class="layout-column">
+                    <table>
+                        <tr>
+                            <th>Handy Education</th>
+                            <th>Учитесь</th>
+                            <th>Сотрудничество</th>
+                            <th>Увидимся</th>
+                        </tr>
+                        <tr>
+                            <td><a href="/about.html">О компании</td>
+                            <td>Рисовать</td>
+                            <td><a href="/contacts.html">Зарабатывайте с нами</td>
+                            <td>Instagram</td>
+                        </tr>
+                        <tr>
+                            <td>Контакты</a></td>
+                            <td>Шить</td>
+                            <td>Партнерам</td>
+                            <td>Facebook</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Вязать</td>
+                            <td>С кем мы работаем?</td>
+                            <td>Вконтакте</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Готовить</td>
+                            <td>Одноклассники</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>YouTube</td>
+                        </tr>
+                    </table>
+                    <hr>
+                </div>
+                 
+            </div>
+            <div class="orange-line"></div>
+
+        </footer>
+    </body>
+</html>

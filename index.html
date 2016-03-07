@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Handy Education</title>
+       <meta charset="utf-8">
+       <link href="public/stylesheet/style.css" rel="stylesheet" type="text/css">
+       <script type="text/javascript">
+            window.onresize = function(event) {
+                var html = document.documentElement;
+                /*if (html.clientWidth < 1350) {
+                    document.getElementById("block-margin").style.marginRight = "80px";    
+                } else { 
+                    document.getElementById("block-margin").style.marginRight = "0px";  
+                }*/
+                if (html.clientWidth < 1170) {
+                    document.getElementById("main-menu-font").style.fontSize = "16px";
+                    
+                } else {
+                    document.getElementById("main-menu-font").style.fontSize = "20px";
+                
+                }
+                if (html.clientWidth < 1300) {
+                    document.getElementById("block1").style.height= "290px";   
+                    document.getElementById("block1").style.width = "341px";
+                    document.getElementById("block2").style.height = "290px";   
+                    document.getElementById("block2").style.width = "341px"; 
+                    document.getElementById("block3").style.height = "290px";   
+                    document.getElementById("block3").style.width = "341px"
+                    document.getElementById("teacher_id").style.height = "390px";
+                    document.getElementById("teacher_id").style.width = "335px";
+                    document.getElementById("teacher_id2").style.height = "390px";
+                    document.getElementById("teacher_id2").style.width = "335px";
+                    document.getElementById("teacher_id3").style.height = "390px";
+                    document.getElementById("teacher_id3").style.width = "335px";
+                    document.getElementById("words1").style.display = "none"
+                    document.getElementById("words2").style.display = "none"
+                } else {
+                    document.getElementById("block1").style.height = "350px";     
+                    document.getElementById("block1").style.width = "429px";   
+                    document.getElementById("block2").style.height = "350px";     
+                    document.getElementById("block2").style.width = "429px"; 
+                    document.getElementById("block3").style.height = "350px";     
+                    document.getElementById("block3").style.width = "429px";
+                    document.getElementById("block3").style.marginRight = "0px"; 
+                    document.getElementById("teacher_id").style.height = "532px"; 
+                    document.getElementById("teacher_id").style.width = "424px";
+                    document.getElementById("teacher_id2").style.height = "532px"; 
+                    document.getElementById("teacher_id2").style.width = "424px";
+                    document.getElementById("teacher_id3").style.height = "532px"; 
+                    document.getElementById("teacher_id3").style.width = "424px";
+                    document.getElementById("words1").style.display = "block"
+                    document.getElementById("words2").style.display = "block"
+                }
+            };
+        </script>
+        <script type="text/javascript">
+            function a() {
+                var html = document.documentElement;
+                /*if (html.clientWidth < 1350) {
+                    document.getElementById("block-margin").style.marginRight = "80px";    
+                } else { 
+                    document.getElementById("block-margin").style.marginRight = "0px";  
+                }*/
+                if (html.clientWidth < 1170) {
+                    document.getElementById("main-menu-font").style.fontSize = "16px";
+                    
+                } else {
+                    document.getElementById("main-menu-font").style.fontSize = "20px";
+                
+                }
+                if (html.clientWidth < 1300) {
+                    document.getElementById("words1").style.display = "none"
+                    document.getElementById("words2").style.display = "none"
+                    document.getElementById("block1").style.height= "290px";   
+                    document.getElementById("block1").style.width = "341px";
+                    document.getElementById("block2").style.height = "290px";   
+                    document.getElementById("block2").style.width = "341px"; 
+                    document.getElementById("block3").style.height = "290px";   
+                    document.getElementById("block3").style.width = "341px"
+                    document.getElementById("teacher_id").style.height = "390px";
+                    document.getElementById("teacher_id").style.width = "335px";
+                    document.getElementById("teacher_id2").style.height = "390px";
+                    document.getElementById("teacher_id2").style.width = "335px";
+                    document.getElementById("teacher_id3").style.height = "390px";
+                    document.getElementById("teacher_id3").style.width = "335px";
+                } else {
+                    document.getElementById("words1").style.display = "block"
+                    document.getElementById("words2").style.display = "block"
+                    document.getElementById("block1").style.height = "350px";     
+                    document.getElementById("block1").style.width = "429px";   
+                    document.getElementById("block2").style.height = "350px";     
+                    document.getElementById("block2").style.width = "429px"; 
+                    document.getElementById("block3").style.height = "350px";     
+                    document.getElementById("block3").style.width = "429px";
+                    document.getElementById("block3").style.marginRight = "0px"; 
+                    document.getElementById("teacher_id").style.height = "532px"; 
+                    document.getElementById("teacher_id").style.width = "424px";
+                    document.getElementById("teacher_id2").style.height = "532px"; 
+                    document.getElementById("teacher_id2").style.width = "424px";
+                    document.getElementById("teacher_id3").style.height = "532px"; 
+                    document.getElementById("teacher_id3").style.width = "424px";
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            var scrolly = 0;
+            var distance = 40;
+            var speed = 24;
+            function autoScrollTo(el) {
+                var currentY = window.pageYOffset;
+                var targetY = document.getElementById(el).offsetTop;
+                var bodeHeight = document.body.offsetHeight;
+                var yPos = currentY + window.innerHeight;
+                var animator = setTimeout('autoScrollTo(\''+el+'\')', 24);
+                if (yPos > bodeHeight) {
+                    clearTimeout(animator);
+                } else {
+                    if(currentY < targetY-distance) {
+                        scrollY = currentY+distance;
+                        window.scroll(0, scrollY);
+                    } else {
+                        clearTimeout(animator);
+                    }
+                }
+            }
+        </script>
+        <style type="text/css">
+    
+   
+    
+</style>
+    </head>
+    <body onload="a()">
+        <script type="text/javascript">
+            function show(state) {
+                    document.getElementById('window').style.display = state;            
+                    document.getElementById('wrap').style.display = state;          
+            }
+        </script>
+        <div onclick="show('none')" id="wrap"></div>
+            <div id="window" class="authorize">
+                <form action="/echo" method="post">
+                    <h1>Создайте аккаунт на Handy Education</h1>
+                    <div class="layout-column">
+                        <input type="text" id="login" name="login" value="введите логин">
+                        <input type="password" id="password" name="password" placeholder="введите пароль">
+                        <input type="password" id="password-confirm" name="password-confirm" placeholder="повторите пароль">
+                        <input type="email" id="e-mail" name="e-mail" value="введите e-mail">
+                    </div>   
+                </form>  
+            </div>
+        <header class="page-header">
+            <div class="header-1">
+                <div class="layout-positioner">
+                    <div class="layout-column layout-column-1">
+                        <ul>
+                            <li><a href="#" onclick="show('block')">Войти</a></li>
+                        </ul>
+                    </div>
+                    <div class="layout-column layout-column-2">
+                        <ul>
+                            <li><a href="#"><img src="public/images/youtube.png" alt="Поиск" title="YouTube"></a></li>
+                            <li><a href="#"><img src="public/images/vk.png" alt="Корзина" title="ВКонтакте"></a></li>
+                            <li><a href="#"><img src="public/images/fb.png" alt="Авторизация" title="Фейсбук"></a></li>
+                            <li><a href="#"><img src="public/images/ok.png" alt="Корзина" title="Одноклассники"></a></li>
+                            <li><a href="#"><img src="public/images/inst.png" alt="Поиск" title="Инстаграм"></a></li>
+                            <li>
+                                <form action="/echo" method="post">
+                                    <div class="search">
+                                        <input name="search" id="search-header" type="search" placeholder="Поиск">
+                                        <input type="submit" value="">
+                                   </div>
+                                </form> 
+                            </li>   
+                        </ul>
+                    </div>
+                </div>  
+            </div> 
+            <div class="header-2">
+                <div class="layout-positioner">
+                    <nav class="main-menu clearfix" id="main-menu-font">
+                        <div class="menu-left">
+                            <ul> 
+                                <li><a href="/courses.html">Курсы</a></li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Статьи</a></li>
+                            </ul> 
+                        </div>
+                        <div class="menu-right">
+                            <ul> 
+                                <li>
+                                    <div class="buttons">
+                                        <input type="submit" value="Попробовать">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                     <div class="logo"> 
+                        <img src="public/images/logo1.png">
+                    </div> 
+                    
+                </div>
+            </div> 
+            <div class="slider">  
+                <div class="layout-positioner">
+                    <h1>Онла<span data-content="й">й</span>н-курсы</h1>
+                    <h2><span>Рисование</span>, Рукоделие, <span>Дизайн</span>, Кулинария</h2>
+                    <span>C самыми талантливыми и креативными </span>
+                    <br>
+                    <span>преподавателями</span>
+                    <form action="/echo" method="post">
+                        <div class="buttons">
+                            <input type="submit" value="Записаться">
+                        </div>
+                    </form> 
+                    <div class="scrolling-btn" onclick="return false;" onmousedown="autoScrollTo('div-why');">
+    
+                    </div>
+
+                </div>
+            </div>
+            <div class="orange-line"></div>  
+        </header>        
+        <div class="why" id="div-why">
+            <div class="layout-positioner">
+                <h1>Почему выбирают нас</h1>
+                <hr>
+                <span>Мы измением Ваше представление</span>
+                <br>
+                <span>об обучении</span>
+                <div class="gallery">
+                    <div class="item">
+                        <div class="image image-1"></div>
+                        <div class="title">Лучшие преподователи</div>
+                    </div>
+                    <div class="item">
+                        <div class="image image-2"></div>
+                        <div class="title">Дешевле, чем обычные курсы</div>
+                    </div>
+                    <div class="item" id="block-margin">
+                        <div class="image image-3"></div>
+                        <div class="title">Огромный выбор</div>
+                    </div>
+                    <div class="item">
+                        <div class="image image-4"></div>
+                        <div class="title">Уникальный формат обучения</div>
+                    </div>
+                    <div class="item">
+                        <div class="image image-5"></div>
+                        <div class="title">Профессиональная съемка</div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="try-this">
+            <div class="layout-positioner">
+                <div id="circle">
+                    <img src="public/images/try-this.png">
+                    <form action="/echo" method="post">
+                        <div class="buttons">
+                            <input type="submit" value="Попробовать бесплатно">
+                        </div>
+                    </form>
+                    <div class="words" id="words1">
+                        <div class="words-1">Смотрите первый урок каждого видеокурса совершенно бесплатно</div>     
+                    </div>
+                </div>
+                <div id="rectangle">  
+                    <!-- <div class="words">
+                        <div class="words-2">Делайте то, что Вы любите, а HandyEd Вам в этом поможет!</div>
+                    </div> -->
+                    <div id="words2">
+                        <span>Делайте то, что Вы </span>
+                        <br>
+                        <span>любите, а HandyEd Вам в</span>
+                        <br>
+                        <span>этом поможет!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="study-to">
+            <div class="layout-positioner">
+                <h1>Учитесь создавать прекрасные творения</h1>
+                <hr>
+                <span>Множество разнообразных курсов на</span>
+                <br>
+                <span>любой вкус</span>
+            </div>
+        </div>
+        <div class="video">
+            <div class="layout-positioner">
+                <ul class="video-hover">
+                    <li><a href="#">Дизайн</a></li>
+                    <li><a href="#">Рисунок</a></li>
+                    <li><a href="#">Рукоделие</a></li>
+                </ul>
+                <hr>
+                <div class="video-blocks">
+                    <div class="block block1" id="block1">
+                    </div>
+                    <div class="block block2" id="block2">          
+                    </div>
+                    <div class="block block3" id="block3">               
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="subscribe">
+            <div class="layout-positioner">
+                <div class="subscribe-div">
+                    <img src="public/images/subscribe2.png">
+                    <img src="public/images/quotes.png">
+                    <span>Хотите получать новости о</span>
+                    <br>
+                    <span >новых курсах?</span>
+                </div>
+                <form action="/echo" method="post">
+                    <div class="buttons">
+                        <input type="email" value="Ваш e-mail">
+                        <div class="button-submit">
+                            <input type="submit" value="Подписаться">
+                        </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+         <div class="how-study">
+            <div class="layout-positioner">
+                <h1>Как происходит обучение</h1>
+                <hr>
+                <div class="how-study-blocks">
+                    <div class="item">
+                        <div class="how how1"></div>
+                        <div class="title">Выбирайте понравившийся курс</div>
+                    </div>
+                    <div class="item">
+                        <div class="how how2"></div>
+                        <div class="title">Учитесь и создавайте</div>        
+                    </div>
+                    <div class="item">
+                        <div class="how how3"></div> 
+                        <div class="title">Делитесь тем, что у вас получилось с другими пользователями</div>             
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us">
+            <div class="layout-positioner">
+                <div class="text"> 
+                    <div class="text-1">У Вас есть вопросы или предложения? Пишите нам!</div>
+                    <div class="text-2">Команда <span>HandyEd</span> с радостью поможет Вам</div>
+                </div>
+                <form action="/echo" method="post">
+                    <div class="buttons">
+                        <input type="submit" value="Написать">
+                    </div>
+                </form> 
+            </div>
+        </div>
+        <div class="pay">
+            <div class="layout-positioner">
+                <div class="pay-system">
+                    <div class="pays pays1"></div>
+                    <div class="pays pays2"></div>
+                    <div class="pays pays3"></div>
+                    <div class="pays pays4"></div>
+                    <div class="pays pays5"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="layout-positioner">
+   
+                <img src="public/images/logo_footer.png" height="170px" width="175px">
+               
+               
+                <div class="layout-column">
+                    <table>
+                        <tr>
+                            <th>Handy Education</th>
+                            <th>Учитесь</th>
+                            <th>Сотрудничество</th>
+                            <th>Увидимся</th>
+                        </tr>
+                        <tr>
+                            <td><a href="/about.html">О компании</td>
+                            <td>Рисовать</td>
+                            <td><a href="/contacts.html">Зарабатывайте с нами</td>
+                            <td>Instagram</td>
+                        </tr>
+                        <tr>
+                            <td>Контакты</a></td>
+                            <td>Шить</td>
+                            <td>Партнерам</td>
+                            <td>Facebook</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Вязать</td>
+                            <td>С кем мы работаем?</td>
+                            <td>Вконтакте</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Готовить</td>
+                            <td>Одноклассники</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>YouTube</td>
+                        </tr>
+                    </table>
+                    <hr>
+                </div>
+                 <div class="copyright">
+                    <div class="text">
+                        <span>HandyEducation<sup>  2015-2016</sup></span>
+                        <span>пользовательское соглашение</span>
+                    </div>
+                </div>
+                <div class="footer-line">
+                    <ul>
+                        <li>помощь</li>
+                        <li>безопасность</li>
+                        <li>гарантии</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="orange-line"></div>
+
+        </footer>
+
+
+
+
+
+
+
+        <!--
+        <div class="online-course">
+            <div class="layout-positioner">
+                <div class="layout-column">
+                    <h1>Онлайн-курсы</h1>
+                    <hr>
+                    <span>с самыми талантливыми и креативными </span>
+                    <br>
+                    <span>преподователями Москвы</span>
+                    <form action="/echo" method="post">
+                        <div class="buttons">
+                            <input type="submit" value="Записаться">
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <div class="orange-line"></div>               
+        </div>
+        -->
+          <!-- <div class="header">
+           		<div class="header-1">
+	           		<div class="layout-positioner">
+	           				<div class="layout-column">
+	           					<ul>
+	           						<li>
+	           							<form action="/echo" method="post">
+											<input name="search" type="search" value="Поиск">
+			    						</form> 
+			    					</li>
+			    					<li><a href="#"><img src="public/images/search100.png" alt="Поиск" title="Поиск"></a></li>
+			    					<li><a href="#"><img src="public/images/user43.png" alt="Авторизация" title="Авторизация"></a></li>
+			    					<li><a href="#"><img src="public/images/shopping-cart11.png" alt="Корзина" title="Корзина"></a></li>
+			    				</ul>
+			    			</div>
+	           		</div>	
+	      		</div>
+	      		<div class="orange-line"></div>     			
+	      		<div class="header-2">
+		      		<div class="layout-positioner">
+		      				<nav class="main-menu">
+		      					<ul>
+		      						<a href="#"><li>Курсы</li></a>
+		      						<a href="#"><li>Преподаватели</li></a>
+		      						<a href="#"><li>Проекты</li></a>
+		      						<a href="#"><li>Статьи</li></a>
+		      					</ul>
+            				</nav>	
+		      		</div>
+		      	</div>
+           </div>
+           -->
+           <!--
+           <div class="online-course">
+           		<div class="layout-positioner">
+           			<div class="layout-column">
+           				<h1>Онлайн-курсы</h1>
+           				<hr>
+         				<span>с самыми талантливыми и креативными </span>
+         				<br>
+         				<span>преподователями Москвы</span>
+         				<form action="/echo" method="post">
+         					<div class="buttons">
+    							<input type="submit" value="Записаться">
+    						</div>
+    					</form> 
+           			</div>
+           		</div>
+           		<div class="orange-line">
+	      			</div>
+           </div>
+     		<div class="why">
+     			<div class="layout-positioner">
+     				<div class="layout-column">
+     					<h1>Почемы выбирают нас?</h1>
+     					<hr>
+     					<div class="gallery">
+     						<div class="item">
+                				<div class="frame">
+                    				<div class="image image-1"></div>
+                    				<div class="title">Лучшие преподователи</div>
+                				</div>
+            				</div>
+            				<div class="item">
+                				<div class="frame">
+                    				<div class="image image-2"></div>
+                    				<div class="title">Дешевле, чем обычные курсы</div>
+                				</div>
+            				</div>
+            				<div class="item">
+                				<div class="frame">
+                    				<div class="image image-3"></div>
+                    				<div class="title">Огромный выбор</div>
+                				</div>
+            				</div>
+            				<div class="item">
+                				<div class="frame">
+                    				<div class="image image-4"></div>
+                    				<div class="title">Уникальный формат обучения</div>
+                				</div>
+            				</div>
+            				<div class="item">
+                				<div class="frame">
+                    				<div class="image image-5"></div>
+                    				<div class="title">Профессиональная съемка</div>
+                				</div>
+            				</div>
+     					</div>	
+     				</div>
+     			</div>
+     		</div>
+     		<div class="try-this">
+     			<div class="layout-positioner">
+     				<div id="circle"></div>
+     				<div id="rectangle">
+     					<img src="public/images/try-this.png">
+     					<form action="/echo" method="post">
+         					<div class="buttons">
+    							<input type="submit" value="Попробовать бесплатно">
+    						</div>
+    					</form> 
+    					<span>Делайте то, что Вы любите, </span>
+         				<br>
+         				<span>а мы Вам в этом поможем</span>
+     				</div>
+					
+     			</div>
+     		</div>
+
+     		<div class="study-to">
+     			<div class="layout-positioner">
+     				<div class="layout-column">
+     					<h1>Учитесь создавать прекрасные творения</h1>
+     					<hr>
+     					<span>Множество разнообразных курсов на</span>
+     					<br>
+     					<span>любой вкус</span>
+     				</div>
+     			</div>
+     		</div>
+     		<div class="video">
+     			<div class="layout-positioner">
+     				<div class="layout-column">
+     					<ul>
+     						<li><a href="#">Дизайн</a></li>
+     						<li><a href="#">Рисунок</a></li>
+     						<li><a href="#">Рукоделие</a></li>
+     					</ul>
+     					<hr>
+     					<img src="public/images/video1.png">
+     					<img src="public/images/video2.png">
+     					<img src="public/images/video3.png">
+ 
+     				</div>
+     			</div>
+     		</div>
+     		<div class="subscribe">
+     			<div class="layout-positioner">
+     				<div class="subscribe-div">
+     					<img src="public/images/subscribe.png">
+     					<img src="public/images/quotes.png">
+     					<span>Хотите получать новости о</span>
+     					<br>
+     					<span >новых курсах?</span>
+
+     				</div>
+     				<form action="/echo" method="post">
+         					<div class="buttons">
+    							<input type="submit" value="Подписаться">
+    						</div>
+    					</form> 
+     			</div>
+     		</div>
+     		<div class="study-to">
+     			<div class="layout-positioner">
+     				<div class="layout-column">
+     					<h1>Наши преподователи</h1>
+     					<hr>
+     					<span>Наша команда состоит из квалифицированных и творческих людей,</span>
+     					<br>
+     					<span class="help">которые с радостью помогут Вам воплотить фантазии в реальность</span>
+    					<br>
+     					<img src="public/images/teacher1.png">
+     					<img src="public/images/teacher2.png">
+     					<img src="public/images/teacher3.png">
+     				</div>
+     			</div>
+     		</div>
+     		<div class="how-study">
+     			<div class="layout-positioner">
+     				<div class="layout-column">
+     					<h1>Как происходит обучение</h1>
+     					<hr>
+     				
+     				</div>
+     			</div>
+     		</div>
+     		<div class="how-study-pic">
+     			<div class="layout-positioner">
+     				<div class="layout-column">
+
+     					<div class="gallery">
+     						<div class="item">
+                				<div class="frame">
+                    				<div class="image image-1"></div>
+                    				<div class="title">Текст</div>
+                				</div>
+            				</div>
+            				<div class="item">
+                				<div class="frame">
+                    				<div class="image image-2"></div>
+                    				<div class="title">Текст</div>
+                				</div>
+            				</div>
+            				<div class="item">
+                				<div class="frame">
+                    				<div class="image image-3"></div>
+                    				<div class="title">Текст</div>
+                				</div>
+            				</div>
+     					</div>	
+     				</div>
+     			</div>
+     		</div>
+            -->
+            
+    </body>
+</html>

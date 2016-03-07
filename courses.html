@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Курсы</title>
+       <meta charset="utf-8">
+       <link href="public/stylesheet/style-courses.css" rel="stylesheet" type="text/css">
+       <script type="text/javascript">
+            window.onresize = function(event) {
+                var html = document.documentElement;
+                /*if (html.clientWidth < 1350) {
+                    document.getElementById("block-margin").style.marginRight = "80px";    
+                } else { 
+                    document.getElementById("block-margin").style.marginRight = "0px";  
+                }*/
+                if (html.clientWidth < 1170) {
+                    document.getElementById("main-menu-font").style.fontSize = "16px";
+                    
+                } else {
+                    document.getElementById("main-menu-font").style.fontSize = "20px";
+                
+                }
+                if (html.clientWidth < 1300) {
+                    document.getElementById("block1").style.height= "290px";   
+                    document.getElementById("block1").style.width = "341px";
+                    document.getElementById("block2").style.height = "290px";   
+                    document.getElementById("block2").style.width = "341px"; 
+                    document.getElementById("block3").style.height = "290px";   
+                    document.getElementById("block3").style.width = "341px"
+                    document.getElementById("teacher_id").style.height = "390px";
+                    document.getElementById("teacher_id").style.width = "335px";
+                    document.getElementById("teacher_id2").style.height = "390px";
+                    document.getElementById("teacher_id2").style.width = "335px";
+                    document.getElementById("teacher_id3").style.height = "390px";
+                    document.getElementById("teacher_id3").style.width = "335px";
+                    document.getElementById("words1").style.display = "none"
+                    document.getElementById("words2").style.display = "none"
+                } else {
+                    document.getElementById("block1").style.height = "350px";     
+                    document.getElementById("block1").style.width = "429px";   
+                    document.getElementById("block2").style.height = "350px";     
+                    document.getElementById("block2").style.width = "429px"; 
+                    document.getElementById("block3").style.height = "350px";     
+                    document.getElementById("block3").style.width = "429px";
+                    document.getElementById("block3").style.marginRight = "0px"; 
+                    document.getElementById("teacher_id").style.height = "532px"; 
+                    document.getElementById("teacher_id").style.width = "424px";
+                    document.getElementById("teacher_id2").style.height = "532px"; 
+                    document.getElementById("teacher_id2").style.width = "424px";
+                    document.getElementById("teacher_id3").style.height = "532px"; 
+                    document.getElementById("teacher_id3").style.width = "424px";
+                    document.getElementById("words1").style.display = "block"
+                    document.getElementById("words2").style.display = "block"
+                }
+            };
+        </script>
+        <script type="text/javascript">
+            function a() {
+                var html = document.documentElement;
+                /*if (html.clientWidth < 1350) {
+                    document.getElementById("block-margin").style.marginRight = "80px";    
+                } else { 
+                    document.getElementById("block-margin").style.marginRight = "0px";  
+                }*/
+                if (html.clientWidth < 1170) {
+                    document.getElementById("main-menu-font").style.fontSize = "16px";
+                    
+                } else {
+                    document.getElementById("main-menu-font").style.fontSize = "20px";
+                
+                }
+                if (html.clientWidth < 1300) {
+                    document.getElementById("words1").style.display = "none"
+                    document.getElementById("words2").style.display = "none"
+                    document.getElementById("block1").style.height= "290px";   
+                    document.getElementById("block1").style.width = "341px";
+                    document.getElementById("block2").style.height = "290px";   
+                    document.getElementById("block2").style.width = "341px"; 
+                    document.getElementById("block3").style.height = "290px";   
+                    document.getElementById("block3").style.width = "341px"
+                    document.getElementById("teacher_id").style.height = "390px";
+                    document.getElementById("teacher_id").style.width = "335px";
+                    document.getElementById("teacher_id2").style.height = "390px";
+                    document.getElementById("teacher_id2").style.width = "335px";
+                    document.getElementById("teacher_id3").style.height = "390px";
+                    document.getElementById("teacher_id3").style.width = "335px";
+                } else {
+                    document.getElementById("words1").style.display = "block"
+                    document.getElementById("words2").style.display = "block"
+                    document.getElementById("block1").style.height = "350px";     
+                    document.getElementById("block1").style.width = "429px";   
+                    document.getElementById("block2").style.height = "350px";     
+                    document.getElementById("block2").style.width = "429px"; 
+                    document.getElementById("block3").style.height = "350px";     
+                    document.getElementById("block3").style.width = "429px";
+                    document.getElementById("block3").style.marginRight = "0px"; 
+                    document.getElementById("teacher_id").style.height = "532px"; 
+                    document.getElementById("teacher_id").style.width = "424px";
+                    document.getElementById("teacher_id2").style.height = "532px"; 
+                    document.getElementById("teacher_id2").style.width = "424px";
+                    document.getElementById("teacher_id3").style.height = "532px"; 
+                    document.getElementById("teacher_id3").style.width = "424px";
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            var scrolly = 0;
+            var distance = 40;
+            var speed = 24;
+            function autoScrollTo(el) {
+                var currentY = window.pageYOffset;
+                var targetY = document.getElementById(el).offsetTop;
+                var bodeHeight = document.body.offsetHeight;
+                var yPos = currentY + window.innerHeight;
+                var animator = setTimeout('autoScrollTo(\''+el+'\')', 24);
+                if (yPos > bodeHeight) {
+                    clearTimeout(animator);
+                } else {
+                    if(currentY < targetY-distance) {
+                        scrollY = currentY+distance;
+                        window.scroll(0, scrollY);
+                    } else {
+                        clearTimeout(animator);
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body onload="a()">
+         <header class="page-header">
+            <div class="header-1">
+                <div class="layout-positioner">
+                    <div class="layout-column layout-column-1">
+                        <ul>
+                            <li><a href="#" onclick="show('block')">Войти</a></li>
+                        </ul>
+                    </div>
+                    <div class="layout-column layout-column-2">
+                        <ul>
+                            <li><a href="#"><img src="public/images/youtube.png" alt="Поиск" title="YouTube"></a></li>
+                            <li><a href="#"><img src="public/images/vk.png" alt="Корзина" title="ВКонтакте"></a></li>
+                            <li><a href="#"><img src="public/images/fb.png" alt="Авторизация" title="Фейсбук"></a></li>
+                            <li><a href="#"><img src="public/images/ok.png" alt="Корзина" title="Одноклассники"></a></li>
+                            <li><a href="#"><img src="public/images/inst.png" alt="Поиск" title="Инстаграм"></a></li>
+                            <li>
+                                <form action="/echo" method="post">
+                                    <div class="search">
+                                        <input name="search" id="search-header" type="search" placeholder="Поиск">
+                                        
+                                   </div>
+                                </form> 
+                            </li>   
+                        </ul>
+                    </div>
+                </div>  
+            </div> 
+            <div class="header-2">
+                <div class="layout-positioner">
+                    <nav class="main-menu clearfix" id="main-menu-font">
+                        <div class="orange-line-header"></div>
+                        <div class="menu-left">
+                            <ul> 
+                                <li>
+                                    <a href="/courses.html">Курсы</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/painting.html">Рисование</a></li>
+                                        <li><a href="#">Кройка и шитье</a></li>
+                                        <li><a href="#">Вязание и вышивка</a></li>
+                                        <li><a href="#">Дополнительно</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="#">Статьи</a></li>
+                            </ul> 
+                        </div>
+                        <div class="menu-right">
+                            <ul> 
+                                <li>
+                                    <div class="buttons">
+                                        <input type="submit" value="Попробовать">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                     <div class="logo"> 
+                        <a href="/"><img src="public/images/logo1.png"></a>
+                    </div> 
+                    
+                </div>
+            </div> 
+        </header>
+        <div class="bread-pieces">
+            <div class="layout-positioner">
+                Курсы >>  Все
+                <div class="bread-pieces-line"></div>
+            </div>
+        </div>
+        <div class="main-contain clearfix">
+            <div class="layout-positioner">
+                <div class="left-contain">
+                    <form action="/echo" method="post">
+                        <h1>Фильтр:</h1>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="new" checked>  
+                                <label for="new">Новинки</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="rate">  
+                                <label for="rate">По рейтингу</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="comments">  
+                                <label for="comments">По комментариям</label>
+                            </li>
+                        </ul>
+                        <h2>По цене</h2>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="first-price">  
+                                <label for="first-price">от 900 до 1300</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="second-price">  
+                                <label for="second-price">1300 и выше</label>
+                            </li>
+                        </ul>
+                        <h2>Кройка и шитье</h2>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="cutting">  
+                                <label for="cutting">Кройка</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="sew">  
+                                <label for="sew">Шитье</label>
+                            </li>
+                        </ul>
+                        <h2>Рисование и бумага</h2>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="painting">  
+                                <label for="painting">Рисование</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="papier-mache">  
+                                <label for="papier-mache">Папье-маше</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="origami">  
+                                <label for="origami">Оригами</label>
+                            </li>
+                        </ul>
+                        <h2>Вязание и вышивка</h2>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="binding">  
+                                <label for="binding">Вязание</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="embroidery">  
+                                <label for="embroidery">Вышивка</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="filter-check" id="lash">  
+                                <label for="lash">Плетение</label>
+                            </li>
+                        </ul>
+                    </form>  
+                </div>
+                <div class="right-contain">
+                    <div class="sew-gallery">
+                        <h1>Кройка и шитье (10)</h1>
+                        <div class="gallery">
+                            <div class="item">
+                                <div class="image image-1"></div>
+                                <div class="course-type">Шитье</div>
+                                <div class="course-title">Sew sturdy: Home Organizers</div>
+                                <div class="course-info">
+                                    <div class="course-author">от Арсеньевой Анны</div>
+                                    <div class="course-price">1010 руб.</div>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="image image-2"></div>
+                                <div class="course-type">Кройка</div>
+                                <div class="course-title">Sew sturdy: Home Organizers</div>
+                                <div class="course-info">
+                                    <div class="course-author">от Арсеньевой Анны</div>
+                                    <div class="course-price">1010 руб.</div>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="image image-3"></div>
+                                <div class="course-type">Шитье</div>
+                                <div class="course-title">Sew sturdy: Home Organizers</div>
+                                <div class="course-info">
+                                    <div class="course-author">от Арсеньевой Анны</div>
+                                    <div class="course-price">1010 руб.</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image image-4"></div>
+                                <div class="course-type blue">Шитье</div>
+                                <div class="course-title blue-line-height">Quilting With Rulers on a Home Machine</div>
+                                <div class="course-info">
+                                    <div class="course-author blue">от Семеновой Елены</div>
+                                    <div class="course-price blue">1210 руб.</div>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="image image-5"></div>
+                                <div class="course-type blue">Шитье</div>
+                                <div class="course-title blue-line-height">Quilting With Rulers on a Home Machine</div>
+                                <div class="course-info">
+                                    <div class="course-author blue">от Семеновой Елены</div>
+                                    <div class="course-price blue">1010 руб.</div>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="image image-6"></div>
+                                <div class="course-type blue">Шитье</div>
+                                <div class="course-title blue-line-height">Quilting With Rulers on a Home Machine</div>
+                                <div class="course-info">
+                                    <div class="course-author blue">от Семеновой Елены</div>
+                                    <div class="course-price blue">1010 руб.</div>
+                                </div>
+                            </div>
+                            <a href="#" class="all-lessons">Все уроки</a> 
+                        </div>    
+                    </div>
+                    <div class="painting-gallery">
+                        <h1>Рисование и бумага (8)</h1>
+                        <div class="gallery">
+                            <div class="item">
+                                <div class="image image-1"></div>
+                                <div class="course-type">Шитье</div>
+                                <div class="course-title">Sew sturdy: Home Organizers</div>
+                                <div class="course-info">
+                                    <div class="course-author">от Арсеньевой Анны</div>
+                                    <div class="course-price">1010 руб.</div>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="image image-2"></div>
+                                <div class="course-type">Кройка</div>
+                                <div class="course-title">Sew sturdy: Home Organizers</div>
+                                <div class="course-info">
+                                    <div class="course-author">от Арсеньевой Анны</div>
+                                    <div class="course-price">1010 руб.</div>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="image image-3"></div>
+                                <div class="course-type">Шитье</div>
+                                <div class="course-title">Sew sturdy: Home Organizers</div>
+                                <div class="course-info">
+                                    <div class="course-author">от Арсеньевой Анны</div>
+                                    <div class="course-price">1010 руб.</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image image-4"></div>
+                                <div class="course-type blue">Шитье</div>
+                                <div class="course-title blue-line-height">Quilting With Rulers on a Home Machine</div>
+                                <div class="course-info">
+                                    <div class="course-author blue">от Семеновой Елены</div>
+                                    <div class="course-price blue">1210 руб.</div>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="image image-5"></div>
+                                <div class="course-type blue">Шитье</div>
+                                <div class="course-title blue-line-height">Quilting With Rulers on a Home Machine</div>
+                                <div class="course-info">
+                                    <div class="course-author blue">от Семеновой Елены</div>
+                                    <div class="course-price blue">1010 руб.</div>
+                                </div>
+                            </div>
+                             <div class="item">
+                                <div class="image image-6"></div>
+                                <div class="course-type blue">Шитье</div>
+                                <div class="course-title blue-line-height">Quilting With Rulers on a Home Machine</div>
+                                <div class="course-info">
+                                    <div class="course-author blue">от Семеновой Елены</div>
+                                    <div class="course-price blue">1010 руб.</div>
+                                </div>
+                            </div>
+                            <a href="#" class="all-lessons">Все уроки</a> 
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="pay">
+            <div class="layout-positioner">
+                <div class="pay-system">
+                    <div class="pays pays1"></div>
+                    <div class="pays pays2"></div>
+                    <div class="pays pays3"></div>
+                    <div class="pays pays4"></div>
+                    <div class="pays pays5"></div>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="layout-positioner">
+   
+                <img src="public/images/logo_footer.png" height="170px" width="175px">
+               
+               
+                <div class="layout-column">
+                    <table>
+                        <tr>
+                            <th>Handy Education</th>
+                            <th>Учитесь</th>
+                            <th>Сотрудничество</th>
+                            <th>Увидимся</th>
+                        </tr>
+                        <tr>
+                            <td><a href="/about.html">О компании</td>
+                            <td>Рисовать</td>
+                            <td><a href="/contacts.html">Зарабатывайте с нами</td>
+                            <td>Instagram</td>
+                        </tr>
+                        <tr>
+                            <td>Контакты</a></td>
+                            <td>Шить</td>
+                            <td>Партнерам</td>
+                            <td>Facebook</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Вязать</td>
+                            <td>С кем мы работаем?</td>
+                            <td>Вконтакте</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Готовить</td>
+                            <td>Одноклассники</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>YouTube</td>
+                        </tr>
+                    </table>
+                    <hr>
+                </div>
+                 
+            </div>
+            <div class="orange-line"></div>
+
+        </footer>
+    </body>
+</html>

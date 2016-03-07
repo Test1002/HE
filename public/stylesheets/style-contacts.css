@@ -1,0 +1,1041 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:"MyriadProRegular", 'PT Sans', sans-serif;
+    background-color: white;
+}
+@font-face {
+    font-family: "MyriadPro";
+    src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "CenturySchoolBook";
+    src: url("../fonts/CenturySchoolbook/century2.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Century751BT";
+    src: url("../fonts/Century751BT/ufonts.com_century-751-bt.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MyriadProItalic";
+    src: url("../fonts/MyriadProItalic/Myriad Pro Italic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf") format("opentype");
+}
+.clearfix:after{
+  content:'';
+  clear:both;
+  display:table;
+}
+.layout-positioner:{
+  content:'';
+  clear:both;
+  display:table;
+}
+.layout-positioner{
+  width:90%;
+  max-width: 1300px;
+  margin:0 auto;
+  /*border:2px solid yellow;*/
+  /*outline: 2px solid yellow;*/
+}
+.orange-line {
+  border-bottom: 5px solid rgb(241, 70, 24);
+}
+hr {
+  border: none; 
+  background-color: #5ca8b6; 
+  color: #5ca8b6; 
+  height: 2px;
+  width:15%;
+}
+
+
+/*Блок с шапкой*/
+
+/*
+header.page-header {
+  position: relative;
+  color:white;
+  padding-bottom: 14px;
+}
+header.page-header .logo {
+  position: relative;
+  top: 10px;
+  left: 22%;
+  margin: 0;
+  width:90px;
+  height: 90px;
+}
+header.page-header .header-1 {
+
+  margin-top: -10px;
+  height:66px;
+  margin-bottom: 5px;
+}
+header.page-header .header-2 {
+  text-align: center;
+  height:66px;
+
+}
+header.page-header .orange-line-header {
+  border-top: 5px solid rgb(241, 70, 24);
+}
+header.page-header .main-menu{
+  margin:0 auto;
+  width:1100px;
+  background-color: #303131;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+header.page-header .layout-column {
+	float:right;
+}
+header.page-header .layout-column ul > li {
+	display:inline-block;
+  margin-right: 20px;
+}
+header.page-header .layout-column ul > li:first-child {
+	margin-right: 10px;
+}
+header.page-header .layout-column ul > li:last-child {
+	margin-right: 50px;
+}
+header.page-header img {
+	position: relative;
+	top:7px;
+  width:80%;
+  height:auto;
+}
+header.page-header .logo img{
+  position: absolute;
+  top:-135px;
+  left:-270px;
+  height:170px; 
+  width:175px;
+}
+header.page-header li:last-child img {
+	top:10px;
+}
+header.page-header input[type="search"] {
+  font-size: 15px;
+  font-family: "MyriadProRegular";
+  color: rgba(44, 45, 45, 0.329);
+  border: 1px solid rgb(241, 71, 23);;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 155px;
+ 	height: 30px;
+ }
+
+header.page-header input[type="search"]:focus {
+  outline: none;
+}
+header.page-header .main-menu ul {
+ 	position:relative;
+ 	margin:0px auto 10px -80px;
+  padding-top: 20px;
+ }
+header.page-header .main-menu li {
+  font-size: 20px;
+  color: rgba(254, 254, 254, 0.6);
+  display: inline-block;
+  list-style: none;
+  text-transform: uppercase;
+  border-right: 2px solid #343d3e;
+  padding: 0 40px;
+  line-height: 2;
+}
+header.page-header .main-menu ul > a:nth-child(4) li, header.page-header .main-menu ul > a:last-child li{
+	border:none;
+}
+header.page-header .main-menu ul > a:last-child li {
+  margin-right: -120px;
+  border: 2px solid rgb(241, 70, 24);
+  border-radius: 10px;
+  color:white;
+}
+header.page-header .main-menu a {
+	text-decoration: none;
+}  
+
+
+/*Блок со слайдером*/
+
+
+
+
+header.page-header {
+  position: relative;
+  color:white;
+  width: 100%;
+  /*
+  height:0;
+  padding-bottom: 35%;
+  */
+  min-height: 550px;
+  background:url('../images/contacts/sotrudnichestvo.png') no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  
+}
+
+header.page-header .logo {
+  position: relative;
+  top: 10px;
+  left: 22%;
+  margin: 0;
+  width:90px;
+  height: 90px;
+}
+header.page-header .header-1 {
+  height:66px;
+}
+
+header.page-header .header-2 {
+ 
+  margin:0 auto;
+}
+header.page-header .header-2 .layout-positioner {
+  /*outline: 2px solid yellow;*/
+}
+header.page-header .orange-line-header {
+  border-top: 5px solid rgb(241, 70, 24);
+}
+
+header.page-header .header-1 .layout-column {
+  float:right;
+  
+}
+header.page-header .header-1 .layout-column-1 {
+  padding-top: 3px;
+  margin-right: 8%;
+}
+header.page-header .header-1 .layout-column-1 a, header.page-header .layout-column-1 a:visited{
+  font-size: 22px;
+  font-family: "MyriadProItalic";
+  color: white;
+
+  text-decoration: none;
+}
+header.page-header .header-1 .layout-column-2 {
+  width:450px;
+  margin-top: -8px;
+  margin-right: -30px;
+}
+
+header.page-header .header-1 .layout-column-2 img {
+  width:36px;
+  height:33px;
+  position: relative;
+  top:12px;
+  right: 10px;
+}
+header.page-header .header-1 .layout-column-2 li:first-child img,
+header.page-header .header-1 .layout-column-2 li:nth-child(5) img {
+  width:30px;
+  height:27px;
+  top:9px;
+}
+header.page-header .header-1 .layout-column-2 li:nth-child(3) {
+  margin-right:-3px;
+  margin-left: -3px;
+}
+header.page-header .header-1 .layout-column ul > li {
+  display:inline-block;
+}
+header.page-header .header-1 .layout-column ul > li:first-child {
+
+}
+header.page-header .header-1 .layout-column ul > li:last-child {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+header.page-header .logo {
+
+}
+header.page-header .logo img{
+  position: absolute;
+  top:-130px;
+  left:-227px;
+  height:160px; 
+  width:165px;
+}
+
+header.page-header input[type="search"] {
+  font-size: 16px;
+  font-family: "MyriadProRegular";
+  background-color: rgb(237, 237, 237);
+  color: rgba(44, 45, 45, 0.302);
+  border: 1px solid rgb(250, 84, 50);
+  border-radius: 10px;
+  padding: 5px 15px;
+  width: 155px;
+  height: 30px;
+ }
+header.page-header input[type="search"]:focus {
+  outline: none;
+}
+header.page-header .main-menu{
+  margin:0 auto;
+  width:87%;
+  background-color: #303131;
+  border-radius: 10px;
+}
+
+header.page-header .main-menu ul {
+  margin:-10px 0px 0px -50px;
+  padding-top: 10px;
+  padding-left: 15%;
+  float:left;
+ }
+header.page-header .main-menu .menu-right {
+  float:right;
+}
+header.page-header .main-menu .menu-right ul {
+  margin-right: 30px;
+}
+header.page-header .main-menu .menu-right ul li{
+  border-radius: 10px;
+  border: 2px solid rgb(241, 70, 24);
+}
+header.page-header .main-menu li {
+  
+  font-family: "MyriadPro";
+  color: rgb(254, 254, 254);
+  display: inline-block;
+  list-style: none;
+  border-right: 2px solid #343d3e;
+  padding: 0 35px;
+  margin-bottom: 10px;
+  line-height: 2;
+
+}
+header.page-header .main-menu li:last-of-type {
+  border-right: none;
+}
+header.page-header .main-menu a, header.page-header .main-menu a:visited {
+  color:rgb(254, 254, 254);
+}
+header.page-header .main-menu li:first-child {
+
+}
+header.page-header .main-menu ul > a:nth-child(4) li, header.page-header .main-menu ul > a:last-child li{
+  
+}
+header.page-header .main-menu ul > a:last-child li {
+
+  /*border: 2px solid rgb(241, 70, 24);
+  border-radius: 10px; */
+  color:white;
+}
+header.page-header .main-menu a:hover {
+  color:rgb(241, 70, 24);
+}
+header.page-header .main-menu ul > a:last-child li:hover {
+  border: 2px solid white;
+  color:rgb(241, 70, 24);
+}
+header.page-header .main-menu a {
+  text-decoration: none;
+}  
+
+
+
+
+
+.slider  {
+  margin-top: -1px;
+  
+}
+.slider .layout-positioner {
+  text-align: center;
+  padding-top: 5px;
+  height: 420px;
+
+
+}
+.slider .layout-positioner h1 {
+  font-size:4em;
+  font-family: "MyriadProBold";
+  margin-top:22px;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.961);
+}
+.slider .menu {
+  width:100%;
+  margin-top: 100px;
+  background-color: rgb(241, 70, 24);
+  opacity: 0.78;
+}
+.slider .menu li {
+  display: inline-block;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  line-height: 1.357;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 35px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+.slider .menu li:hover {
+  box-shadow: 0px 5px 0 0 rgb(24, 192, 207);
+}
+.slider .layout-positioner  span {
+  font-size: 25px;
+  font-family: "Century751BT";
+  color: rgba(251, 249, 249, 0.843);
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.207;
+  text-align: center;
+}
+.slider .buttons {
+    margin-top: 41px;
+    text-align: center;
+}
+.slider input[type="submit"] { 
+    display: inline-block;
+    margin: 0 5px;
+    margin-bottom: 145px;
+    padding: 22px 65px;
+    width: 352px;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+    background: rgb(241, 71, 23);
+    color: rgba(253, 254, 253, 0.910);
+    font-size: 20px;
+    font-family: "CenturySchoolbook";
+    text-transform: uppercase;
+    box-shadow: 0px 3px 5px 0px rgba(0, 1, 2, 0.58);
+}
+.slider input[type="submit"]:focus {
+  outline: none;
+}
+
+/*Зарабатывайте*/
+
+
+.earn .layout-positioner {
+  text-align: center;
+  width: 100%;
+
+}
+.earn .layout-positioner h1 {
+  margin-top: 45px;
+  color: rgb(53, 54, 54);
+  line-height: 0.832;
+  font-size: 38px;
+  font-family: "CentSchbkCyrill BT Roman";
+}
+.earn .layout-positioner h2 {
+  color: rgb(53, 54, 54);
+  font-size: 25px;
+  font-family: "CenturySchoolbook";
+  color: rgba(61, 70, 80, 0.671);
+}
+.earn .layout-positioner hr {
+  color: rgb(0, 182, 199);
+  background-color: rgb(0, 182, 199);
+  opacity: 0.42;
+}
+.earn .layout-positioner h1:last-of-type {
+  margin-top: 70px;
+  font-size: 46px;
+}
+.earn .layout-positioner hr:last-of-type {
+  width:3.5%;
+}
+.earn .gallery {
+  padding-top:15px;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+.earn .gallery .item .image-1 + img {
+  position: relative;
+  top:-40px;
+}
+.earn .gallery .item {
+  width:345px;
+  display:inline-block; 
+  vertical-align:top;
+}
+.earn .gallery .item:nth-child(2) {
+  margin: auto 20px;
+}
+.earn .gallery .item:nth-child(3) {
+  margin-right: 0px;
+}
+.earn .gallery .image {
+  height:230px;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  margin-top:40px;
+  background-size: 57% 80%;
+}
+.earn .gallery .image-1{
+  background-image: url('../images/contacts/we/1.png');
+  background-position: 50% 50%;
+  background-size: 57% 80%;
+}
+.earn .gallery .image-2{
+  background-image: url('../images/contacts/we/2.png');
+  background-position: 50% 50%;
+  background-size: 57% 80%;
+}
+.earn .gallery .image-3{
+  background-image: url('../images/contacts/we/3.png');
+  background-position: 50% 50%;
+  background-size: 57% 80%;
+}
+.earn .gallery .title {
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(5, 4, 4);
+  font-size: 25px;
+  line-height: 1.467;
+  margin-bottom: 100px; /*Отодвигает нижний блок*/
+}
+.earn .gallery .title ul {
+  list-style: none;
+}
+.earn .gallery .title li {
+  position: relative;
+  margin: 10px 0;
+  font-size: 20px;
+  margin-left: 0px;
+  text-align: left;
+
+}
+.earn .gallery .title li::before{
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 27.5px;
+  left: -35px;
+  top: 2px;
+  background-image: url('../images/contacts/we/list-style.png')
+}
+
+
+/*Прямоугольник*/
+
+
+.pramo .layout-positioner {
+  margin-top: 40px;
+  background-image: 
+
+    url('../images/contacts/ellipse.png'),
+    url('../images/contacts/pramo.png');
+  background-position: 
+    50% 0%,
+    50% -10%;
+  background-size: 
+    400px 400px,
+    auto;
+  height:230px;
+  background-repeat: no-repeat;
+}
+.pramo .layout-positioner img {
+  display: table-caption; /*Изображение строго по центру*/
+  position: relative;
+  margin: 0 auto;
+  margin-top: -80px;
+}
+.pramo .layout-positioner img:first-of-type {
+  left:-5px;
+  top:-10px;
+  z-index: 5;
+}
+.pramo .layout-positioner img:last-of-type {
+  top:-20px;
+  left:5px;
+
+}
+.pramo .layout-positioner .pramo-text {
+  font-family: "MyriadProItalic";
+  font-size: 38px;
+  color: rgb(69, 67, 67);
+  text-align:  center;
+}
+.pramo .layout-positioner .pramo-text br + * {
+  font-size:32px;
+}
+.pramo .layout-positioner .pramo-text-left {
+  float:left;
+}
+.pramo .layout-positioner .pramo-text-left .padding {
+  margin:-190px 0 0 30px;
+}
+.pramo .layout-positioner .pramo-text-right .padding {
+  margin:-190px 75px 0 0;
+}
+.pramo .layout-positioner .pramo-text-right {
+  float:right;
+}
+.pramo .layout-positioner .pramo-text span{
+  color:rgb(241, 70, 24);
+}
+
+
+
+/*Блок вы*/
+
+
+.you .layout-positioner {
+  text-align: center;
+  margin-top: 80px;
+}
+.you .layout-positioner h1 {
+  margin-top: 45px;
+  color: rgb(53, 54, 54);
+  line-height: 0.832;
+  font-size: 38px;
+  font-family: "MyriadProRegular";
+}
+
+.you .layout-positioner hr {
+   width:3.5%;
+  color: rgb(0, 182, 199);
+  background-color: rgb(0, 182, 199);
+  opacity: 0.42;
+}
+.you .layout-positioner img {
+  float:left;
+  position: relative;
+  top:8px;
+}
+.you .layout-positioner > img:last-of-type {
+  float:right;
+  
+}
+.you ul {
+  list-style: none;
+  float:left;
+  padding: 70px 0 0 110px;
+}
+.you li {
+  position: relative;
+  margin: 10px 0;
+  font-size: 20px;
+  margin-left: 0px;
+  text-align: left;
+
+}
+.you li::before{
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 27.5px;
+  left: -35px;
+  top: -3px;
+  background-image: url('../images/contacts/you-list.png')
+}
+
+
+/* Оранж блок */
+
+
+.you .orange-place {
+  background-color: rgb(250, 84, 50);
+  min-height: 300px;
+  width:100%;
+  clear: both;
+  float:left;
+}
+.you .orange-place .gallery .item {
+  width:315px;
+  width:33%;
+  display:inline-block;
+  margin: 0 0px 10px 0px; 
+  vertical-align:top;
+
+}
+.you .orange-place .gallery .item .image {
+  height:260px;
+  background-position:50% 50%;
+  background-repeat:no-repeat;
+  margin-top:30px;
+  padding-bottom: 40px;
+  background-size: 57% 80%;
+  text-align: center;
+}
+.you .orange-place .gallery .title {
+  vertical-align:top;
+  font-size: 40px;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-top: 35px;
+
+}
+.you .orange-place .gallery .image img {
+  float:none;
+}
+
+
+
+/* Из чего состоит видеокурс */
+
+
+.video-course {
+  margin-top: 920px;
+  text-align: center;
+}
+
+.video-course .layout-positioner h1 {
+  margin-top: 45px;
+  color: rgb(53, 54, 54);
+  line-height: 0.832;
+  font-size: 34px;
+  font-family: "Century Gothic";
+}
+
+.video-course .layout-positioner hr {
+  width:3.5%;
+  color: rgb(0, 182, 199);
+  background-color: rgb(0, 182, 199);
+  opacity: 0.42;
+}
+.video-course .layout-positioner .layout-column {
+  margin-top: 80px;
+  width: 50%;
+  text-align: left;
+  font-size: 21px;
+  font-family: "Lucida Sans";
+  color: rgb(1, 1, 1);
+  line-height: 1.2;
+}
+
+.video-course .layout-positioner .layout-column-1 {
+  float:left;
+}
+.video-course .layout-positioner .layout-column-2 {
+  float:right;
+  display: block;
+}
+.video-course .layout-positioner .layout-column-2 p {
+  margin-top: 0px;
+}
+.video-course .layout-positioner .layout-column-2 .middle {
+  width: 100%;
+  text-align: center
+}
+.video-course .layout-positioner .layout-column-2 .middle-text {
+  width:75%;
+  margin: 0 auto;
+  height:15px;
+  border-bottom: 1px solid black;
+}
+.video-course .layout-positioner .layout-column-2 .middle-text span {
+  padding: 0 15px;
+  background-color: white;
+}
+.video-course .layout-positioner .layout-column-2 .middle-buttons {
+  margin-top: 15px;
+  width:80%;
+  margin: 0 auto;
+  
+}
+.video-course .layout-positioner .layout-column-2 .middle-buttons .button-1 {
+  float:left;
+}
+.video-course .layout-positioner .layout-column-2 .middle-buttons .button-2 {
+  float:right;
+}
+.video-course .layout-positioner .layout-column-2 .middle-buttons .button-1,
+.video-course .layout-positioner .layout-column-2 .middle-buttons .button-2 {
+  text-align: center;
+  position: relative;
+}
+.video-course .layout-positioner .layout-column-2 .middle-buttons .button-1:active,
+.video-course .layout-positioner .layout-column-2 .middle-buttons .button-2:active {
+  top:1px;
+  box-shadow: none;
+}
+.video-course .layout-positioner .layout-column-2 .middle-buttons input[type="submit"] { 
+  display: inline-block;
+  margin: 0 5px;
+  margin-bottom: 20px;
+  width: 182px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: rgb(241, 71, 23);
+  color: rgba(253, 254, 253, 0.750);
+  font-size: 20px;
+  font-family: "CenturySchoolbook";
+  box-shadow: inset 0px -7px 2.91px 0.09px rgba(0, 0, 0, 0.11);
+}
+.video-course .layout-positioner .layout-column-2 .middle-buttons input[type="submit"]:hover {
+  color: rgba(253, 254, 253, 1);
+  cursor: pointer
+}
+.video-course .layout-positioner .layout-column-2 .middle-buttons input[type="submit"]:focus {
+  outline: none;
+}
+.video-course .layout-positioner .layout-column-2 p:nth-of-type(5),.video-course .layout-positioner .layout-column-2 p:last-of-type {
+  font-size: 18px;
+  font-family: "Palatino Linotype";
+  color: rgb(1, 1, 1);
+}
+.video-course .layout-positioner .layout-column-2 p:last-of-type {
+  margin-top: -15px;
+}
+
+
+/*Блок статистика*/
+
+
+.statistics {
+  clear:both;
+  margin-top:550px;
+}
+.statistics .layout-positioner {
+  text-align: center;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.549);
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.statistics .layout-positioner .facts span {
+  font-size: 17px;
+  font-family: "Lucida Sans";
+  color: rgb(1, 0, 0);
+  line-height: 1.727;
+}
+.statistics .layout-positioner .facts span:first-child{
+  float:left;
+  margin-left: 2%;
+}
+.statistics .layout-positioner .facts span:last-child {
+  float:right;
+  margin-right: 2%
+}
+.statistics .layout-positioner .facts b {
+  font-size: 27px;
+  font-weight: normal;
+  color: rgb(223, 87, 46);
+}
+
+
+/*Блок со слайдером*/
+
+
+.connect {
+  margin-top: 20px;
+  text-align: center;
+}
+.connect .layout-positioner h1 {
+  margin-top: 45px;
+  color: rgb(53, 54, 54);
+  line-height: 0.832;
+  font-size: 34px;
+  font-family: "Century Gothic";
+}
+
+.connect .layout-positioner hr {
+  width:3.5%;
+  color: rgb(0, 182, 199);
+  background-color: rgb(0, 182, 199);
+  opacity: 0.42;
+}
+.slider-back {
+  background: url('../images/contacts/slider-background.png') no-repeat 50% 50%;
+  height:450px;
+  margin-bottom: 20px; /*для кнопки*/
+}
+section {
+  width: 750px;
+  margin: 40px auto;  
+  padding-top: 15px; 
+
+}
+.connect .layout-positioner .slider {
+  margin-top: 25px;
+  position: relative;
+  /*background: url('../images/contacts/slider-background.png') no-repeat 50% 50%;*/
+   
+}
+.connect .layout-positioner .slider input[type=radio] {
+    display: none;
+}
+.connect .layout-positioner .slider .slider-inner {
+    overflow: hidden;
+}
+.connect .layout-positioner .slider .slider-slides{
+    width: 300%;
+    transition: transform .8s ease;
+}
+.connect .layout-positioner .slider .slider-slides img {
+    float: left;
+    width: 750px;
+    height: 365px;   
+}
+.connect .layout-positioner .slider .slider-controls {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -40px;
+    z-index: 100;
+    text-align: center;
+}
+.connect .layout-positioner .slider .slider-controls label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    background: #ccc;
+    cursor: pointer;   
+    border-radius: 50%;    
+    box-shadow: 0px 0px 2px rgba(0,0,0,.8);     
+    transition: background-color .2s;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+    background-color: rgb(241, 70, 24);
+}
+#btn-1:checked ~ .slider-inner .slider-slides { 
+    transform:translate(0);
+}
+#btn-2:checked ~ .slider-inner .slider-slides { 
+    transform:translate(-750px);
+}#btn-3:checked ~ .slider-inner .slider-slides { 
+    transform:translate(-1500px);
+}
+.connect .layout-positioner .buttons {
+  text-align: center;
+  position: relative;
+}
+.connect .layout-positioner .buttons:active {
+  top:1px;
+  box-shadow: none;
+}
+.connect .layout-positioner input[type="submit"] { 
+  display: inline-block;
+  margin: 0 5px;
+  margin-bottom: 145px;
+  width: 272px;
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  background: rgb(241, 71, 23);
+  color: rgba(253, 254, 253, 0.750);
+  font-size: 22px;
+  font-family: "CenturySchoolbook";
+  box-shadow: inset 0px -7px 2.91px 0.09px rgba(0, 0, 0, 0.11);
+}
+.connect .layout-positioner input[type="submit"]:hover {
+  color: rgba(253, 254, 253, 1);
+  cursor: pointer
+}
+.connect .layout-positioner input[type="submit"]:focus {
+  outline: none;
+}
+
+
+/* Футер */
+
+
+footer.page-footer .layout-positioner {
+  height:300px;
+  background-color: rgb(61, 70, 80);
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+  margin-top: -100px;
+}
+footer.page-footer a:visited{
+  color: white;
+
+}
+footer.page-footer .layout-positioner .layout-column {
+  text-align: center;
+}
+footer.page-footer .layout-positioner img {
+  position: absolute;
+  top:50px;
+  left:80px;
+}
+footer.page-footer .layout-positioner .layout-column-float {
+  float: right;
+  position: relative;
+  height: 190px;
+  margin-top: -190px;
+  width:85px;
+  background-color: rgb(255, 255, 255);
+  background-image: url('../images/socio.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-right: 2px solid rgb(61, 70, 80);
+}
+footer.page-footer .layout-positioner .layout-column table {
+  margin: 0 auto;
+  font-family: "CenturySchoolbook";
+  font-size: 16px;
+  text-align: left;
+}
+footer.page-footer .layout-positioner .layout-column table img {
+  position: static;
+}
+footer.page-footer .layout-positioner .layout-column table tr {
+
+}
+footer.page-footer .layout-positioner .layout-column table th {
+  color: rgb(241, 71, 23);
+  text-transform: uppercase;
+  padding: 60px 40px 20px 0px;
+
+}
+footer.page-footer .layout-positioner .layout-column table td {
+  color: rgba(253, 254, 253, 0.910);
+  padding-top:5px;
+
+}
+footer.page-footer .layout-positioner .layout-column table span {
+  color: rgb(241, 71, 23);
+}
+footer.page-footer .layout-positioner .layout-column hr {
+  width:50%;
+  background-color: rgb(24, 192, 207);
+  color: rgb(24, 192, 207);
+  opacity: 0.11;
+  margin-left: 23.5%;
+  margin-top:20px;
+}
+footer.page-footer .layout-positioner .orange-line {
+
+}
+footer.page-footer .layout-positioner table + img {
+  position: absolute;
+  left:820px;
+  top:100px;
+}
+
+

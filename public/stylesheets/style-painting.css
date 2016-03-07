@@ -1,0 +1,805 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:"MyriadProRegular", 'PT Sans', sans-serif;
+    background-color: white;
+}
+@font-face {
+    font-family: "MyriadPro";
+    src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "CenturySchoolBook";
+    src: url("../fonts/CenturySchoolbook/century2.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Century751BT";
+    src: url("../fonts/Century751BT/ufonts.com_century-751-bt.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MyriadProItalic";
+    src: url("../fonts/MyriadProItalic/Myriad Pro Italic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf") format("opentype");
+}
+.clearfix:after{
+  content:'';
+  clear:both;
+  display:table;
+}
+.layout-positioner:{
+  content:'';
+  clear:both;
+  display:table;
+}
+.layout-positioner{
+  width:90%;
+  max-width: 1300px;
+  margin:0 auto;
+  /*border:2px solid yellow;*/
+  /*outline: 2px solid yellow;*/
+}
+.orange-line {
+  border-bottom: 5px solid rgb(241, 70, 24);
+}
+hr {
+  border: none; 
+  background-color: #5ca8b6; 
+  color: #5ca8b6; 
+  height: 2px;
+  width:15%;
+}
+
+
+/*Шапка*/
+
+header.page-header {
+  position: relative;
+  color:white;
+  width: 100%;
+  /*
+  height:0;
+  padding-bottom: 35%;
+  */
+
+
+  
+}
+
+header.page-header .logo {
+  position: relative;
+  top: 20px;
+  left: 22%;
+  margin: 0;
+  width:90px;
+  height: 90px;
+}
+header.page-header .header-1 {
+  height:66px;
+}
+
+header.page-header .header-2 {
+ 
+  margin:0 auto;
+}
+header.page-header .header-2 .layout-positioner {
+  /*outline: 2px solid yellow;*/
+}
+header.page-header .orange-line-header {
+  border-top: 5px solid rgb(241, 70, 24);
+}
+
+header.page-header .header-1 .layout-column {
+  float:right;
+  
+}
+header.page-header .header-1 .layout-column-1 {
+  padding-top: 3px;
+  margin-right: 8%;
+}
+header.page-header .header-1 .layout-column-1 a, header.page-header .layout-column-1 a:visited{
+  font-size: 22px;
+  font-family: "MyriadProItalic";
+  color: black;
+  text-decoration: none;
+}
+header.page-header .header-1 .layout-column-2 {
+  width:450px;
+  margin-top: -8px;
+  margin-right: -30px;
+}
+
+header.page-header .header-1 .layout-column-2 img {
+  width:36px;
+  height:33px;
+  position: relative;
+  top:12px;
+  right: 10px;
+}
+header.page-header .header-1 .layout-column-2 li:first-child img,
+header.page-header .header-1 .layout-column-2 li:nth-child(5) img {
+  width:30px;
+  height:27px;
+  top:9px;
+}
+header.page-header .header-1 .layout-column-2 li:nth-child(3) {
+  margin-right:-3px;
+  margin-left: -3px;
+}
+header.page-header .header-1 .layout-column ul > li {
+  display:inline-block;
+}
+header.page-header .header-1 .layout-column ul > li:first-child {
+
+}
+header.page-header .header-1 .layout-column ul > li:last-child {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+header.page-header .logo {
+
+}
+header.page-header .logo img{
+  position: absolute;
+  top:-130px;
+  left:-227px;
+  height:160px; 
+  width:165px;
+}
+
+header.page-header input[type="search"] {
+  font-size: 16px;
+  font-family: "MyriadProRegular";
+  background-color: rgb(237, 237, 237);
+  color: rgba(44, 45, 45, 0.302);
+  border: 1px solid rgb(250, 84, 50);
+  border-radius: 10px;
+  padding: 5px 15px;
+  width: 155px;
+  height: 30px;
+ }
+header.page-header input[type="search"]:focus {
+  outline: none;
+}
+header.page-header .main-menu{
+  margin:0 auto;
+  width:87%;
+  background-color: #303131;
+  border-radius: 10px;
+}
+
+header.page-header .main-menu ul {
+  margin:-10px 0px 0px -50px;
+  padding-top: 10px;
+  padding-left: 15%;
+  float:left;
+ }
+header.page-header .main-menu .menu-right {
+  float:right;
+}
+header.page-header .main-menu .menu-right ul {
+  margin-right: 0px;
+  float:right;
+}
+header.page-header .main-menu .menu-right .buttons {
+  margin-top:3px;
+  text-align: center;
+  position: relative;
+}
+header.page-header .main-menu .menu-right .buttons:active {
+  top:1px;
+  box-shadow: none;
+}
+header.page-header .main-menu .menu-right input[type="submit"] { 
+  display: inline-block;
+  margin: 0 5px;
+  width: 162px;
+  height: 35px;
+  border:2px solid rgb(250, 84, 50);
+  border-radius: 10px;
+  background: rgb(241, 71, 23);
+  color: rgba(253, 254, 253, 0.750);
+  font-size: 20px;
+  font-family: "MyriadPro";
+
+}
+header.page-header .main-menu .menu-right input[type="submit"]:hover {
+  color: rgba(253, 254, 253, 1);
+  cursor: pointer
+}
+header.page-header .main-menu .menu-right input[type="submit"]:focus {
+  outline: none;
+}
+
+header.page-header .main-menu .menu-right ul li{
+  
+}
+header.page-header .main-menu li {
+  
+  font-family: "MyriadPro";
+  color: rgb(254, 254, 254);
+  display: inline-block;
+  list-style: none;
+  border-right: 2px solid #343d3e;
+  padding: 0 35px;
+  margin-bottom: 10px;
+  line-height: 2;
+
+}
+header.page-header .main-menu li:last-of-type {
+  border-right: none;
+}
+header.page-header .main-menu a, header.page-header .main-menu a:visited {
+  color:rgb(254, 254, 254);
+}
+header.page-header .main-menu .menu-left ul li:first-child a{
+    color:rgb(241, 71, 23);
+}
+header.page-header .main-menu ul > a:nth-child(4) li, header.page-header .main-menu ul > a:last-child li{
+  
+}
+header.page-header .main-menu ul > a:last-child li {
+
+  /*border: 2px solid rgb(241, 70, 24);
+  border-radius: 10px; */
+  color:white;
+}
+header.page-header .main-menu a:hover {
+  color:rgb(241, 70, 24);
+}
+header.page-header .main-menu ul > a:last-child li:hover {
+  border: 2px solid white;
+  color:rgb(241, 70, 24);
+}
+header.page-header .main-menu a {
+  text-decoration: none;
+}  
+
+
+/*Выпадающее меню*/
+
+
+header.page-header .main-menu .menu-left .sub-menu {
+    position: absolute;
+    left: 235px;
+    display: none;
+    width: 800px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+header.page-header .main-menu .menu-left .sub-menu li {
+  border: none;
+  padding-right:15px;
+  margin-top: 15px;
+}
+
+header.page-header .main-menu .menu-left .sub-menu a {
+  font-size: 17px;
+}
+header.page-header .main-menu .menu-left > ul > li:hover .sub-menu {
+    display: inline-block;
+}
+
+
+/*Хлебные крошки*/
+
+.bread-pieces {
+  width:93%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "ProximaNova";
+  color: rgba(53, 54, 54, 0.69);
+}
+.bread-pieces .bread-pieces-line {
+  height:2px;
+  margin-top: 5px;
+  border:0.6px solid rgb(243, 84, 43);
+}
+
+
+/*Основное содержимое*/
+
+.main-contain .layout-positioner {
+  margin-top: 50px;
+  min-width: 1100px;
+  font-family: "ProximaNova";
+}
+
+.main-contain .layout-positioner .left-contain  {
+  float:left;
+  width: 730px;
+
+
+ 
+}
+.main-contain .layout-positioner .right-contain {
+  float:right;
+  width: 355px;
+
+
+}
+.main-contain .layout-positioner .left-contain .title-author .photo {
+  float:left;
+  width:137px;
+  height:128px;
+  margin-left: 45px;
+  background: url('../images/painting/photo.png') no-repeat;
+}
+.main-contain .layout-positioner .left-contain .title-author .text {
+  float:left;
+  margin:45px auto auto 25px;
+  color: rgb(53, 54, 54);
+}
+.main-contain .layout-positioner .left-contain .title-author .text .title {
+  font-size: 26px;
+}
+.main-contain .layout-positioner .left-contain .title-author .text .author {
+  color: rgb(250, 84, 50);
+  font-size: 13px;
+  font-style: italic;
+  margin:-3px auto 5px auto;
+}
+.main-contain .layout-positioner .left-contain .title-author .text .rating {
+  margin-left: 110px;
+  position: relative;
+  line-height: 1.7;
+}
+.main-contain .layout-positioner .left-contain .title-author .text .rating::before {
+  content: '';
+  position: absolute;
+  width:105px;
+  height:23px;
+  left:-110px;
+  top:0px;
+  background: url('../images/painting/rating.png') no-repeat;
+}
+.main-contain .layout-positioner .left-contain .video {
+  margin-top: 30px;
+}
+.main-contain .layout-positioner .left-contain .video .video-player {
+  width:100%;
+  height:370px;
+  background: url('../images/painting/video.png') no-repeat;
+  background-size: contain;
+}
+.main-contain .layout-positioner .left-contain .video nav.video-navigation {
+  background-color: #f7f7f7;
+  margin-top: -24px;
+  width:100%;
+}
+.main-contain .layout-positioner .left-contain .video nav.video-navigation li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  color: rgb(96, 95, 95);
+  font-size: 21px;
+  width: 25%;
+  margin: 15px auto 5px -12px;
+  padding-bottom: 10px;
+  
+}
+.main-contain .layout-positioner .left-contain .video nav.video-navigation li:first-child {
+  color: rgb(250, 84, 50);
+}
+.main-contain .layout-positioner .left-contain .video nav.video-navigation li:hover {
+  box-shadow: 0px 5px 0 0 rgb(24, 192, 207);
+  color: rgb(250, 84, 50);
+}
+.main-contain .layout-positioner .left-contain .layout-column-text {
+  width: 80%;
+  margin: 0 auto 0 50px;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text section {
+  font-family: "MyriadPro";
+  color: rgb(0, 165, 186);
+  font-size: 18px;
+  position: relative;
+  margin-top: 45px;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text section:first-of-type::after {
+  content: '';
+  position: absolute;
+  left:7px;
+  top:60px;
+  width:93%;
+  border:0.4px solid rgb(250, 84, 50);
+}
+.main-contain .layout-positioner .left-contain .layout-column-text section:last-of-type {
+  margin-top: 38px;
+  color: rgb(44, 45, 45);
+}
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan {
+  margin-top: 25px;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan h1 {
+  color: rgb(250, 84, 50);
+  font-size: 22px;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block {
+  width: 100%;
+  height:50px;
+  background-color: rgb(93, 204, 216);
+  margin-bottom: 4px;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block .title,
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block .lenght {
+  font-family: "ProximaNova";
+  color: rgb(255, 255, 255);
+  padding-top:15px;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block .title {
+  float: left;
+  padding-left: 20px;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block .lenght {
+  float:right;
+  padding-right: 50px;
+  position: relative;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block .lenght::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left:48px;
+  width: 24px;
+  height: 24px;
+  box-shadow: 2px 2px 0 0px rgb(250, 84, 50);
+  border-radius: 50px 0 0 0;
+  transform: rotate(45deg) scale(0.73);
+}
+.main-contain .layout-positioner .right-contain .subscribe {
+  margin-top: 120px;
+  padding-top: 25px;
+  background-color: rgb(24, 192, 207);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+}
+.main-contain .layout-positioner .right-contain .subscribe .old-price {
+  color: rgb(96, 92, 92);
+  font-size: 16px;
+  margin-left: 95px;
+  margin:-5px auto 20px 95px;
+}
+.main-contain .layout-positioner .right-contain .subscribe button {
+  position: relative;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border:none;
+  background-color: rgb(250, 84, 50);
+  width: 275px;
+  height: 50px;
+  outline: none;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+.main-contain .layout-positioner .right-contain .subscribe button:first-of-type {
+  width:245px;
+  font-size: 20px;
+}
+.main-contain .layout-positioner .right-contain .subscribe button:nth-of-type(2) {
+  background-color: rgb(0, 173, 93);
+}
+.main-contain .layout-positioner .right-contain .subscribe button:last-of-type {
+  background-color: rgb(221, 162, 35);
+  padding-right: 80px;
+  margin-bottom: 15px;
+}
+.main-contain .layout-positioner .right-contain .subscribe button:active {
+  top:1px;
+}
+.main-contain .layout-positioner .right-contain .subscribe button:hover {
+  cursor: pointer
+}
+.main-contain .layout-positioner .right-contain .subscribe button img {
+  position: absolute;
+  left:8px;
+  top:12px;
+}
+.main-contain .layout-positioner .right-contain .subscribe button:last-of-type img {
+  left:15px;
+  top:15px;
+}
+.main-contain .layout-positioner .right-contain .right-contain-line {
+  height:1px;
+  margin-top: 60px;
+  border:0.1px solid rgb(149, 149, 149);
+}
+.main-contain .layout-positioner .right-contain .what-you-get h2{
+  text-align: center;
+  color: rgb(72, 69, 69);
+}
+.main-contain .layout-positioner .right-contain .what-you-get span {
+  color:rgb(250, 84, 50);
+}
+.main-contain .layout-positioner .right-contain .what-you-get ul {
+  list-style: none;
+}
+.main-contain .layout-positioner .right-contain .what-you-get li {
+  position: relative;
+  font-size: 15px;
+  color: rgb(72, 69, 69);
+  margin-bottom: 15px;
+}
+.main-contain .layout-positioner .right-contain .what-you-get li::before {
+  position: absolute;
+  content: '';
+  border:4px solid rgb(250, 84, 50);
+  border-radius: 50%;
+  left:-23px;
+  top:4.5px;
+}
+.main-contain .layout-positioner .right-contain .circle {
+  border-radius: 50%;
+  background-color: rgba(250, 84, 50, 0.07);
+  margin: 0 auto;
+  height:250px;
+  width:280px;
+  color: rgb(0, 158, 176);
+  font-size: 20px;
+  margin-top: 50px;
+}
+.main-contain .layout-positioner .right-contain .circle li:last-child,
+.main-contain .layout-positioner .right-contain .circle span {
+  color:rgb(57, 58, 59);
+  font-size: 16px;
+  position: relative;
+}
+.main-contain .layout-positioner .right-contain .circle span {
+  padding-left: 28px;
+}
+.main-contain .layout-positioner .right-contain .circle ul {
+  list-style: none;
+}
+.main-contain .layout-positioner .right-contain .circle li:first-child {
+  padding-top: 70px;
+}
+.main-contain .layout-positioner .right-contain .circle span::before {
+  content: '';
+  position: absolute;
+  height: 21px;
+  width: 24px;
+  left:0px;
+  top:-3px;
+  background: url('../images/painting/graduation.png') no-repeat;
+  background-size: contain;
+}
+.main-contain .layout-positioner .right-contain .circle li:nth-child(2) {
+  margin-top: 0px;
+  position: relative;
+}
+.main-contain .layout-positioner .right-contain .circle li:nth-child(2)::after {
+  content: '';
+  position: absolute;
+  top:40px;
+  left:0px;
+  width:87%;
+  border-top:1px solid rgb(149, 149, 149);
+}
+.main-contain .layout-positioner .right-contain .circle li:nth-child(2) span{
+  padding-left: 34px;
+}
+.main-contain .layout-positioner .right-contain .circle li:nth-child(2) span::before {
+  background: url('../images/painting/painter.png') no-repeat;
+  background-size: contain;
+  left:7px;
+  top:1px;
+}
+.main-contain .layout-positioner .right-contain .circle li:last-child {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+}
+.main-contain .layout-positioner .right-contain .circle li:last-child::before {
+  content: '';
+  position: absolute;
+  height: 32px;
+  width: 38px;
+  left: 40px;
+  top:-5px;
+  background: url('../images/painting/commerce.png') no-repeat;
+  background-size: contain;
+}
+.main-contain .layout-positioner .right-contain .we-guarantee {
+  margin-top: 80px;
+  color: rgb(84, 89, 90);
+  font-size: 17px;
+}
+.main-contain .layout-positioner .right-contain .we-guarantee h2 {
+  text-align: center;
+  font-size: 22px;
+  color: rgb(250, 84, 50);
+}
+.main-contain .layout-positioner .right-contain .we-guarantee ul {
+  list-style: none;
+  margin-left: 45px;
+}
+.main-contain .layout-positioner .right-contain .we-guarantee li {
+  position: relative;
+  margin-top: 34px;
+}
+.main-contain .layout-positioner .right-contain .we-guarantee li::before {
+  content: '';
+  position: absolute;
+  top:-4px;
+  left:-67px;
+  width: 50px;
+  height: 50px;
+  background-image:
+    url('../images/painting/view/1.png'),
+    url('../images/painting/view/2.png');
+  background-repeat: no-repeat;
+  background-size: 
+    27px 16px,
+    contain;
+  background-position: 
+    10px 18px,
+    0px 0px;
+}
+.main-contain .layout-positioner .right-contain .we-guarantee li:nth-of-type(even)::before {
+  background-image:
+    url('../images/painting/access/1.png'),
+    url('../images/painting/access/2.png');
+  top:-15px;
+  background-size: 
+    23px 17px,
+    contain;
+  background-position: 
+    13px 18px,
+    0px 0px;
+}
+.main-contain .layout-positioner .right-contain .we-guarantee li:last-of-type::before {
+  background-image:
+    url('../images/painting/money/1.png'),
+    url('../images/painting/money/2.png');
+  background-size: 
+    16px 17px,
+    contain;
+  background-position: 
+    19px 14px,
+    0px 0px;
+  top:-8px;
+
+}
+
+
+/*Блок с рекоммендациями*/
+
+.recommended {
+  font-size: 10px;
+  color: rgb(250, 84, 50);
+}
+.recommended .layout-positioner {
+  text-align: center;
+}
+.recommended .layout-positioner h1,
+.recommended .layout-positioner .gallery {
+  margin-top: 65px;
+}
+.recommended .gallery {
+  font-size: 146px;
+}
+.recommended .gallery .course {
+  display: inline-block;
+  width:313px;
+  height:182px;
+
+}
+.recommended .gallery .course-1 {
+  background:url('../images/painting/recommended/3.png') no-repeat;
+  background-size: contain;
+}
+.recommended .gallery .course-2 {
+  background:url('../images/painting/recommended/2.png') no-repeat;
+  background-size: contain;
+}
+.recommended .gallery .course-3 {
+  background:url('../images/painting/recommended/1.png') no-repeat;
+  background-size: contain;
+}
+
+
+
+/* Футер */
+
+
+footer.page-footer .layout-positioner {
+  height:300px;
+  background-color: rgb(61, 70, 80);
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+}
+footer.page-footer a:visited{
+
+  color: white;
+
+}
+footer.page-footer .layout-positioner .layout-column {
+  text-align: center;
+}
+footer.page-footer .layout-positioner img {
+  position: absolute;
+  top:50px;
+  left:80px;
+}
+footer.page-footer .layout-positioner .layout-column-float {
+  float: right;
+  position: relative;
+  height: 190px;
+  margin-top: -190px;
+  width:85px;
+  background-color: rgb(255, 255, 255);
+  background-image: url('../images/socio.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-right: 2px solid rgb(61, 70, 80);
+}
+footer.page-footer .layout-positioner .layout-column table {
+  margin: 0 auto;
+  font-family: "CenturySchoolbook";
+  font-size: 16px;
+  text-align: left;
+}
+footer.page-footer .layout-positioner .layout-column table img {
+  position: static;
+}
+footer.page-footer .layout-positioner .layout-column table tr {
+
+}
+footer.page-footer .layout-positioner .layout-column table th {
+  color: rgb(241, 71, 23);
+  text-transform: uppercase;
+  padding: 60px 40px 20px 0px;
+
+}
+footer.page-footer .layout-positioner .layout-column table td {
+  color: rgba(253, 254, 253, 0.910);
+  padding-top:5px;
+
+}
+footer.page-footer .layout-positioner .layout-column table span {
+  color: rgb(241, 71, 23);
+}
+footer.page-footer .layout-positioner .layout-column hr {
+  width:50%;
+  background-color: rgb(24, 192, 207);
+  color: rgb(24, 192, 207);
+  opacity: 0.11;
+  margin-left: 23.5%;
+  margin-top:20px;
+}
+footer.page-footer .layout-positioner .orange-line {
+
+}
+footer.page-footer .layout-positioner table + img {
+  position: absolute;
+  left:820px;
+  top:100px;
+}
