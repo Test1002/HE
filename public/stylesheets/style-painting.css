@@ -458,9 +458,28 @@ header.page-header .main-menu .menu-left > ul > li:hover .sub-menu {
 }
 .main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block .lenght {
   float:right;
-  padding-right: 50px;
+  padding-right: 25px;
   position: relative;
 }
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block-hiden {
+  margin: 0 auto;
+  display: none;
+  width: 90%;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block .openBtn {
+  float:right;
+  position: relative;
+  margin:5px 15px 0 0;
+  width: 24px;
+  height: 24px;
+  box-shadow: 2px 2px 0 0px rgb(250, 84, 50);
+  transform: rotate(45deg) scale(0.73);
+  transition: 0.4s all;
+}
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block-hiden {
+  position: relative;
+}
+/*
 .main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block .lenght::after {
   content: '';
   position: absolute;
@@ -469,9 +488,19 @@ header.page-header .main-menu .menu-left > ul > li:hover .sub-menu {
   width: 24px;
   height: 24px;
   box-shadow: 2px 2px 0 0px rgb(250, 84, 50);
-  border-radius: 50px 0 0 0;
   transform: rotate(45deg) scale(0.73);
+  transition: 0.5s all;
 }
+.main-contain .layout-positioner .left-contain .layout-column-text .course-plan .block .lenght:hover::after {
+  transform: rotate(45deg) scale(0.8);
+  transition: 0.5s all;
+  /*
+  transform: rotate(225deg) scale(0.73);
+  top:12px;
+  
+  
+}
+*/
 .main-contain .layout-positioner .right-contain .subscribe {
   margin-top: 120px;
   padding-top: 25px;

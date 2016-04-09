@@ -3,127 +3,10 @@
     <head>
         <title>Курсы</title>
        <meta charset="utf-8">
+        <link href="public/stylesheets/styles.css" rel="stylesheet" type="text/css">
        <link href="public/stylesheets/style-courses.css" rel="stylesheet" type="text/css">
-       <script type="text/javascript">
-            window.onresize = function(event) {
-                var html = document.documentElement;
-                /*if (html.clientWidth < 1350) {
-                    document.getElementById("block-margin").style.marginRight = "80px";    
-                } else { 
-                    document.getElementById("block-margin").style.marginRight = "0px";  
-                }*/
-                if (html.clientWidth < 1170) {
-                    document.getElementById("main-menu-font").style.fontSize = "16px";
-                    
-                } else {
-                    document.getElementById("main-menu-font").style.fontSize = "20px";
-                
-                }
-                if (html.clientWidth < 1300) {
-                    document.getElementById("block1").style.height= "290px";   
-                    document.getElementById("block1").style.width = "341px";
-                    document.getElementById("block2").style.height = "290px";   
-                    document.getElementById("block2").style.width = "341px"; 
-                    document.getElementById("block3").style.height = "290px";   
-                    document.getElementById("block3").style.width = "341px"
-                    document.getElementById("teacher_id").style.height = "390px";
-                    document.getElementById("teacher_id").style.width = "335px";
-                    document.getElementById("teacher_id2").style.height = "390px";
-                    document.getElementById("teacher_id2").style.width = "335px";
-                    document.getElementById("teacher_id3").style.height = "390px";
-                    document.getElementById("teacher_id3").style.width = "335px";
-                    document.getElementById("words1").style.display = "none"
-                    document.getElementById("words2").style.display = "none"
-                } else {
-                    document.getElementById("block1").style.height = "350px";     
-                    document.getElementById("block1").style.width = "429px";   
-                    document.getElementById("block2").style.height = "350px";     
-                    document.getElementById("block2").style.width = "429px"; 
-                    document.getElementById("block3").style.height = "350px";     
-                    document.getElementById("block3").style.width = "429px";
-                    document.getElementById("block3").style.marginRight = "0px"; 
-                    document.getElementById("teacher_id").style.height = "532px"; 
-                    document.getElementById("teacher_id").style.width = "424px";
-                    document.getElementById("teacher_id2").style.height = "532px"; 
-                    document.getElementById("teacher_id2").style.width = "424px";
-                    document.getElementById("teacher_id3").style.height = "532px"; 
-                    document.getElementById("teacher_id3").style.width = "424px";
-                    document.getElementById("words1").style.display = "block"
-                    document.getElementById("words2").style.display = "block"
-                }
-            };
-        </script>
-        <script type="text/javascript">
-            function a() {
-                var html = document.documentElement;
-                /*if (html.clientWidth < 1350) {
-                    document.getElementById("block-margin").style.marginRight = "80px";    
-                } else { 
-                    document.getElementById("block-margin").style.marginRight = "0px";  
-                }*/
-                if (html.clientWidth < 1170) {
-                    document.getElementById("main-menu-font").style.fontSize = "16px";
-                    
-                } else {
-                    document.getElementById("main-menu-font").style.fontSize = "20px";
-                
-                }
-                if (html.clientWidth < 1300) {
-                    document.getElementById("words1").style.display = "none"
-                    document.getElementById("words2").style.display = "none"
-                    document.getElementById("block1").style.height= "290px";   
-                    document.getElementById("block1").style.width = "341px";
-                    document.getElementById("block2").style.height = "290px";   
-                    document.getElementById("block2").style.width = "341px"; 
-                    document.getElementById("block3").style.height = "290px";   
-                    document.getElementById("block3").style.width = "341px"
-                    document.getElementById("teacher_id").style.height = "390px";
-                    document.getElementById("teacher_id").style.width = "335px";
-                    document.getElementById("teacher_id2").style.height = "390px";
-                    document.getElementById("teacher_id2").style.width = "335px";
-                    document.getElementById("teacher_id3").style.height = "390px";
-                    document.getElementById("teacher_id3").style.width = "335px";
-                } else {
-                    document.getElementById("words1").style.display = "block"
-                    document.getElementById("words2").style.display = "block"
-                    document.getElementById("block1").style.height = "350px";     
-                    document.getElementById("block1").style.width = "429px";   
-                    document.getElementById("block2").style.height = "350px";     
-                    document.getElementById("block2").style.width = "429px"; 
-                    document.getElementById("block3").style.height = "350px";     
-                    document.getElementById("block3").style.width = "429px";
-                    document.getElementById("block3").style.marginRight = "0px"; 
-                    document.getElementById("teacher_id").style.height = "532px"; 
-                    document.getElementById("teacher_id").style.width = "424px";
-                    document.getElementById("teacher_id2").style.height = "532px"; 
-                    document.getElementById("teacher_id2").style.width = "424px";
-                    document.getElementById("teacher_id3").style.height = "532px"; 
-                    document.getElementById("teacher_id3").style.width = "424px";
-                }
-            }
-        </script>
-        <script type="text/javascript">
-            var scrolly = 0;
-            var distance = 40;
-            var speed = 24;
-            function autoScrollTo(el) {
-                var currentY = window.pageYOffset;
-                var targetY = document.getElementById(el).offsetTop;
-                var bodeHeight = document.body.offsetHeight;
-                var yPos = currentY + window.innerHeight;
-                var animator = setTimeout('autoScrollTo(\''+el+'\')', 24);
-                if (yPos > bodeHeight) {
-                    clearTimeout(animator);
-                } else {
-                    if(currentY < targetY-distance) {
-                        scrollY = currentY+distance;
-                        window.scroll(0, scrollY);
-                    } else {
-                        clearTimeout(animator);
-                    }
-                }
-            }
-        </script>
+       <script src="public/javascripts/scripts.js"></script>  
+       <script src="public/javascripts/jquery-1.12.1.min.js"></script>
     </head>
     <body onload="a()">
          <header class="page-header">
@@ -160,9 +43,9 @@
                         <div class="menu-left">
                             <ul> 
                                 <li>
-                                    <a href="/courses.html">Курсы</a>
+                                    <a href="/courses">Курсы</a>
                                     <ul class="sub-menu">
-                                        <li><a href="/painting.html">Рисование</a></li>
+                                        <li><a href="painting.html">Рисование</a></li>
                                         <li><a href="#">Кройка и шитье</a></li>
                                         <li><a href="#">Вязание и вышивка</a></li>
                                         <li><a href="#">Дополнительно</a></li>
@@ -170,7 +53,7 @@
                                 </li>
                                 <li><a href="#">Преподаватели</a></li>
                                 <li><a href="#">Проекты</a></li>
-                                <li><a href="#">Статьи</a></li>
+                                <li><a href="articles.html">Статьи</a></li>
                             </ul> 
                         </div>
                         <div class="menu-right">
@@ -184,7 +67,7 @@
                         </div>
                     </nav>
                      <div class="logo"> 
-                        <a href="/"><img src="public/images/logo1.png"></a>
+                        <a href="index.html"><img src="public/images/logo1.png"></a>
                     </div> 
                     
                 </div>
@@ -419,9 +302,9 @@
                             <th>Увидимся</th>
                         </tr>
                         <tr>
-                            <td><a href="/about.html">О компании</td>
+                            <td>О компании</td>
                             <td>Рисовать</td>
-                            <td><a href="/contacts.html">Зарабатывайте с нами</td>
+                            <td><a href="/contacts">Зарабатывайте с нами</td>
                             <td>Instagram</td>
                         </tr>
                         <tr>

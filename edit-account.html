@@ -1,0 +1,118 @@
+<link rel="stylesheet" href="/stylesheets/styles.css"/><link rel="stylesheet" href="/stylesheets/style-edit-account.css"/><script src="/javascripts/scripts.js"></script><script src="/javascripts/jquery-1.12.1.min.js"></script><link rel="stylesheet" href="/stylesheets/styles.css"/><link rel="stylesheet" href="/stylesheets/style-edit-account.css"/><script src="/javascripts/scripts.js"></script><script src="/javascripts/jquery-1.12.1.min.js"></script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Редактировать аккаунт</title>
+        <meta charset="utf-8">
+    </head>
+    <body onload="a()">
+        <div onclick="showSub('none')" id="subMenuWrap"></div>
+    	<header class="page-header">
+            <div class="header-1">
+                <div class="layout-positioner">
+                    <div class="layout-column layout-column-1 authorized">
+                        <ul>
+                            <li onclick="showSub('block')"></li>
+                                <ul id="authorized">
+                                    <li>Мой аккаунт</li>
+                                    <li>Мои курсы</li>
+                                    <li>Мои проекты</li>
+                                    <li>Редактировать</li>
+                                    <li>Выйти</li>
+                                </ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="layout-column layout-column-2">
+                        <ul>
+                            <li><a href="#"><img src="../images/youtube.png" alt="Поиск" title="YouTube"></a></li>
+                            <li><a href="#"><img src="../images/vk.png" alt="Корзина" title="ВКонтакте"></a></li>
+                            <li><a href="#"><img src="../images/fb.png" alt="Авторизация" title="Фейсбук"></a></li>
+                            <li><a href="#"><img src="../images/ok.png" alt="Корзина" title="Одноклассники"></a></li>
+                            <li><a href="#"><img src="../images/inst.png" alt="Поиск" title="Инстаграм"></a></li>
+                            <li>
+                                <form action="/echo" method="post">
+                                    <div class="search">
+                                        <input name="search" id="search-header" type="search" placeholder="Поиск">
+                                        <input type="submit" value="">
+                                   </div>
+                                </form> 
+                            </li>   
+                        </ul>
+                    </div>
+                </div>  
+            </div> 
+            <div class="header-2">
+                <div class="layout-positioner">
+                    <div class="orange-line-header"></div>
+                    <nav class="main-menu clearfix" id="main-menu-font">
+                        <div class="menu-left">
+                            <ul> 
+                                <li><a href="/courses">Курсы</a></li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                            </ul> 
+                        </div>
+                        <div class="menu-right">
+                            <ul> 
+                                <li>
+                                    <div class="buttons">
+                                        <input type="submit" value="Попробовать">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                     <div class="logo"> 
+                        <a href="/"><img src="../images/logo1.png"></a>
+                    </div> 
+                </div>
+            </div> 
+        </header>   
+        <div class="edit">
+        	<div class="layout-positioner">
+        		<div class="layout-column layout-column-1">
+        			<div class="edit-1-box">
+        				<img src="../images/account/user-pic-background-default.png" width="157px" height="157px">
+                        <img src="../images/account/user-pic-default.png" width="86px" height="107px">
+                        <div class="nickname">Настройки аккаунта</div>
+        			</div>
+        			<div class="edit-2-box">
+        				<form action="/echo" method="post">
+        					<label for="user-name">Ваше имя</label>
+        					<input type="text" id="user-name">
+        					<label for="user-pic">Ваша фотография</label>
+        					<input type="submit" id="user-pic" value="Загрузить">
+        					<label for="user-country">Страна</label>
+        					<input type="text" id="user-country">
+        					<label for="user-city">Город</label>
+        					<input type="text" id="user-city">
+        					<label>Интересы</label>
+        					<input type="checkbox">
+        					<label>рисование</label>
+        					<input type="checkbox">
+        					<label>кройка и шитье</label>
+        					<input type="checkbox">
+        					<label>вязание и вышивка</label>
+        					<input type="checkbox">
+        					<label>ювелирное дело</label>
+        				</form>
+        			</div>
+        			<p>Пароль и e-mail</p>
+        			<label for="user-new-email">Новый e-mail</label>
+        			<input type="text" id="user-new-email">
+        			<label for="user-old-password">Старый пароль</label>
+        			<input type="text" id="user-old-password">
+        			<label for="user-new-password">Новый пароль</label>
+        			<input type="text" id="user-new-password">
+        			<input type="submit" value="Редактировать">
+        		</div>
+        		<div class="layout-column layout-column-2">
+
+        		</div>
+        	</div>
+        </div>
+    </body>
+</html>

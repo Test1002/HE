@@ -1,0 +1,268 @@
+@font-face {
+  font-family: "Etude";
+  src: url("../fonts/Etude/Etude.ttf") format("opentype");
+}
+
+.bread-pieces .layout-positioner {
+	min-width: 1050px;
+	max-width: 1150px;
+}
+main.main-content {
+	margin-top: 30px;
+	font-size: 16px;
+	font-family: "ProximaNova";
+}
+main.main-content .layout-positioner {
+	max-width: 1220px;
+	min-width: 1200px;
+}
+main.main-content .layout-positioner .layout-column {
+	float:left;
+}
+main.main-content .layout-positioner .layout-column-1 ul {
+	position: relative;
+	list-style: none;
+	width: 100px;
+	margin-top: 95px;
+  	font-family: "ProximaNovaRegularItalic";
+  	color: rgb(24, 192, 207);
+}
+main.main-content .layout-positioner .layout-column-1 ul::before,
+main.main-content .layout-positioner .layout-column-1 ul::after {
+	position: absolute;
+	content: '';
+	width: 87px;
+	height:6px;
+	top:-52px;
+	background-color:rgb(24, 192, 207);
+}
+main.main-content .layout-positioner .layout-column-1 ul::after {
+	top:-43px;
+}
+main.main-content .layout-positioner .layout-column-1 ul li {
+	margin: 0 0 10px 20px;
+	text-align: center;
+	height:55px;
+	width: 55px;
+	background: url('../images/article-page/fb.png') no-repeat;
+	background-size: contain;
+}
+main.main-content .layout-positioner .layout-column-1 ul li:nth-child(2) {
+	background: url('../images/article-page/vk.png') no-repeat;
+	background-size: contain;
+}
+main.main-content .layout-positioner .layout-column-1 ul li:nth-child(3) {
+	background: url('../images/article-page/ok.png') no-repeat;
+	background-size: contain;
+}
+main.main-content .layout-positioner .layout-column-1 ul li:last-child {
+	background: none;
+	margin-left: 6px;
+}
+main.main-content .layout-positioner .layout-column-2 {
+	width:59%;
+
+}
+main.main-content .layout-positioner .layout-column-2 article .article-info,
+main.main-content .layout-positioner .layout-column-2 .article-author-type,
+main.main-content .layout-positioner .layout-column-2 .comments {
+	height:58px;
+	background-color: rgba(226, 226, 226, 0.7);
+	font-family: "ProximaNovaRegularItalic";
+}
+main.main-content .layout-positioner .layout-column-2 article .article-info .time {
+	float:left;
+	width:65px;
+	height: 100%;
+	background-color: rgb(24, 192, 207);
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+main.main-content .layout-positioner .layout-column-2 .article-info .time span {
+	display: block;
+	font-family: "ProximaNovaBold";
+	font-size: 22px;
+}
+main.main-content .layout-positioner .layout-column-2 .article-info .time p {
+	margin-top: 5px;
+}
+main.main-content .layout-positioner .layout-column-2 .article-info h1 {
+	margin: 0;
+	font-size:20px;
+	position: relative;
+	top:16px;
+	left:15px;
+}
+main.main-content .layout-positioner .layout-column-2 .article-author-type {
+	height:40px;
+	margin-top: -10px;
+	font-size: 14px;
+}
+main.main-content .layout-positioner .layout-column-2 .article-author-type ul {
+	list-style: none;
+	margin-left: -32px;
+}
+main.main-content .layout-positioner .layout-column-2 .article-author-type ul li {
+	margin-top: 12px;
+	display: inline-block;
+}
+main.main-content .layout-positioner .layout-column-2 .article-author-type .article-type {
+	margin-left: 10px;
+	background-color: rgb(250, 84, 50);
+	border-radius: 15px;
+	padding: 1px 15px;
+	font-family: "MyriadProItalic";
+	color: white;
+}
+main.main-content .layout-positioner .layout-column-2 .article-content img {
+ 	max-width: 719px;
+}
+main.main-content .layout-positioner .layout-column-2 .comments .comments-var {
+	height: 64px;
+	line-height: 64px;
+	background-color: rgba(226, 226, 226, 0.7);
+	text-align: center;
+}
+main.main-content .layout-positioner .layout-column-2 .comments .comments-block {
+	margin-top: 15px;
+	background-color: rgba(226, 226, 226, 0.7)
+}
+main.main-content .layout-positioner .layout-column-2 .comments .comments-block .comment {
+	width:80%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+main.main-content .layout-positioner .layout-column-3 {
+	float:right;
+	margin-right: 35px;
+}
+main.main-content .layout-positioner .layout-column-3 input[type="search"] {
+  font-size: 16px;
+  font-family: "ProximaNova";
+  background-color: rgb(241, 241, 243);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 5px 15px;
+  padding-right: 35px;
+  width: 285px;
+  height: 30px;
+ }
+
+#search-header::-webkit-input-placeholder {
+  color: black;
+}
+#search-header::-webkit-search-cancel-button{
+  display: none;
+}
+main.main-content .layout-positioner .layout-column-3 .search,
+main.main-content .layout-positioner .layout-column-3 aside {
+  position: relative;
+}
+main.main-content .layout-positioner .layout-column-3 .search::before,
+main.main-content .layout-positioner .layout-column-3 .search::after {
+	position: absolute;
+	content: '';
+	height:2px;
+	width:285px;
+	top:62px;
+	background-color:rgb(24, 192, 207);
+}
+main.main-content .layout-positioner .layout-column-3 .search::before {
+	top:100px;
+}
+main.main-content .layout-positioner .layout-column-3 .search input[type="submit"] {
+  width: 20px;
+  height: 20px; 
+  border: none; 
+  position: absolute;
+  top:5px;
+  right:11px;
+  background: url('../images/article-page/search.png') no-repeat;
+  background-size: contain;
+}
+main.main-content .layout-positioner .layout-column-3 input[type="search"]:focus,
+main.main-content .layout-positioner .layout-column-3 .search input[type="submit"]:focus,
+main.main-content .layout-positioner .layout-column-3 input[type="submit"]:focus {
+  outline: none;
+}
+main.main-content .layout-positioner .layout-column-3 aside {
+	margin-top: 95px;
+	position: relative;
+}
+
+main.main-content .layout-positioner .layout-column-3 aside .get-presents {
+	top:715px;
+}
+main.main-content .layout-positioner .layout-column-3 aside .learn-more .title {
+	height: 50px;
+	background-color: rgb(24, 192, 207);
+	text-align: center;
+	font-family: "Etude";
+  	color: rgb(255, 255, 255);
+  	font-size: 19px;
+}
+main.main-content .layout-positioner .layout-column-3 aside .read-handyed {
+	width: 60%;
+
+	margin: 0 auto;
+	position: relative;
+	top:-15px;
+	color: rgb(24, 192, 207);
+	background-color: white;
+	font-size: 19px;
+	font-family: "ProximaNovaRegularItalic";
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+main.main-content .layout-positioner .layout-column-3 aside .read-handyed ul {
+	padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+main.main-content .layout-positioner .layout-column-3 aside .read-handyed ul li:first-child {
+	margin-top: -17px;
+}
+main.main-content .layout-positioner .layout-column-3 aside .read-handyed ul li:last-child {
+	font-size: 22px;
+	font-family: "ProximaNovaBold";
+	margin-bottom: -10px;
+}
+main.main-content .layout-positioner .layout-column-3 aside .background {
+	margin-top: -64px;
+	height: 260px;
+	background: url('../images/article-page/learn-more.png') no-repeat 50% 50%;
+	background-size: contain;
+}
+main.main-content .layout-positioner .layout-column-3 .get-presents {
+	margin-top: 35px;
+	height: 400px;
+	background: url('../images/article-page/get-presents.png') no-repeat;
+	background-size: contain;
+	text-align: center;
+}
+main.main-content .layout-positioner .layout-column-3 .get-presents form {
+	position: relative;
+	top:280px;
+
+}
+main.main-content .layout-positioner .layout-column-3 .get-presents input[type="email"] {
+	padding: 5px;
+}
+main.main-content .layout-positioner .layout-column-3 .get-presents input[type="submit"] {
+	background-color: rgb(241, 70, 24);
+	padding: 7px;
+	margin-left: -5px;
+	color:white;
+	border: none;
+	text-transform: uppercase;
+}
+main.main-content .layout-positioner .layout-column-3 .get-presents input[type]:focus {
+  outline: none;
+}
+main.main-content .layout-positioner .layout-column-3 .get-presents input[type="submit"]:hover {
+  cursor: pointer;
+}
+#email::-webkit-input-placeholder {
+  color: black;
+}

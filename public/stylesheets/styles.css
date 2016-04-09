@@ -1,0 +1,708 @@
+body{
+  margin:0;
+  padding:0;
+  font-family:"MyriadPro", 'PT Sans', sans-serif;
+  background-color: white;
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot");
+  src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.woff") format("woff"),
+  url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "CenturySchoolBook";
+  src: url("../fonts/CenturySchoolbook/century2.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Century751BT";
+  src: url("../fonts/Century751BT/ufonts.com_century-751-bt.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url("../fonts/MyriadProItalic/Myriad Pro Italic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/Proxima Nova/Proxima Nova Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaRegularItalic";
+  src: url("../fonts/Proxima Nova/Proxima Nova Regular Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaLightItalic";
+  src: url("../fonts/Proxima Nova/Proxima Nova Light Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "ProximaNovaBoldItalic";
+  src: url("../fonts/Proxima Nova/Proxima Nova Bold Italic.otf") format("opentype");
+}
+
+
+
+/*Общие элементы*/
+
+
+.clearfix:after{
+  content:'';
+  clear:both;
+  display:table;
+}
+.layout-positioner:after{
+  content:'';
+  clear:both;
+  display:table;
+}
+.layout-positioner{
+  max-width: 1300px;
+  width:90%;
+  margin:0 auto;
+}
+.orange-line {
+  border-bottom: 7px solid rgb(216, 216, 216);
+}
+hr {
+  border: none; 
+  background-color: #5ca8b6; 
+  color: #5ca8b6; 
+  height: 2px;
+  width:15%;
+}
+
+
+/*Блок с шапкой*/
+
+
+/*Блок войти*/
+
+
+#wrap{
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(1, 1, 1, 0.725);
+  z-index: 100;
+  overflow: auto;
+}
+#window {
+  width: 550px;
+  height: 360px;
+  margin: 150px auto;
+  display: none;
+  background: #fff;
+  z-index: 200;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 19.2px 0.8px rgba(0, 0, 0, 0.8);
+}
+.sign-up form {
+  margin: 0 auto;
+  padding: 20px;
+  width: 450px; 
+  text-align: center;
+  font-family: "MyriadPro";
+}
+.sign-up form h1, .sign-up form h2 {
+  margin-top: -20px;
+  font-size: 24px;
+  font-family: "MyriadProBold";
+  color: rgba(0, 0, 0, 0.62);
+  letter-spacing: -1px;
+}
+.sign-up form h2 {
+  position: relative;
+  font-size:16px;
+  font-family: "MyriadPro";
+  margin-top: -5px;
+}
+.sign-up form h2:first-of-type::before, .sign-up form h2:first-of-type::after{
+  position: absolute;
+  content: '';
+  top:24px;
+  left:-40px;
+  width:140px;
+  border-top:1px solid rgba(250, 84, 50, 0.5);
+}
+.sign-up form h2:first-of-type::after {
+  left:350px;
+}
+.sign-up form .layout-column {
+  width:315px;
+  margin: 0 auto;
+}
+.sign-up form input {
+  width: 100%;
+  border:1px solid rgb(160, 160, 160);
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.sign-up form input[type="checkbox"] {
+  width: auto;
+  border:none;
+  border-radius: auto;
+  margin-bottom: auto;
+}
+.sign-up form label {
+  font-size:16px;
+  font-family: "MyriadPro";
+  margin-left: 4px;
+  color: rgba(0, 0, 0, 0.62);
+}
+.sign-up form.form_1 input:first-of-type {
+  margin-top: 15px;
+}
+.sign-up form input[type] {
+  padding: 11px 15px;
+}
+.sign-up form input[type]:focus {
+  outline: none;
+}
+.sign-up form ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.459);
+  font-family: "MyriadProItalic";
+}
+.sign-up form .floated-1 {
+  float:left;
+  width: 80%;
+}
+.sign-up form.form_1 .floated-1 {
+  text-align: left;
+  width: 50%;
+}
+.sign-up form p {
+  text-align: left;
+  font-size: 10px;
+  color: rgb(89, 89, 89);
+}
+.sign-up form p span {
+  color: rgb(250, 84, 50);
+}
+.sign-up form .floated-2 {
+  float: right;
+  position: relative;
+}
+.sign-up form.form_1 .floated-2 {
+  width: 50%;
+}
+.sign-up form input[type="submit"] {
+  position: absolute;
+  left:-95px;
+  width: 140px;
+  border:2px solid rgb(250, 84, 50);
+  border-radius: 10px;
+  background: rgb(250, 84, 50);
+  color: rgba(253, 254, 253, 1);
+  font-size: 16px;
+  box-shadow: inset 0px -4px 2.91px 0.09px rgba(0, 0, 0, 0.11);
+}
+.sign-up form.form_1 input[type="submit"] {
+  top:-15px;
+  left:0px;
+  width: 100%;
+}
+.sign-up form input[type="submit"]:hover {
+  cursor: pointer;
+}
+.sign-up form ul {
+  list-style: none;
+  text-align: left;
+}
+.sign-up form ul li {
+  display: inline-block;
+  margin-top: -150px;
+}
+.sign-up form ul li:first-of-type,
+.sign-up form.form_1 ul li:nth-of-type(2),
+ .sign-up form a:visited{
+  margin-left: -40px;
+  color: rgb(24, 192, 207);
+  font-size:14px;
+}
+ .sign-up form a {
+  text-decoration: none;
+ }
+.sign-up form.form_1 ul li:nth-of-type(2) {
+  margin-left: 25px;
+}
+.sign-up form ul img {
+  width:36px;
+  height:35px;
+  position: relative;
+  top:13px;
+  right: 10px;
+}
+.sign-up form ul li:nth-child(2) {
+  margin-left: 20px;
+}
+.sign-up form ul li:last-child img {
+  width:30px;
+  height:27px;
+  top:9px;
+}
+.sign-up form ul li:nth-child(3) {
+  margin-right:-5px;
+  margin-left: -4px;
+}
+.sign-up form ul li:nth-child(4) {
+  margin-right: 1px;
+}
+.sign-up form.form_1 ul {
+  margin-top: 40px;
+}
+
+
+/*Header*/
+
+
+header.page-header {
+  position: relative;
+  color:white;
+  width: 100%;
+}
+header.page-header .logo {
+  position: relative;
+  top: 20px;
+  left: 22%;
+  margin: 0;
+  width:90px;
+  height: 90px;
+}
+header.page-header .header-1 {
+  height:66px;
+}
+header.page-header .header-2 {
+  margin:0 auto;
+}
+header.page-header .orange-line-header {
+  position: relative;
+  border: 2px solid rgb(241, 70, 24);
+  margin: 0 auto;
+  width: 84.9%;
+}
+header.page-header .orange-line-header::after {
+  position: absolute;
+  content: '';
+  top:-6px;
+  left:99.7%;
+  border: 4px solid transparent; 
+  border-top: 4px solid rgb(241, 70, 24); 
+  transform: rotate(180deg);
+}
+header.page-header .header-1 .layout-column {
+  float:right;
+}
+header.page-header .header-1 .layout-column-1 {
+  padding-top: 8px;
+  margin-right: 8%;
+}
+header.page-header .header-1 .layout-column-1 a, header.page-header .layout-column-1 a:visited{
+  font-size: 22px;
+  font-family: "ProximaNova";
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+}
+header.page-header .header-1 .layout-column-2 {
+  width:450px;
+  margin-top: -8px;
+  margin-right: -30px;
+}
+header.page-header .header-1 .layout-column-2 img {
+  width:36px;
+  height:35px;
+  position: relative;
+  top:-8px;
+  right: 10px;
+}
+header.page-header .header-1 .layout-column-2 li:first-child img,
+header.page-header .header-1 .layout-column-2 li:nth-child(5) img {
+  width:30px;
+  height:27px;
+  top:-12px;
+}
+header.page-header .header-1 .layout-column-2 li:nth-child(3) {
+  margin-right:-3px;
+  margin-left: -4px;
+}
+header.page-header .header-1 .layout-column ul > li {
+  display:inline-block;
+}
+header.page-header .header-1 .layout-column ul > li:first-child {
+  margin-right:1px;
+}
+header.page-header .header-1 .layout-column ul > li:last-child {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+header.page-header img {
+  position: relative;
+  top:7px;
+  width:80%;
+  height:auto;
+}
+header.page-header .logo img{
+  position: absolute;
+  top:-130px;
+  left:-227px;
+  height:160px; 
+  width:165px;
+}
+header.page-header .layout-column-2 .search {
+  position: relative;
+  top:15px;
+  width:155px;
+  height:40px;
+}
+header.page-header input[type="search"] {
+  float:right;
+  font-size: 16px;
+  font-family: "ProximaNova";
+  font-style: italic;
+  background-color: transparent;
+  color: black;
+  border: 1px solid rgb(250, 84, 50);
+  border-radius: 10px;
+  padding: 5px 15px;
+  padding-right: 35px;
+  width: 15px;
+  height: 31px;
+  transition: width .4s ease-in-out;
+  z-index: 5;
+ }
+ header.page-header input[type="search"]:focus {
+  width: 155px;
+ }
+#search-header::-webkit-input-placeholder {
+  color: black;
+}
+#search-header::-webkit-search-cancel-button{
+  display: none;
+}
+header.page-header .search {
+  position: relative;
+}
+header.page-header .search input[type="submit"] {
+  width: 20px;
+  height: 20px; 
+  border: none; 
+  position: absolute;
+  top:5px;
+  left:125px;
+  background: url('../images/search.png') no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+header.page-header input[type="search"]:focus,
+header.page-header .search input[type="submit"]:focus,
+header.page-header .main-menu .menu-right input[type="submit"]:focus {
+  outline: none;
+}
+header.page-header .main-menu{
+  margin:0 auto;
+  width:87%;
+  background-color: #303131;
+  border-radius: 10px;
+}
+header.page-header .main-menu ul {
+  margin:-15px -20px 0px -30px;
+  padding-top: 10px;
+  padding-left: 15%;
+  float:left;
+}
+header.page-header .main-menu .menu-right {
+  float:right;
+}
+header.page-header .main-menu .menu-right ul {
+  margin-right: 0px;
+  float:right;
+}
+header.page-header .main-menu .menu-right .buttons {
+  margin-top:3px;
+  text-align: center;
+  position: relative;
+}
+header.page-header .main-menu .menu-right .buttons:active {
+  top:1px;
+  box-shadow: none;
+}
+header.page-header .main-menu .menu-right input[type="submit"] { 
+  display: inline-block;
+  margin: 0 5px;
+  width: 162px;
+  height: 35px;
+  border:2px solid rgb(250, 84, 50);
+  border-radius: 10px;
+  background: transparent;
+  color: rgba(253, 254, 253, 1);
+  font-size: 20px;
+  font-family: "MyriadPro";
+  transition:color 0.2s;
+}
+header.page-header .main-menu .menu-right input[type="submit"]:hover {
+  color: black;
+  background-color: rgb(250, 84, 50);
+  cursor: pointer
+}
+header.page-header .main-menu li {
+  font-family: "MyriadPro";
+  color: rgb(254, 254, 254);
+  display: inline-block;
+  list-style: none;
+  border-right: 2px solid #343d3e;
+  padding: 0 35px;
+  margin-bottom: 10px;
+  line-height: 2;
+}
+header.page-header .main-menu li:last-of-type {
+  border-right: none;
+}
+header.page-header .main-menu a, header.page-header .main-menu a:visited {
+  color:rgb(254, 254, 254);
+}
+header.page-header .main-menu ul > a:last-child li {
+  color:white;
+}
+header.page-header .main-menu a:hover,
+header.page-header .main-menu ul > a:last-child li:hover {
+  color:rgb(241, 70, 24);
+}
+header.page-header .main-menu ul > a:last-child li:hover {
+  color:rgb(241, 70, 24);
+}
+header.page-header .main-menu a {
+  text-decoration: none;
+}  
+
+
+/*Хлебные крошки*/
+
+
+.bread-pieces {
+  width:93%;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "ProximaNova";
+  color: rgba(53, 54, 54, 0.69);
+}
+.bread-pieces .bread-pieces-line {
+  height:2px;
+  margin-top: 5px;
+  border-top:1px solid rgba(243, 84, 43, 0.3);
+  border-bottom:1px solid rgba(243, 84, 43, 0.3);
+}
+
+
+/* Футер */
+
+footer.page-footer {
+  width: 100%;
+  background-color: rgb(61, 70, 80);
+}
+footer.page-footer .layout-positioner {
+  height:300px;
+  position: relative;
+  min-width: 1200px;
+  width: 100%;
+}
+footer.page-footer a:visited{
+  color: white;
+}
+footer.page-footer .layout-positioner .layout-column {
+  text-align: center;
+}
+footer.page-footer .layout-positioner img {
+  position: absolute;
+  top:50px;
+  left:80px;
+}
+footer.page-footer .layout-positioner .layout-column-float {
+  float: right;
+  position: relative;
+  height: 190px;
+  margin-top: -190px;
+  width:85px;
+  background-color: rgb(255, 255, 255);
+  background-image: url('../images/socio.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-right: 2px solid rgb(61, 70, 80);
+}
+footer.page-footer .layout-positioner .layout-column table {
+  margin: 0 auto;
+  font-family: "CenturySchoolbook";
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+}
+footer.page-footer .layout-positioner .layout-column table img {
+  position: static;
+}
+footer.page-footer .layout-positioner .layout-column table tr th:last-of-type {
+  padding-left: 27px;
+}
+footer.page-footer .layout-positioner .layout-column table tr td:last-of-type {
+  padding-left: 52px;
+}
+footer.page-footer .layout-positioner .layout-column table td:last-of-type {
+  position: relative;
+  top:-15px;
+  padding-bottom: 6px;
+}
+footer.page-footer .layout-positioner .layout-column table::after {
+  position: absolute;
+  content: '';
+  top:100px;
+  left:74%;
+  border-left: 2px dotted rgb(255, 255, 255);
+  height: 90px;
+  width: 3px;
+}
+footer.page-footer .layout-positioner .layout-column table tr td:last-of-type::before {
+  position: absolute;
+  content: '';
+  top:-4px;
+  left:13px;
+  width:36px;
+  height:33px;
+}
+footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(2) td:last-of-type::before {
+  background:url('../images/inst.png') no-repeat;
+  background-size: contain;
+  width:30px;
+  height:27px;
+  left:16px;
+  top:0px;
+}
+footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(3) td:last-of-type::before {
+  background:url('../images/fb.png') no-repeat;
+  background-size: contain;
+}
+footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(4) td:last-of-type::before {
+  background:url('../images/vk.png') no-repeat;
+  background-size: contain;
+}
+footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(5) td:last-of-type::before {
+  background:url('../images/ok.png') no-repeat;
+  background-size: contain;
+}
+footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(6) td:last-of-type::before {
+  background:url('../images/youtube.png') no-repeat;
+  background-size: contain;
+  width:30px;
+  height:27px;
+  left:16px;
+  top:0px;
+}
+footer.page-footer .layout-positioner .layout-column table th {
+  color: rgb(241, 71, 23);
+  text-transform: uppercase;
+  padding: 60px 40px 20px 0px;
+
+}
+footer.page-footer .layout-positioner .layout-column table td {
+  color: rgba(253, 254, 253, 0.910);
+  padding-top:5px;
+
+}
+footer.page-footer .layout-positioner .layout-column table span {
+  color: rgb(241, 71, 23);
+}
+footer.page-footer .layout-positioner .layout-column hr {
+  width:50%;
+  background-color: rgb(24, 192, 207);
+  color: rgb(24, 192, 207);
+  opacity: 0.11;
+  margin-left: 23.5%;
+  margin-top:0px;
+}
+footer.page-footer .layout-positioner .orange-line {
+
+}
+footer.page-footer .layout-positioner table + img {
+  position: absolute;
+  left:820px;
+  top:100px;
+}
+footer.page-footer .copyright {
+  width:280px;
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(252, 252, 252, 0.14);
+  position: relative;
+}
+footer.page-footer .copyright .text {
+  position: absolute;
+  top:-40px;
+  left:60px;
+}
+footer.page-footer .footer-line {
+  position: absolute;
+  top:250px;
+  left:580px;
+}
+footer.page-footer .footer-line ul {
+  list-style: none;
+}
+footer.page-footer .footer-line li {
+  display: inline-block;
+  font-family: "ProximaNova";
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  margin-right: 37px;
+  position: relative;
+}
+footer.page-footer .footer-line li:first-of-type::before {
+  content: '';
+  position: absolute;
+  left:-26px;
+  width:18px;
+  height:18px;
+  background:url('../images/footer-question.png') no-repeat;
+}

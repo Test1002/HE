@@ -1,396 +1,23 @@
 body{
     margin:0;
     padding:0;
-    font-family:"MyriadProRegular", 'PT Sans', sans-serif;
+    font-family:"MyriadPro", 'PT Sans', sans-serif;
     background-color: white;
 }
-@font-face {
-    font-family: "MyriadPro";
-    src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
-    src: url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"),
-    url("../fonts/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: "MyriadProBold";
-    src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot");
-    src: url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.woff") format("woff"),
-    url("../fonts/MyriadPro/MyriadProBold/MyriadProBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: "CenturySchoolBook";
-    src: url("../fonts/CenturySchoolbook/century2.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: "Century751BT";
-    src: url("../fonts/Century751BT/ufonts.com_century-751-bt.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-    font-family: "MyriadProItalic";
-    src: url("../fonts/MyriadProItalic/Myriad Pro Italic.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-}
-@font-face {
-  font-family: "ProximaNova";
-  src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf") format("opentype");
-}
-
-.clearfix:after{
-  content:'';
-  clear:both;
-  display:table;
-}
-.layout-positioner:after{
-  content:'';
-  clear:both;
-  display:table;
-}
-.layout-positioner{
+.layout-positioner {
   max-width: 1300px;
-  width:90%;
-  margin:0 auto;
-  /*border:2px solid yellow;*/
-  /*outline: 2px solid yellow;*/
 }
-.orange-line {
-  /*border-bottom: 5px solid rgb(241, 70, 24);*/
-  border-bottom: 7px solid rgb(216, 216, 216);
-}
-
-
-hr {
-  border: none; 
-  background-color: #5ca8b6; 
-  color: #5ca8b6; 
-  height: 2px;
-  width:15%;
-}
-
-
-/*Блок с шапкой*/
-
-/*Блок войти*/
-
-#wrap{
-  display: none;
-  opacity: 0.8;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  padding: 16px;
-  background-color: rgba(1, 1, 1, 0.725);
-  z-index: 100;
-  overflow: auto;
-}
-  #window{
-  width: 550px;
-  height: 400px;
-  margin: 150px auto;
-  display: none;
-  background: #fff;
-  z-index: 200;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  padding: 16px;
-}
-.authorize form {
-  margin: 0 auto;
-  padding: 20px;
-  width: 450px; 
-  text-align: center;
-}
-.authorize form h1 {
-  margin-top: -20px;
-  font-size: 24px;
-  font-family: "ProximaNova";
-  color: rgb(0, 0, 0);
-}
-.authorize form .layout-column {
-  width:300px;
-  margin: 0 auto;
-}
-.authorize form input {
-  width: 100%;
-  border-width: 1px;
-  border-color: rgb(160, 160, 160);
-  border-style: solid;
-  border-radius: 10px;
-}
-.authorize form input[type="text"], .authorize form input[type="password"], .authorize form input[type="email"] {
-  padding: 10px 15px;
-}
-#password::-webkit-input-placeholder, #password-confirm::-webkit-input-placeholder {
-  color: rgb(0, 0, 0);
-}
-
-
-
-
-
-
-
 header.page-header {
-  position: relative;
-  color:white;
-  width: 100%;
-  /*
-  height:0;
-  padding-bottom: 35%;
-  */
-  min-height: 550px;
-  background:url('../images/online-background-cut.png') no-repeat;
-  background-position: 50% 0%;
+  background:url('public/images/online-background-new.png') no-repeat;
   background-size: cover;
-  
 }
-
-header.page-header .logo {
-  position: relative;
-  top: 20px;
-  left: 22%;
-  margin: 0;
-  width:90px;
-  height: 90px;
+header.page-header .header-1 .layout-column-1 a, header.page-header .layout-column-1 a:visited {
+  color:white;
 }
-header.page-header .header-1 {
-  height:66px;
-}
-
-header.page-header .header-2 {
-  margin:0 auto;
-}
-/*
-header.page-header .header-2::before {
-  content: '';
-  position: absolute;
-  top: 62px;
-  left:225px;
-  width:70.5%;
-  border:2px solid rgb(250, 84, 50);
-}
-header.page-header .header-2::after {
-  content: '';
-  position: absolute;
-  border:10px solid transparent;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  top:43px;
-  left:1105px;
-  transform:rotate(-45deg);
-  z-index: -1;
-}
-*/
-header.page-header .header-2 .layout-positioner {
-  /*outline: 2px solid yellow;*/
-}
-header.page-header .orange-line-header {
-  border-top: 5px solid rgb(241, 70, 24);
-  width: 90%;
-}
-header.page-header .header-1 .layout-column {
-	float:right;
-}
-header.page-header .header-1 .layout-column-1 {
-  padding-top: 8px;
-  margin-right: 8%;
-}
-header.page-header .header-1 .layout-column-1 a, header.page-header .layout-column-1 a:visited{
-  font-size: 22px;
-  font-family: "ProximaNova";
-  font-style: italic;
-  color: white;
-  text-decoration: none;
-}
-header.page-header .header-1 .layout-column-2 {
-  width:450px;
-  margin-top: -8px;
-  margin-right: -30px;
-}
-
-header.page-header .header-1 .layout-column-2 img {
-  width:36px;
-  height:35px;
-  position: relative;
-  top:13px;
-  right: 10px;
-}
-header.page-header .header-1 .layout-column-2 li:first-child img,
-header.page-header .header-1 .layout-column-2 li:nth-child(5) img {
-  width:30px;
-  height:27px;
-  top:9px;
-}
-header.page-header .header-1 .layout-column-2 li:nth-child(3) {
-  margin-right:-3px;
-  margin-left: -4px;
-}
-header.page-header .header-1 .layout-column ul > li {
-	display:inline-block;
-}
-header.page-header .header-1 .layout-column ul > li:first-child {
-  margin-right:1px;
-}
-header.page-header .header-1 .layout-column ul > li:last-child {
-	margin-left: 10px;
-  margin-right: 30px;
-}
-header.page-header img {
-	position: relative;
-	top:7px;
-  width:80%;
-  height:auto;
-}
-header.page-header .logo {
-
-}
-header.page-header .logo img{
-  position: absolute;
-  top:-130px;
-  left:-227px;
-  height:160px; 
-  width:165px;
-}
-
-header.page-header input[type="search"] {
-  font-size: 16px;
-  font-family: "ProximaNova";
-  font-style: italic;
-  background-color: transparent;
-  color: rgba(253, 254, 253, 0.650);
-  border: 1px solid rgb(250, 84, 50);
-  border-radius: 10px;
-  padding: 5px 15px;
-  padding-right: 35px;
-  width: 155px;
- 	height: 30px;
- }
+header.page-header input[type="search"],
 #search-header::-webkit-input-placeholder {
   color: rgba(253, 254, 253, 0.650);
 }
-#search-header::-webkit-search-cancel-button{
-  display: none;
-}
-header.page-header .search {
-  position: relative;
-}
-header.page-header .search input[type="submit"] {
-    width: 20px;
-    height: 20px; 
-    border: none; 
-    position: absolute;
-    top:5px;
-    left:125px;
-    background: url('../images/search.png') no-repeat;
-    background-size: contain;
-}
-header.page-header input[type="search"]:focus,
-header.page-header .search input[type="submit"]:focus {
-  outline: none;
-}
-header.page-header .main-menu{
-  margin:0 auto;
-  width:87%;
-  background-color: #303131;
-  border-radius: 10px;
-}
-
-header.page-header .main-menu ul {
- 	margin:-20px 0px 0px -50px;
-  padding-top: 10px;
-  padding-left: 15%;
-  float:left;
- }
-header.page-header .main-menu .menu-right {
-  float:right;
-}
-header.page-header .main-menu .menu-right ul {
-  margin-right: 0px;
-  float:right;
-}
-header.page-header .main-menu .menu-right .buttons {
-  margin-top:3px;
-  text-align: center;
-  position: relative;
-}
-header.page-header .main-menu .menu-right .buttons:active {
-  top:1px;
-  box-shadow: none;
-}
-header.page-header .main-menu .menu-right input[type="submit"] { 
-  display: inline-block;
-  margin: 0 5px;
-  width: 162px;
-  height: 35px;
-  border:2px solid rgb(250, 84, 50);
-  border-radius: 10px;
-  background: transparent;
-  color: rgba(253, 254, 253, 1);
-  font-size: 20px;
-  font-family: "MyriadPro";
-  transition:color 0.2s;
-}
-header.page-header .main-menu .menu-right input[type="submit"]:hover {
-  color: black;
-  background-color: rgb(250, 84, 50);
-  cursor: pointer
-}
-header.page-header .main-menu .menu-right input[type="submit"]:focus {
-  outline: none;
-}
-header.page-header .main-menu li {
-  font-family: "MyriadPro";
-  color: rgb(254, 254, 254);
-  display: inline-block;
-  list-style: none;
-  border-right: 2px solid #343d3e;
-  padding: 0 35px;
-  margin-bottom: 10px;
-  line-height: 2;
-}
-header.page-header .main-menu li:last-of-type {
-  border-right: none;
-}
-header.page-header .main-menu a, header.page-header .main-menu a:visited {
-  color:rgb(254, 254, 254);
-}
-header.page-header .main-menu li:first-child {
-
-}
-header.page-header .main-menu ul > a:nth-child(4) li, header.page-header .main-menu ul > a:last-child li{
-	
-}
-header.page-header .main-menu ul > a:last-child li {
-
-  /*border: 2px solid rgb(241, 70, 24);
-  border-radius: 10px; */
-  color:white;
-}
-header.page-header .main-menu a:hover {
-  color:rgb(241, 70, 24);
-}
-header.page-header .main-menu ul > a:last-child li:hover {
-  border: 2px solid white;
-  color:rgb(241, 70, 24);
-}
-header.page-header .main-menu a {
-	text-decoration: none;
-}  
-/*
 
 /*Блок со слайдером*/
 
@@ -402,13 +29,12 @@ header.page-header .slider .layout-positioner {
   text-align: center;
   font-family: "Century Gothic";
   padding-top: 5px;
-
 }
 header.page-header .slider .layout-positioner h1 {
   font-size:4em;
   color: rgb(253, 253, 253);
-  margin-top:70px;
-  margin-bottom: -20px;
+  margin-top:80px;
+  margin-bottom: -30px;
 }
 header.page-header .slider .layout-positioner h1 span {
   position:relative;
@@ -428,7 +54,11 @@ header.page-header .slider .layout-positioner h2{
   font-size: 1.7em;
   color: rgb(253, 253, 253);
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+}
+header.page-header .slider .layout-positioner hr {
+  background-color: rgba(241, 70, 24, 0.671);
+  color:rgba(241, 70, 24);
 }
 header.page-header .slider .layout-positioner h2 > span {
   font-family: "Century Gothic";
@@ -436,14 +66,13 @@ header.page-header .slider .layout-positioner h2 > span {
 }
 header.page-header .slider .layout-positioner  h2 ~ span {
   font-size: 23px;
-  color: rgb(24, 192, 207);
+  color: rgb(253, 253, 253);
   text-shadow: 0px 0px 3.2px rgba(56, 56, 56, 0.42);
   font-weight: bold;
   font-style: italic;
   line-height: 1.407;
   text-align: center;
 }
-
 header.page-header .slider .buttons {
   margin-top: 155px;
   text-align: center;
@@ -456,7 +85,7 @@ header.page-header .slider .buttons:active {
 header.page-header .slider input[type="submit"] { 
   display: inline-block;
   margin: 0 5px;
-  margin-bottom: 54px;
+  margin-bottom: 47px;
   width: 352px;
   height: 70px;
   border: none;
@@ -483,6 +112,15 @@ header.page-header .slider .scrolling-btn {
   border-radius: 50%;
   transition-duration:0.5s;
 }
+header.page-header .slider .scrolling-btn::after {
+  position: absolute;
+  content: '';
+  top:8px;
+  left:4px;
+  border:7px solid transparent;
+  border-top-color:rgba(255, 255, 255, 0.5);
+  transition-duration:0.5s;
+}
 header.page-header .slider .scrolling-btn:hover,  header.page-header .slider .scrolling-btn:hover::after{
   border-color:rgba(255, 255, 255, 0.9);
   transform:scale(1.1);
@@ -491,19 +129,6 @@ header.page-header .slider .scrolling-btn:hover::after {
   border-color:transparent;
   border-top-color:rgba(255, 255, 255, 0.9);
 }
-header.page-header .slider .scrolling-btn::after {
-  position: absolute;
-  content: '';
-  text-align: center;
-  top:8px;
-  left:4.5px;
-  width: 0px;
-  height: 0px;
-  border:7.75px solid transparent;
-  border-top-color:rgba(255, 255, 255, 0.5);
-  transition-duration:0.5s;
-}
-
 
 
 /*Почему выбирают нас*/
@@ -560,6 +185,7 @@ header.page-header .slider .scrolling-btn::after {
     935px 455px;
   */
   background-repeat: no-repeat;
+
 }
 .why .gallery .item .image-1 + img {
   position: relative;
@@ -598,6 +224,7 @@ header.page-header .slider .scrolling-btn::after {
   background-repeat:no-repeat;
   margin-top:40px;
   background-size: 57% 80%;
+  transform:translateY(-20px);
 }
 .why .gallery .image-1{
   background-image: 
@@ -616,10 +243,6 @@ header.page-header .slider .scrolling-btn::after {
     4.75% 28%,
     26% 41%;
   
-}
-.why .gallery .image:hover {
-  transform:scale(1.1);
-  transition-duration:0.5s;
 }
 .why .gallery .image-2{
   background-image:
@@ -924,35 +547,41 @@ header.page-header .slider .scrolling-btn::after {
 
 .subscribe {
   margin-top: 40px;
+  width: 100%;
+  height: 300px;
+  background: url('../images/subscribe.png') no-repeat;
+  background-size: cover;
 }
 .subscribe .layout-positioner {
-  height: 280px;
-  width: 100%;
+  width:100%;
+  border-top:1px solid transparent;
+  text-align: center;
 }
-.subscribe-div {
-  position:relative;
+.subscribe h1 {
+  margin-top: 70px;
+  text-align: center;
+  font-size:37px;
+  font-family: "ProximaNova";
+  color: rgb(241, 70, 24);
 }
-.subscribe img:nth-child(1) {
-  width:1300px;
+.subscribe ul {
+  display: inline-block;
+  margin-top: -40px;
+  padding: 0px 40px;
+  list-style: none;
 }
-.subscribe img:nth-child(2) {
-  position:absolute;
-  top:13px;
-  left:50px;
-  width:750px;
+.subscribe ul:nth-child(2) {
+
 }
-.subscribe span {
-  position: relative;
-  color:white;
-  left:910px;
-  top:-215px;
-  font-family: "CenturySchoolbook";
-  font-size: 28px;
-  color: rgb(24, 192, 207);
+.subscribe ul li {
+  margin-top: 20px;
 }
-.subscribe span:last-child {
-  top:-215px;
-  left:990px;
+.subscribe li:first-child {
+  font-size: 24px;
+  color: rgb(93, 97, 98);
+}
+.subscribe li:last-child {
+
 }
 .subscribe .buttons, .subscribe .button-submit {
   position: relative;
@@ -965,13 +594,42 @@ header.page-header .slider .scrolling-btn::after {
   color: rgba(253, 254, 253, 1);
   cursor: pointer
 }
-.subscribe .buttons input[type="submit"], .subscribe .buttons input[type="email"] {
-  top:-280px;
-  left:900px;
+.subscribe input[type="email"],
+.subscribe input[type="text"] {
+  font-family: "MyriadProItalic";
+  line-height: 1.5;
+  font-size: 22px;
+  color: rgba(22, 22, 23, 0.212);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(61, 70, 80, 0.2);
+  border-radius: 10px;
+  padding: 0px 15px;
+  width: 295px;
+  height: 50px;
 }
-.subscribe .buttons input[type="submit"] {
-  top:-215px;
+.subscribe input[type="email"] {
+  
+  
 }
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe input[type="submit"] { 
+  height:50px;
+  width:251px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  background: rgb(241, 70, 24);
+  color: rgba(253, 254, 253, 0.750);
+  font-size: 22px;
+  font-family: "CenturySchoolbook";
+  border-radius: 10px;
+  box-shadow: inset 0.61px -6.973px 2.91px 0.09px rgba(0, 0, 0, 0.25);
+}
+
+
+/*
 .subscribe .buttons {
   margin-top: 75px;
   text-align: center;
@@ -1011,10 +669,9 @@ header.page-header .slider .scrolling-btn::after {
   border-radius: 10px;
   box-shadow: 0px 3px 5px 0px rgba(0, 1, 2, 0.58);
 }
-.subscribe input[type="submit"]:focus {
-  outline: none;
-}
 
+
+*/
 
 /*Блок с преподователями*/
 
@@ -1038,7 +695,8 @@ header.page-header .slider .scrolling-btn::after {
   font-family: "ProximaNova";
   color: rgb(0, 182, 199);
 }
-.how-study hr {
+.how-study hr,
+.pay hr {
   margin-top: 22px;
   background-color: #c5c7ca; 
   color: #c5c7ca;
@@ -1138,8 +796,8 @@ header.page-header .slider .scrolling-btn::after {
 
 .contact-us {
   margin-top:30px;
-}
-.contact-us .layout-positioner {
+  margin-bottom: 50px;
+  width: 100%;
   background-image: 
     url('../images/contact-us2.png'),
     url('../images/contact-us1.png');
@@ -1147,6 +805,9 @@ header.page-header .slider .scrolling-btn::after {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat; 
+}
+.contact-us .layout-positioner {
+  
   min-width: 1000px;
   height: 340px;
   width: 100%;
@@ -1209,6 +870,12 @@ header.page-header .slider .scrolling-btn::after {
 .pay .layout-positioner .pay-system {
   text-align: center;
 }
+.pay h1{
+  font-size:37px;
+  text-align: center;
+  font-family: "ProximaNova";
+  color: rgb(0, 182, 199);
+}
 .pay .layout-positioner .pays {
   display: inline-block;
   margin-top: 10px;
@@ -1218,500 +885,15 @@ header.page-header .slider .scrolling-btn::after {
   background-position: 50% 50%;
 }
 .pay .layout-positioner .pays1 {
-  background-image: url('../images/PayPal.png');
+  background-image: url('../images/partner1.png');
   background-size:75%;
 }
 .pay .layout-positioner .pays2 {
-  background-image: url('../images/qiwi.png');
+  background-image: url('../images/partner2.png');
   background-size:75%;
 }
 .pay .layout-positioner .pays3 {
-  background-image: url('../images/mastercard.png');
+  background-image: url('../images/partner3.png');
   background-size:55%;
 }
-.pay .layout-positioner .pays4 {
-  background-image: url('../images/visa.png');
-  background-size:55%;
-}
-.pay .layout-positioner .pays5 {
-  background-image: url('../images/yandex.png');
-  background-size:100%;
-}
 
-/* Футер */
-
-
-footer.page-footer .layout-positioner {
-  height:300px;
-  background-color: rgb(61, 70, 80);
-  position: relative;
-  min-width: 1200px;
-  width: 100%;
-}
-footer.page-footer a:visited{
-
-  color: white;
-
-}
-footer.page-footer .layout-positioner .layout-column {
-  text-align: center;
-}
-footer.page-footer .layout-positioner img {
-  position: absolute;
-  top:50px;
-  left:80px;
-}
-footer.page-footer .layout-positioner .layout-column-float {
-  float: right;
-  position: relative;
-  height: 190px;
-  margin-top: -190px;
-  width:85px;
-  background-color: rgb(255, 255, 255);
-  background-image: url('../images/socio.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  border-right: 2px solid rgb(61, 70, 80);
-}
-footer.page-footer .layout-positioner .layout-column table {
-  margin: 0 auto;
-  font-family: "CenturySchoolbook";
-  font-size: 16px;
-  text-align: left;
-}
-footer.page-footer .layout-positioner .layout-column table img {
-  position: static;
-}
-footer.page-footer .layout-positioner .layout-column table tr th:last-of-type {
-  padding-left: 27px;
-}
-footer.page-footer .layout-positioner .layout-column table tr td:last-of-type {
-  padding-left: 52px;
-}
-footer.page-footer .layout-positioner .layout-column table td:last-of-type {
-  position: relative;
-  top:-15px;
-  padding-bottom: 6px;
-}
-footer.page-footer .layout-positioner .layout-column table tr:last-of-type::after {
-  position: absolute;
-  content: '';
-  top:100px;
-  left:795px;
-  border-left: 2px dotted rgb(255, 255, 255);
-  height: 90px;
-  width: 3px;
-}
-
-
-footer.page-footer .layout-positioner .layout-column table tr td:last-of-type::before {
-  position: absolute;
-  content: '';
-  top:-4px;
-  left:13px;
-  width:36px;
-  height:33px;
-}
-footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(2) td:last-of-type::before {
-  background:url('../images/inst.png') no-repeat;
-  background-size: contain;
-  width:30px;
-  height:27px;
-  left:16px;
-  top:0px;
-}
-footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(3) td:last-of-type::before {
-  background:url('../images/fb.png') no-repeat;
-  background-size: contain;
-}
-footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(4) td:last-of-type::before {
-  background:url('../images/vk.png') no-repeat;
-  background-size: contain;
-}
-footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(5) td:last-of-type::before {
-  background:url('../images/ok.png') no-repeat;
-  background-size: contain;
-}
-footer.page-footer .layout-positioner .layout-column table tr:nth-of-type(6) td:last-of-type::before {
-  background:url('../images/youtube.png') no-repeat;
-  background-size: contain;
-  width:30px;
-  height:27px;
-  left:16px;
-  top:0px;
-}
-footer.page-footer .layout-positioner .layout-column table th {
-  color: rgb(241, 71, 23);
-  text-transform: uppercase;
-  padding: 60px 40px 20px 0px;
-
-}
-footer.page-footer .layout-positioner .layout-column table td {
-  color: rgba(253, 254, 253, 0.910);
-  padding-top:5px;
-
-}
-footer.page-footer .layout-positioner .layout-column table span {
-  color: rgb(241, 71, 23);
-}
-footer.page-footer .layout-positioner .layout-column hr {
-  width:50%;
-  background-color: rgb(24, 192, 207);
-  color: rgb(24, 192, 207);
-  opacity: 0.11;
-  margin-left: 23.5%;
-  margin-top:0px;
-}
-footer.page-footer .layout-positioner .orange-line {
-
-}
-footer.page-footer .layout-positioner table + img {
-  position: absolute;
-  left:820px;
-  top:100px;
-}
-footer.page-footer .copyright {
-  width:280px;
-  font-family: "ProximaNova";
-  font-size: 14px;
-  font-style: italic;
-  color: rgba(252, 252, 252, 0.14);
-  position: relative;
-}
-footer.page-footer .copyright .text {
-  position: absolute;
-  top:-40px;
-  left:60px;
-}
-footer.page-footer .footer-line {
-  position: absolute;
-  top:250px;
-  left:580px;
-}
-footer.page-footer .footer-line ul {
-  list-style: none;
-
-}
-footer.page-footer .footer-line li {
-  display: inline-block;
-  font-family: "ProximaNova";
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  margin-right: 37px;
-  position: relative;
-}
-footer.page-footer .footer-line li:first-of-type::before {
-  content: '';
-  position: absolute;
-  left:-26px;
-  width:18px;
-  height:18px;
-  background:url('../images/footer-question.png') no-repeat;
-}
-
-/*
-.online-course  {
-	background:url('../images/online-background.png') no-repeat;
-	background-position: center center;	
-	min-height:680px;
-}
-
-.online-course .layout-column  {
-	text-align: center;
-	margin-top: 0px;
-}
-.online-course .layout-column h1{
-	font-size:80px;
-	color:#010101;
-	font-family: "MyriadProBold";
-
-}
- hr {
-	border: none; 
-	margin-top: 0px;
-    background-color: #5ca8b6; 
-    color: #5ca8b6; 
-    height: 2px;
-    width:15%;
-}
-.online-course .layout-column  span, .try-this span{
-  	font-size: 29px;
-  	font-family: "Century751BT";
-  	color: rgba(251, 249, 249, 0.322);
-  	font-weight: bold;
-  	font-style: italic;
-  	line-height: 1.207;
-  	text-align: center;
-
-}
-
-.try-this span {
-	color: #ffffff;
-	position: absolute;
-	left:900px;
-	top:50px;
-}
-.try-this #rectangle span:last-child {
-	top:80px;
-	left:900px;
-}
-.online-course input[type="submit"] { 
-    display: inline-block;
-    margin: 0 5px;
-    margin-bottom: 145px;
-    padding: 22px 65px;
-    width: 392px;
-  	height: 92px;
-    border: none;
-    border-radius: 5px;
-    background: #d14821;
-    color: rgba(253, 254, 253, 0.729);
-    font-size: 23px;
-  	font-family: "CenturySchoolbook";
-  	text-transform: uppercase;
-}
-*/
-
-
-
-
-
-
-/*
-.why, .how-study-pic {
-	background-color: #ffffff;
-	font-family: "MyriadProBold";
-}
-.why .layout-column, .how-study-pic .layout-column {
-	text-align: center;
-	margin-top: 55px;
-}
-.why .layout-column h1, .study-to .layout-column h1{
-	font-size:37px;
-	color: rgb(86, 181, 197);
-	
-
-}
-.why .gallery, .how-study-pic .gallery{
-    padding-top:10px;
-}
-.why .gallery .item, .how-study-pic .gallery .item{
-    width:245px;
-    display:inline-block;
-    margin: 0 90px 10px 80px; 
-    
-}
-.why .gallery .item:nth-child(3) {
-  margin-right:80px;
-}
-.why .gallery .image, .how-study-pic .gallery .image{
-    height:230px;
-    background-position:50% 50%;
-    background-repeat:no-repeat;
-    margin-top:40px;
-
-}
-
-.why .gallery .image-1{
-    background-image:url('../images/why1.png');
-}
-.why .gallery .image-2{
-    background-image:url('../images/why2.png');
-}
-.why .gallery .image-3{
-    background-image:url('../images/why3.png');
-}
-.why .gallery .image-4{
-    background-image:url('../images/why4.png');
-}
-.why .gallery .image-5{
-    background-image:url('../images/why5.png');
-}
-.why .gallery .title {
-	margin-top: 10px;
-}
-.why hr, .study-to hr, .video hr, .how-study hr {
-	margin-top: 0px;
-	background-color: #c5c7ca; 
-  color: #c5c7ca; 
-}
-
-*/
-
-/*
-
-.try-this {
-	margin-top: -30px;
-	background-color: #ffffff;
-}
-#circle {
-	position: relative;
-	left:90px;
-	top:270px;
-	width: 1100px;
-	height: 550px;
-	background: #55b5c5;
-	-moz-border-radius: 450px 450px 0 0;
-	-webkit-border-radius: 450px 450px 0 0;
-	border-radius: 700px 700px 0 0;
-}
-#rectangle {
-	position: relative;
-	top:40px;
-	width: 100%;
-	height: 195px;
-	background: #55b5c5;
-}
-.try-this {
-	min-height: 898px;
-}
-.try-this img {
-	position:absolute;
-	top:-370px;
-	left:190px;
-}
-.buttons {
-	z-index: 100;
-}
-.try-this .buttons input[type="submit"], .subscribe .buttons input[type="submit"] {
-	position: absolute;
-	top:65px;
-	left: 522px;
-	height:75px;
-	width:251px;
-	display: inline-block;
-    border: none;
-    border-radius: 5px;
-    background: #d14821;
-    color: #ffffff;
-    font-size: 16px;
-  	font-family: "CenturySchoolbook";
-  	text-transform: uppercase;
-}
-
-*/
-/*
-.study-to, .video, .how-study {
-	background-color: #ffffff;
-}
-
-.study-to .layout-column, .how-study .layout-column {
-    text-align: center;
-
-    margin-top: 50px;
-    font-size: 46px;
-}
-.study-to .layout-positioner .layout-column h1, .how-study .layout-positioner .layout-column h1{
-    font-size: 46px;
-}
-.study-to span {
-    font-size: 25px;
-    font-family: "CenturySchoolbook";
-    color: rgba(66, 72, 81, 0.671);
-
-}
-.study-to hr {
-  margin-bottom: 22px;
-}
-*/
-
-/*
-.video {
-  text-align:center;
-  margin-top: 80px;
-}
-
-.video .layout-column ul > li {
-  display:inline-block;
-  font-size: 30px;
-  font-family: "Century Schoolbook";
-  margin: auto 35px;
-  
-}
-.video .layout-column li:nth-child(2) {
-  line-height: 40px;
-  box-shadow: 0px 5px 0 rgb(209, 72, 33);
-}
-.video .layout-column a {
-  text-decoration: none;
-  color: rgba(66, 72, 81, 0.722);
-}
-.video .layout-column hr {
-  margin-top:-11px;
-  width:70%;
-}
-.video img {
-    width:30%;
-    height:45%;
-}
-*/
-/*
-.subscribe {
-  margin-top: 40px;
-}
-.subscribe-div {
-  position:relative;
-}
-.subscribe img:nth-child(1) {
-  width:1300px;
-}
-.subscribe img:nth-child(2) {
-  position:absolute;
-  top:35px;
-  left:50px;
-  width:750px;
-}
-.subscribe span {
-  position: absolute;
-  color:white;
-  left:970px;
-  top:100px;
-  font-family: "CenturySchoolbook";
-  font-size: 24px;
-  color: rgb(110, 191, 205);
-}
-.subscribe span:last-child {
-  top:130px;
-  left:1040px;
-}
-.subscribe .buttons {
-  position: relative;
-}
-.subscribe .buttons input[type="submit"] {
-  top:-200px;
-  left:990px;
-}
-*/
-/*
-
-.study-to img {
-    width:30%;
-    height:65%;
-}
- .how-study hr {
-    margin-top: 22px;
- }
- .how-study-pic .gallery .image{
-  margin-top: -60px;
- }
-.how-study-pic .gallery .image-1{
-    background-image:url('../images/how-to-study3.png');
-}
-.how-study-pic .gallery .image-2{
-    background-image:url('../images/how-to-study2.png');
-}
-.how-study-pic .gallery .image-3{
-    background-image:url('../images/how-to-study1.png');
-}
-.title {
-    font-family: "CenturySchoolbook";
-    color: rgba(66, 72, 81, 0.749);
-    font-size: 22px;
-}
-.how-study-pic .gallery .image{
-    height:260px;
-
-
-}
-
-*/

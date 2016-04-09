@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Аккаунт</title>
+       <meta charset="utf-8">
+       <link href="../public/stylesheets/styles.css" rel="stylesheet" type="text/css">
+       <link href="../public/stylesheets/style-account.css" rel="stylesheet" type="text/css">
+       <script src="../public/javascripts/scripts.js"></script>  
+       <script src="/javascripts/jquery-1.12.1.min.js"></script>
+    </head>
+    <body onload="a()">
+        <div onclick="showSub('none')" id="subMenuWrap"></div>
+    	<header class="page-header">
+            <div class="header-1">
+                <div class="layout-positioner">
+                    <div class="layout-column layout-column-1 authorized">
+                        <ul>
+                            <li onclick="showSub('block')"></li>
+                                <ul id="authorized">
+                                    <li>Мой аккаунт</li>
+                                    <li>Мои курсы</li>
+                                    <li>Мои проекты</li>
+                                    <li>Редактировать</li>
+                                    <li>Выйти</li>
+                                </ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="layout-column layout-column-2">
+                        <ul>
+                            <li><a href="#"><img src="../images/youtube.png" alt="Поиск" title="YouTube"></a></li>
+                            <li><a href="#"><img src="../images/vk.png" alt="Корзина" title="ВКонтакте"></a></li>
+                            <li><a href="#"><img src="../images/fb.png" alt="Авторизация" title="Фейсбук"></a></li>
+                            <li><a href="#"><img src="../images/ok.png" alt="Корзина" title="Одноклассники"></a></li>
+                            <li><a href="#"><img src="../images/inst.png" alt="Поиск" title="Инстаграм"></a></li>
+                            <li>
+                                <form action="/echo" method="post">
+                                    <div class="search">
+                                        <input name="search" id="search-header" type="search" placeholder="Поиск">
+                                        <input type="submit" value="">
+                                   </div>
+                                </form> 
+                            </li>   
+                        </ul>
+                    </div>
+                </div>  
+            </div> 
+            <div class="header-2">
+                <div class="layout-positioner">
+                    <div class="orange-line-header"></div>
+                    <nav class="main-menu clearfix" id="main-menu-font">
+                        <div class="menu-left">
+                            <ul> 
+                                <li><a href="/courses">Курсы</a></li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                            </ul> 
+                        </div>
+                        <div class="menu-right">
+                            <ul> 
+                                <li>
+                                    <div class="buttons">
+                                        <input type="submit" value="Попробовать">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                     <div class="logo"> 
+                        <a href="/"><img src="../images/logo1.png"></a>
+                    </div> 
+                </div>
+            </div> 
+        </header>   
+        <div class="main-content">
+            <div class="layout-positioner">
+                <div class="layout-column layout-column-1">
+                    <div class="user-pic">
+                        <img src="../images/account/user-pic-background-default.png">
+                        <img src="../images/account/user-pic-default.png">
+                        <div class="nickname">Настройки аккаунта</div>
+                    </div>
+                    <div class="user-info">
+                        <div class="block-1 clearfix">
+                            <div class="column-1">
+                                <ul>
+                                    <li>имя</li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="column-2">
+                                <ul>
+                                    <li>Марина</li>
+                                    <li>Россия, Москва</li>
+                                    <li>Интересы:</li>
+                            </div>
+                        </div>
+                        <div class="block-2 clearfix">
+                            <ul>
+                                <li>рисование</li>
+                                <li>кройка и шитье</li>
+                                <li>вязание и вышивка</li>
+                                <li>ювелирное дело</li>
+                            </ul>
+                        </div>
+                        <button>Редактировать</button>
+                    </div>
+                </div>
+                <div class="layout-column layout-column-2">
+                    <nav>
+                        <ul>
+                            <li>Курсы</li>
+                            <li>Проекты</li>
+                        </ul>
+                    </nav>
+                    <p>приобретенные курсы</p>
+                    <div class="gallery">
+                        <div class="item">
+                            <div class="image image-1"></div>
+                            <div class="course-type">Шитье</div>
+                            <div class="course-title">Sew sturdy: Home Organizers</div>
+                            <div class="course-info">
+                                <div class="course-author">от Арсеньевой Анны</div>
+                            </div>
+                        </div>
+                         <div class="item">
+                            <div class="image image-2"></div>
+                            <div class="course-type">Кройка</div>
+                            <div class="course-title">Sew sturdy: Home Organizers</div>
+                            <div class="course-info">
+                                <div class="course-author">от Арсеньевой Анны</div>
+                            </div>
+                        </div>
+                         <div class="item">
+                            <div class="image image-3"></div>
+                            <div class="course-type">Шитье</div>
+                            <div class="course-title">Sew sturdy: Home Organizers</div>
+                            <div class="course-info">
+                                <div class="course-author">от Арсеньевой Анны</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="image image-4"></div>
+                            <div class="course-type blue">Шитье</div>
+                            <div class="course-title blue-line-height">Quilting With Rulers on a Home Machine</div>
+                            <div class="course-info">
+                                <div class="course-author blue">от Семеновой Елены</div>
+                            </div>
+                        </div>
+                         <div class="item">
+                            <div class="image image-5"></div>
+                            <div class="course-type blue">Шитье</div>
+                            <div class="course-title blue-line-height">Quilting With Rulers on a Home Machine</div>
+                            <div class="course-info">
+                                <div class="course-author blue">от Семеновой Елены</div>
+                            </div>
+                        </div>
+                         <div class="item">
+                            <div class="image image-6"></div>
+                            <div class="course-type blue">Шитье</div>
+                            <div class="course-title blue-line-height">Quilting With Rulers on a Home Machine</div>
+                            <div class="course-info">
+                                <div class="course-author blue">от Семеновой Елены</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

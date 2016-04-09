@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>id1</title>
+        <meta charset="utf-8">
+        <link href="public/stylesheets/styles.css" rel="stylesheet" type="text/css">
+       <link href="public/stylesheets/style-article-page.css" rel="stylesheet" type="text/css">
+       <script src="public/javascripts/scripts.js"></script>  
+       <script src="public/javascripts/jquery-1.12.1.min.js"></script>
+    </head>
+    <body onload="a()">
+    	<div onclick="show('none')" id="wrap"></div>
+        <div id="window" class="sign-up">
+            <form action="/echo" method="post" id="form1" class="form_1">
+                <h1>Войти в аккаунт Handy Education</h1>
+                <h2>Присоединяйтесь к нам</h2>
+                <h2>Наши преподаватели ждут Вас</h2>
+                <div class="layout-column">
+                    <input type="text" id="login-sign-in" name="login" placeholder="Введите логин">
+                    <input type="password" id="password-sign-in" name="password" placeholder="Введите пароль">
+                    <div class="clearfix">
+                        <div class="floated-1">
+                            <input type="checkbox" class="checkbox" id="remember-me-radio">
+                            <label for="remember-me-radio">Запомнить меня</label>
+                        </div>
+                        <div class="floated-2">
+                            <input type="submit" value="Войти">
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Забыли пароль?</li>
+                        <li><a href="#" onclick="showForm('form1', 'form2')">Создать аккаунт</a></li>
+                    </ul>
+                </div>
+            </form>
+            <form action="/echo" method="post" id="form2">
+                <h1>Создайте аккаунт на Handy Education</h1>
+                <div class="layout-column">
+                    <input type="text" id="login" name="login" placeholder="Введите логин">
+                    <input type="password" id="password" name="password" placeholder="Введите пароль">
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="Повторите пароль">
+                    <input type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
+                    <div class="clearfix">
+                        <div class="floated-1">
+                            <p>при создании моего аккаунта я соглашаюсь с <span>пользовательским соглашением</span></p>
+                        </div>
+                        <div class="floated-2">
+                            <input type="submit" value="Создать">
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#" onclick="showForm('form2', 'form1')">Есть аккаунт</a></li>
+                        <li><a href="#"><img src="public/images/vk.png" alt="ВКонтакте" title="ВКонтакте"></a></li>
+                        <li><a href="#"><img src="public/images/fb.png" alt="Фейсбук" title="Фейсбук"></a></li>
+                        <li><a href="#"><img src="public/images/ok.png" alt="Одноклассники" title="Одноклассники"></a></li>
+                        <li><a href="#"><img src="public/images/inst.png" alt="Инстаграм" title="Инстаграм"></a></li>
+                    </ul>
+                </div>   
+            </form>  
+        </div>
+        <header class="page-header">
+            <div class="header-1">
+                <div class="layout-positioner">
+                    <div class="layout-column layout-column-1">
+                        <ul>
+                            <li><a href="#" onclick="show('block')">Войти</a></li>
+                        </ul>
+                    </div>
+                    <div class="layout-column layout-column-2">
+                        <ul style="margin-top: 32px;">
+                            <li><a href="#"><img src="public/images/youtube.png" alt="Поиск" title="YouTube"></a></li>
+                            <li><a href="#"><img src="public/images/vk.png" alt="Корзина" title="ВКонтакте"></a></li>
+                            <li><a href="#"><img src="public/images/fb.png" alt="Авторизация" title="Фейсбук"></a></li>
+                            <li><a href="#"><img src="public/images/ok.png" alt="Корзина" title="Одноклассники"></a></li>
+                            <li><a href="#"><img src="public/images/inst.png" alt="Поиск" title="Инстаграм"></a></li>
+                            <li>
+                                <form action="/echo" method="post" style="position: relative; top:-16px;">
+                                    <div class="search">
+                                        <input name="search" id="search-header" type="search" placeholder="Поиск">
+                                        <input type="submit" value="">
+                                   </div>
+                                </form> 
+                            </li>   
+                        </ul>
+                    </div>
+                </div>  
+            </div> 
+            <div class="header-2">
+                <div class="layout-positioner">
+                    <div class="orange-line-header"></div>
+                    <nav class="main-menu clearfix" id="main-menu-font">
+                        <div class="menu-left">
+                            <ul> 
+                                <li><a href="/courses">Курсы</a></li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                            </ul> 
+                        </div>
+                        <div class="menu-right">
+                            <ul> 
+                                <li>
+                                    <div class="buttons">
+                                        <input type="submit" value="Попробовать">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                     <div class="logo"> 
+                        <a href="index.html"><img src="public/images/logo1.png"></a>
+                    </div> 
+                </div>
+            </div> 
+        </header>
+        <div class="bread-pieces">
+            <div class="layout-positioner">
+                <div class="bread-pieces-line"></div>
+            </div>
+        </div>
+        <main class="main-content">
+        	<div class="layout-positioner">
+        		<div class="layout-column layout-column-1">
+        			<ul>
+        				<li><a href=""></a></li>
+        				<li><a href=""></a></li>
+        				<li><a href=""></a></li>
+        				<li>Поделись!</li>
+        		</div>
+        		<div class="layout-column layout-column-2">
+        			<article>
+                        <div class="article-info">
+                            <div class="time">
+                                <time datetime="2015-02-29 00:00"><p>ФЕВ <span>29</span></p></time>
+                            </div>
+                            <div class="article-title">
+                            	<h1>Украшаем вязанный шарф своими руками</h1>
+                            </div>
+                        </div>
+                        <div class="article-author-type">
+	                        <ul>
+	                            <li><div class="article-author">Автор: Алиса Претуева</div></li>
+	                            <li><div class="article-type">рукоделие</div></li>
+	                        </ul>
+	                    </div>
+                        <div class="article-content">
+                        	<p>На улице начинает холодать. Когда мой градусник показывает меньше 0, то я тот час же вспоминаю о своих шарфах. А когда я вижу первые снежинки за окном, то в первую очередь я залезаю в шкаф и смотрю на то, что у меня в нем лежит. Я достала всю свою утепленную одежду и разложила ее на диване. Вот тогда мне вдруг и стало понятно, насколько я люблю свои теплые и необыкновенные вещи, а особенно вязанные! Обычно я забываю о том, что онивообще у меня есть. Они где-то лежат, поджидая своего времени. Когда я их достала, то мне в голову сразу пришла идея о том, что к ним нужно  добавить что-то особенное, чтобы поменять привычный образ моих прошлогодних вещей. Пришло время шарфа! Сейчас я вам покажу, как можно с легкостью украсить свой шарф. Посмотрите, у вас дома наверное должен находитьсямонотонный черный шарф, который так и хочется сделать ярче. Ниже я вам покажу то, как мы украсили шарф своими руками, сделав небольшое преображение. </p>
+                        	<img src="public/images/article-page/1.png">
+                        	<p>На улице начинает холодать. Когда мой градусник показывает меньше 0, то я тот час же вспоминаю о своих шарфах. А когда я вижу первые снежинки за окном, то в первую очередь я залезаю в шкаф и смотрю на то, что у меня в нем лежит. Я достала всю свою утепленную одежду и разложила ее на диване. Вот тогда мне вдруг и стало понятно, насколько я люблю свои теплые и необыкновенные вещи, а особенно вязанные! Обычно я забываю о том, что онивообще у меня есть. Они где-то лежат, поджидая своего времени. Когда я их достала, то мне в голову сразу пришла идея о том, что к ним нужно  добавить что-то особенное, чтобы поменять привычный образ моих прошлогодних вещей. Пришло время шарфа! Сейчас я вам покажу, как можно с легкостью украсить свой шарф. Посмотрите, у вас дома наверное должен находитьсямонотонный черный шарф, который так и хочется сделать ярче. Ниже я вам покажу то, как мы украсили шарф своими руками, сделав небольшое преображение. </p>
+                        	<img src="public/images/article-page/2.png">
+                        	<p>На улице начинает холодать. Когда мой градусник показывает меньше 0, то я тот час же вспоминаю о своих шарфах. А когда я вижу первые снежинки за окном, то в первую очередь я залезаю в шкаф и смотрю на то, что у меня в нем лежит. Я достала всю свою утепленную одежду и разложила ее на диване. Вот тогда мне вдруг и стало понятно, насколько я люблю свои теплые и необыкновенные вещи, а особенно вязанные! Обычно я забываю о том, что онивообще у меня есть. Они где-то лежат, поджидая своего времени. Когда я их достала, то мне в голову сразу пришла идея о том, что к ним нужно  добавить что-то особенное, чтобы поменять привычный образ моих прошлогодних вещей. Пришло время шарфа! Сейчас я вам покажу, как можно с легкостью украсить свой шарф. Посмотрите, у вас дома наверное должен находитьсямонотонный черный шарф, который так и хочется сделать ярче. Ниже я вам покажу то, как мы украсили шарф своими руками, сделав небольшое преображение. </p>
+                        	<img src="public/images/article-page/3.png">
+                        </div>
+                    </article>
+                    <div class="comments">
+                    	<div class="comments-var"><h2>Комментарии</h2></div>
+                    	<div class="comments-block">
+                    		<div class="comment">
+                    			<div class="comment-place">fdsfsd</div>
+                    		</div>
+                    	</div>
+                    </div>
+        		</div>
+        		<div class="layout-column layout-column-3">
+        			<form action="/echo" method="post">
+                        <div class="search">
+                            <input name="search" id="search-header" type="search" placeholder="Поиск">
+                            <input type="submit" value="">
+                       </div>
+                    </form> 
+                    <!--
+                    <script type="text/javascript">
+                    	$(document).ready(function(){
+						 	var elementPosition = $('#asideId').offset();
+							$(window).scroll(function(){
+							        if($(window).scrollTop() > elementPosition.top){
+							              $('#asideId').css('position','fixed').css('top','-120px');
+							        } else {
+							            $('#asideId').css('position','static');
+							        }    
+							}); 
+						});
+                    </script>
+                    -->
+                    <!--
+                    <script type="text/javascript">
+                    	window.addEventListener('scroll', function (evt) {
+
+						  // This value is your scroll distance from the top
+						  var distance_from_top = document.body.scrollTop;
+
+						  // The user has scrolled to the tippy top of the page. Set appropriate style.
+						  if (distance_from_top === 0) {
+								document.getElementById("asideId").style.position= "static";   
+								document.getElementById("asideId").style.width= "inherit"; 
+						  }
+
+						  // The user has scrolled down the page.
+						  if(distance_from_top > 200) {
+						  		document.getElementById("asideId").style.position= "fixed"; 
+						  		document.getElementById("asideId").style.width= "inherit";  
+						  }
+
+						});
+                    </script>
+                    -->
+                    <script type="text/javascript">
+                    	$(document).ready(function(){
+						 	jQuery(function($) {
+							    function fixDiv() {
+							        var $cache = $('#asideId');
+							        var $width = $('#asideId').parent().width();
+							        if ($(window).scrollTop() > 350) {
+							            $cache.css({
+							                'position': 'fixed',
+							                'top': '-96px',
+							                'width': $width
+							            });
+							        } else {
+							            $cache.css({
+							                'position': 'relative',
+							                'top': 'auto'
+							            });
+							        }
+							    }
+							    $(window).scroll(fixDiv);
+							    fixDiv();
+							 }); 
+						});
+                    </script>
+                    <aside id="asideId">
+                    	<div class="learn-more" id="learn-more-id">
+                    		<div class="title"><h2>Узнайте больше</h2></div>
+                    		<div class="read-handyed">
+                    			<ul>
+                    				<li>читайте</li>
+                    				<li>Handy Education</li>
+                    			</ul>
+                    		</div>
+                    		<div class="background"></div>
+                    	</div>
+                    	<div class="get-presents" id="get-presents-id">
+                    		<form>
+                    			<input type="email" id="email" placeholder="Ваш e-mail">
+                    			<input type="submit" value="Готово">
+                    		</form>
+                    	</div>
+                    </aside>
+        		</div>
+        	</div>
+        </main>
+    </body>
+</html>

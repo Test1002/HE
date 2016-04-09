@@ -3,127 +3,10 @@
 	<head>
 	<title>О компании</title>
 	<meta charset="utf-8">
-       <link href="/public/stylesheets/style-painting.css" rel="stylesheet" type="text/css">
-       <script type="text/javascript">
-            window.onresize = function(event) {
-                var html = document.documentElement;
-                /*if (html.clientWidth < 1350) {
-                    document.getElementById("block-margin").style.marginRight = "80px";    
-                } else { 
-                    document.getElementById("block-margin").style.marginRight = "0px";  
-                }*/
-                if (html.clientWidth < 1170) {
-                    document.getElementById("main-menu-font").style.fontSize = "16px";
-                    
-                } else {
-                    document.getElementById("main-menu-font").style.fontSize = "20px";
-                
-                }
-                if (html.clientWidth < 1300) {
-                    document.getElementById("block1").style.height= "290px";   
-                    document.getElementById("block1").style.width = "341px";
-                    document.getElementById("block2").style.height = "290px";   
-                    document.getElementById("block2").style.width = "341px"; 
-                    document.getElementById("block3").style.height = "290px";   
-                    document.getElementById("block3").style.width = "341px"
-                    document.getElementById("teacher_id").style.height = "390px";
-                    document.getElementById("teacher_id").style.width = "335px";
-                    document.getElementById("teacher_id2").style.height = "390px";
-                    document.getElementById("teacher_id2").style.width = "335px";
-                    document.getElementById("teacher_id3").style.height = "390px";
-                    document.getElementById("teacher_id3").style.width = "335px";
-                    document.getElementById("words1").style.display = "none"
-                    document.getElementById("words2").style.display = "none"
-                } else {
-                    document.getElementById("block1").style.height = "350px";     
-                    document.getElementById("block1").style.width = "429px";   
-                    document.getElementById("block2").style.height = "350px";     
-                    document.getElementById("block2").style.width = "429px"; 
-                    document.getElementById("block3").style.height = "350px";     
-                    document.getElementById("block3").style.width = "429px";
-                    document.getElementById("block3").style.marginRight = "0px"; 
-                    document.getElementById("teacher_id").style.height = "532px"; 
-                    document.getElementById("teacher_id").style.width = "424px";
-                    document.getElementById("teacher_id2").style.height = "532px"; 
-                    document.getElementById("teacher_id2").style.width = "424px";
-                    document.getElementById("teacher_id3").style.height = "532px"; 
-                    document.getElementById("teacher_id3").style.width = "424px";
-                    document.getElementById("words1").style.display = "block"
-                    document.getElementById("words2").style.display = "block"
-                }
-            };
-        </script>
-        <script type="text/javascript">
-            function a() {
-                var html = document.documentElement;
-                /*if (html.clientWidth < 1350) {
-                    document.getElementById("block-margin").style.marginRight = "80px";    
-                } else { 
-                    document.getElementById("block-margin").style.marginRight = "0px";  
-                }*/
-                if (html.clientWidth < 1170) {
-                    document.getElementById("main-menu-font").style.fontSize = "16px";
-                    
-                } else {
-                    document.getElementById("main-menu-font").style.fontSize = "20px";
-                
-                }
-                if (html.clientWidth < 1300) {
-                    document.getElementById("words1").style.display = "none"
-                    document.getElementById("words2").style.display = "none"
-                    document.getElementById("block1").style.height= "290px";   
-                    document.getElementById("block1").style.width = "341px";
-                    document.getElementById("block2").style.height = "290px";   
-                    document.getElementById("block2").style.width = "341px"; 
-                    document.getElementById("block3").style.height = "290px";   
-                    document.getElementById("block3").style.width = "341px"
-                    document.getElementById("teacher_id").style.height = "390px";
-                    document.getElementById("teacher_id").style.width = "335px";
-                    document.getElementById("teacher_id2").style.height = "390px";
-                    document.getElementById("teacher_id2").style.width = "335px";
-                    document.getElementById("teacher_id3").style.height = "390px";
-                    document.getElementById("teacher_id3").style.width = "335px";
-                } else {
-                    document.getElementById("words1").style.display = "block"
-                    document.getElementById("words2").style.display = "block"
-                    document.getElementById("block1").style.height = "350px";     
-                    document.getElementById("block1").style.width = "429px";   
-                    document.getElementById("block2").style.height = "350px";     
-                    document.getElementById("block2").style.width = "429px"; 
-                    document.getElementById("block3").style.height = "350px";     
-                    document.getElementById("block3").style.width = "429px";
-                    document.getElementById("block3").style.marginRight = "0px"; 
-                    document.getElementById("teacher_id").style.height = "532px"; 
-                    document.getElementById("teacher_id").style.width = "424px";
-                    document.getElementById("teacher_id2").style.height = "532px"; 
-                    document.getElementById("teacher_id2").style.width = "424px";
-                    document.getElementById("teacher_id3").style.height = "532px"; 
-                    document.getElementById("teacher_id3").style.width = "424px";
-                }
-            }
-        </script>
-        <script type="text/javascript">
-            var scrolly = 0;
-            var distance = 40;
-            var speed = 24;
-            function autoScrollTo(el) {
-                var currentY = window.pageYOffset;
-                var targetY = document.getElementById(el).offsetTop;
-                var bodeHeight = document.body.offsetHeight;
-                var yPos = currentY + window.innerHeight;
-                var animator = setTimeout('autoScrollTo(\''+el+'\')', 24);
-                if (yPos > bodeHeight) {
-                    clearTimeout(animator);
-                } else {
-                    if(currentY < targetY-distance) {
-                        scrollY = currentY+distance;
-                        window.scroll(0, scrollY);
-                    } else {
-                        clearTimeout(animator);
-                    }
-                }
-            }
-        </script>
+        <link href="public/stylesheets/styles.css" rel="stylesheet" type="text/css">
+       <link href="public/stylesheet/style-painting.css" rel="stylesheet" type="text/css">
+       <script src="public/javascripts/scripts.js"></script>  
+       <script src="public/javascripts/jquery-1.12.1.min.js"></script>
 	</head>
 	<body onload="a()">
 		<header class="page-header">
@@ -136,14 +19,14 @@
                         </ul>
                     </div>
                     <div class="layout-column layout-column-2">
-                        <ul>
+                        <ul style="margin-top: 32px;">
                             <li><a href="#"><img src="public/images/youtube.png" alt="Поиск" title="YouTube"></a></li>
                             <li><a href="#"><img src="public/images/vk.png" alt="Корзина" title="ВКонтакте"></a></li>
                             <li><a href="#"><img src="public/images/fb.png" alt="Авторизация" title="Фейсбук"></a></li>
                             <li><a href="#"><img src="public/images/ok.png" alt="Корзина" title="Одноклассники"></a></li>
                             <li><a href="#"><img src="public/images/inst.png" alt="Поиск" title="Инстаграм"></a></li>
                             <li>
-                                <form action="/echo" method="post">
+                                <form action="/echo" method="post" style="position: relative; top:-16px;">
                                     <div class="search">
                                         <input name="search" id="search-header" type="search" placeholder="Поиск">
                                         
@@ -161,7 +44,7 @@
                         <div class="menu-left">
                             <ul> 
                                 <li>
-                                    <a href="/courses.html">Курсы</a>
+                                    <a href="/courses">Курсы</a>
                                 </li>
                                 <li><a href="#">Преподаватели</a></li>
                                 <li><a href="#">Проекты</a></li>
@@ -179,7 +62,7 @@
                         </div>
                     </nav>
                      <div class="logo"> 
-                        <a href="/"><img src="public/images/logo1.png"></a>
+                        <a href="index.html"><img src="public/images/logo1.png"></a>
                     </div> 
                     
                 </div>
@@ -244,7 +127,7 @@
                         <tr>
                             <td>О компании</td>
                             <td>Рисовать</td>
-                            <td><a href="/contacts.html">Зарабатывайте с нами</td>
+                            <td><a href="/contacts">Зарабатывайте с нами</td>
                             <td>Instagram</td>
                         </tr>
                         <tr>

@@ -1,130 +1,86 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Handy Education</title>
-       <meta charset="utf-8">
-       <link href="public/stylesheets/style-contacts.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript">
-            window.onresize = function(event) {
-                var html = document.documentElement;
-                /*if (html.clientWidth < 1350) {
-                    document.getElementById("block-margin").style.marginRight = "80px";    
-                } else { 
-                    document.getElementById("block-margin").style.marginRight = "0px";  
-                }*/
-                if (html.clientWidth < 1170) {
-                    document.getElementById("main-menu-font").style.fontSize = "16px";
-                    
-                } else {
-                    document.getElementById("main-menu-font").style.fontSize = "20px";
-                
-                }
-                if (html.clientWidth < 1300) {
-                    document.getElementById("block1").style.height= "290px";   
-                    document.getElementById("block1").style.width = "341px";
-                    document.getElementById("block2").style.height = "290px";   
-                    document.getElementById("block2").style.width = "341px"; 
-                    document.getElementById("block3").style.height = "290px";   
-                    document.getElementById("block3").style.width = "341px"
-                    document.getElementById("teacher_id").style.height = "390px";
-                    document.getElementById("teacher_id").style.width = "335px";
-                    document.getElementById("teacher_id2").style.height = "390px";
-                    document.getElementById("teacher_id2").style.width = "335px";
-                    document.getElementById("teacher_id3").style.height = "390px";
-                    document.getElementById("teacher_id3").style.width = "335px";
-                    document.getElementById("words1").style.display = "none"
-                    document.getElementById("words2").style.display = "none"
-                } else {
-                    document.getElementById("block1").style.height = "350px";     
-                    document.getElementById("block1").style.width = "429px";   
-                    document.getElementById("block2").style.height = "350px";     
-                    document.getElementById("block2").style.width = "429px"; 
-                    document.getElementById("block3").style.height = "350px";     
-                    document.getElementById("block3").style.width = "429px";
-                    document.getElementById("block3").style.marginRight = "0px"; 
-                    document.getElementById("teacher_id").style.height = "532px"; 
-                    document.getElementById("teacher_id").style.width = "424px";
-                    document.getElementById("teacher_id2").style.height = "532px"; 
-                    document.getElementById("teacher_id2").style.width = "424px";
-                    document.getElementById("teacher_id3").style.height = "532px"; 
-                    document.getElementById("teacher_id3").style.width = "424px";
-                    document.getElementById("words1").style.display = "block"
-                    document.getElementById("words2").style.display = "block"
-                }
-            };
-        </script>
-        <script type="text/javascript">
-            function a() {
-                var html = document.documentElement;
-                /*if (html.clientWidth < 1350) {
-                    document.getElementById("block-margin").style.marginRight = "80px";    
-                } else { 
-                    document.getElementById("block-margin").style.marginRight = "0px";  
-                }*/
-                if (html.clientWidth < 1170) {
-                    document.getElementById("main-menu-font").style.fontSize = "16px";
-                    
-                } else {
-                    document.getElementById("main-menu-font").style.fontSize = "20px";
-                
-                }
-                if (html.clientWidth < 1300) {
-                    document.getElementById("words1").style.display = "none"
-                    document.getElementById("words2").style.display = "none"
-                    document.getElementById("block1").style.height= "290px";   
-                    document.getElementById("block1").style.width = "341px";
-                    document.getElementById("block2").style.height = "290px";   
-                    document.getElementById("block2").style.width = "341px"; 
-                    document.getElementById("block3").style.height = "290px";   
-                    document.getElementById("block3").style.width = "341px"
-                    document.getElementById("teacher_id").style.height = "390px";
-                    document.getElementById("teacher_id").style.width = "335px";
-                    document.getElementById("teacher_id2").style.height = "390px";
-                    document.getElementById("teacher_id2").style.width = "335px";
-                    document.getElementById("teacher_id3").style.height = "390px";
-                    document.getElementById("teacher_id3").style.width = "335px";
-                } else {
-                    document.getElementById("words1").style.display = "block"
-                    document.getElementById("words2").style.display = "block"
-                    document.getElementById("block1").style.height = "350px";     
-                    document.getElementById("block1").style.width = "429px";   
-                    document.getElementById("block2").style.height = "350px";     
-                    document.getElementById("block2").style.width = "429px"; 
-                    document.getElementById("block3").style.height = "350px";     
-                    document.getElementById("block3").style.width = "429px";
-                    document.getElementById("block3").style.marginRight = "0px"; 
-                    document.getElementById("teacher_id").style.height = "532px"; 
-                    document.getElementById("teacher_id").style.width = "424px";
-                    document.getElementById("teacher_id2").style.height = "532px"; 
-                    document.getElementById("teacher_id2").style.width = "424px";
-                    document.getElementById("teacher_id3").style.height = "532px"; 
-                    document.getElementById("teacher_id3").style.width = "424px";
-                }
-            }
-        </script>
+        <title>Контакты</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../images/favicon.jpg" type="image/jpg">
+        <link href="public/stylesheets/styles.css" rel="stylesheet" type="text/css">
+        <link href="public/stylesheets/style-contacts.css" rel="stylesheet" type="text/css">
+        <script src="public/javascripts/scripts.js"></script>  
+        <script src="public/javascripts/jquery-1.12.1.min.js"></script>
     </head>
     <body onload="a()">
-        <header class="page-header">
+    	<!-- в верху f0f0f0 100%, ближе к менюшке f5f5f5 97% а потом ffffff -->
+    	<div class="linear-background"></div>
+    	<div onclick="show('none')" id="wrap"></div>
+        <div id="window" class="sign-up">
+            <form action="/echo" method="post" id="form1" class="form_1">
+                <h1>Войти в аккаунт Handy Education</h1>
+                <h2>Присоединяйтесь к нам</h2>
+                <h2>Наши преподаватели ждут Вас</h2>
+                <div class="layout-column">
+                    <input type="text" id="login-sign-in" name="login" placeholder="Введите логин">
+                    <input type="password" id="password-sign-in" name="password" placeholder="Введите пароль">
+                    <div class="clearfix">
+                        <div class="floated-1">
+                            <input type="checkbox" class="checkbox" id="remember-me-radio">
+                            <label for="remember-me-radio">Запомнить меня</label>
+                        </div>
+                        <div class="floated-2">
+                            <input type="submit" value="Войти">
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Забыли пароль?</li>
+                        <li><a href="#" onclick="showForm('form1', 'form2')">Создать аккаунт</a></li>
+                    </ul>
+                </div>
+            </form>
+            <form action="/echo" method="post" id="form2">
+                <h1>Создайте аккаунт на Handy Education</h1>
+                <div class="layout-column">
+                    <input type="text" id="login" name="login" placeholder="Введите логин">
+                    <input type="password" id="password" name="password" placeholder="Введите пароль">
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="Повторите пароль">
+                    <input type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
+                    <div class="clearfix">
+                        <div class="floated-1">
+                            <p>при создании моего аккаунта я соглашаюсь с <span>пользовательским соглашением</span></p>
+                        </div>
+                        <div class="floated-2">
+                            <input type="submit" value="Создать">
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#" onclick="showForm('form2', 'form1')">Есть аккаунт</a></li>
+                        <li><a href="#"><img src="public/images/vk.png" alt="ВКонтакте" title="ВКонтакте"></a></li>
+                        <li><a href="#"><img src="public/images/fb.png" alt="Фейсбук" title="Фейсбук"></a></li>
+                        <li><a href="#"><img src="public/images/ok.png" alt="Одноклассники" title="Одноклассники"></a></li>
+                        <li><a href="#"><img src="public/images/inst.png" alt="Инстаграм" title="Инстаграм"></a></li>
+                    </ul>
+                </div>   
+            </form>  
+        </div>
+         <header class="page-header">
             <div class="header-1">
                 <div class="layout-positioner">
-
                     <div class="layout-column layout-column-1">
                         <ul>
-                            <li><a href="#">Войти</a></li>
+                            <li><a href="#" onclick="show('block')">Войти</a></li>
                         </ul>
                     </div>
                     <div class="layout-column layout-column-2">
-                        <ul>
+                        <ul style="margin-top: 32px;">
                             <li><a href="#"><img src="public/images/youtube.png" alt="Поиск" title="YouTube"></a></li>
                             <li><a href="#"><img src="public/images/vk.png" alt="Корзина" title="ВКонтакте"></a></li>
                             <li><a href="#"><img src="public/images/fb.png" alt="Авторизация" title="Фейсбук"></a></li>
                             <li><a href="#"><img src="public/images/ok.png" alt="Корзина" title="Одноклассники"></a></li>
                             <li><a href="#"><img src="public/images/inst.png" alt="Поиск" title="Инстаграм"></a></li>
                             <li>
-                                <form action="/echo" method="post">
+                                <form action="/echo" method="post" style="position: relative; top:-16px;">
                                     <div class="search">
                                         <input name="search" id="search-header" type="search" placeholder="Поиск">
-                                        
+                                        <input type="submit" value="">
                                    </div>
                                 </form> 
                             </li>   
@@ -134,269 +90,84 @@
             </div> 
             <div class="header-2">
                 <div class="layout-positioner">
+                    <div class="orange-line-header"></div>
                     <nav class="main-menu clearfix" id="main-menu-font">
-                        <div class="orange-line-header"></div>
                         <div class="menu-left">
                             <ul> 
                                 <li><a href="/courses">Курсы</a></li>
                                 <li><a href="#">Преподаватели</a></li>
                                 <li><a href="#">Проекты</a></li>
-                                <li><a href="#">Статьи</a></li>
+                                <li><a href="/articles">Статьи</a></li>
                             </ul> 
                         </div>
                         <div class="menu-right">
                             <ul> 
-                                <li><a href="">Попробовать</a></li>
+                                <li>
+                                    <div class="buttons">
+                                        <input type="submit" value="Попробовать">
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </nav>
                      <div class="logo"> 
-                        <a href="/"><img src="public/images/logo1.png"></a>
+                        <a href="index.html"><img src="public/images/logo1.png"></a>
                     </div> 
-                    
                 </div>
             </div> 
-            <div class="slider">
+        </header>
+         <div class="bread-pieces">
             <div class="layout-positioner">
-                <h1>Сотрудничество</h1>
-        		<div class="menu">
-        			<ul>
-        				<li>Зарабатывайте с нами</li>
-        				<li>Из чего состоит курс</li>
-        				<li>Свяжитесь с нами</li>
-        			</ul>
-        		</div>
-                
+                Контакты
+                <div class="bread-pieces-line"></div>
             </div>
         </div>
-            <div class="orange-line"></div>  
-        </header>        
-        <div class="earn">
-        	<div class="layout-positioner">
-        		<h1>Зарабатывайте с нами</h1>
-        		<hr>
-        		<h2>снимайтесь и получайте деньги</h2>
-        		<h1>Мы</h1>
-        		<hr>
-        		<div class="gallery">
+        <div class="image-contacts">
+            <div class="layout-positioner">
+                <ul>
+                    <li>Handyed@handyed.ru</li>
+                    <li>+7 (905) 519-27-29</li>
+                </ul>      
+            </div>
+        </div>
+        <section class="contacts">
+            <div class="layout-positioner">
+                <h1>Наши контакты</h1>
+                <ul>
+                    <li>Адрес: <span>Россия, Москва</span></li>
+                    <li>Почта: <span>Handyed@handyed.ru</span></li>
+                    <li>Телефон: <span>+7 (905) 519-27-29</span></li>
+                </ul>
+                <h2>Реквизиты</h2>
+                <ul>
+                    <li>Наименование организации: <span>«АНВ ТЕХНОЛОГИИ»</span></li>
+                    <li>ОГРН</li>
+                    <li>ИНН</li>
+                </ul>
+            </div>
+        </section>
+        <div class="help-info">
+            <div class="layout-positioner">
+                 <div class="gallery">
                     <div class="item">
-                        <div class="image image-1"></div>
-                        <div class="title">
-                        	Снимаем
-                        	<ul>
-                        		<li>Профессиональное оборудование</li>
-                        		<li>Помощь и корректировка</li>
-                        		<li>Монтаж</li>
-                        	</ul>
-                        </div>
+                        <img src="public/images/contacts/card.png" alt="card" width="190px" height="141px">
+                        <div class="title">Как зарегистрироваться и <a href="#">оплатить курс</a></div>
                     </div>
                     <div class="item">
-                        <div class="image image-2"></div>
-                        <div class="title">
-                        	Продаем
-                        	<ul>
-                        		<li>Организуем продажи</li>
-                        		<li>Ведем статистику и учет</li>
-                        		<li>Анализируем трафик</li>
-                        	</ul>
-                        </div>
+                        <img src="public/images/contacts/socks.png" alt="socks" width="130px" height="138px">
+                        <div class="title">Хотите стать нашим <a href="#">партнером</a>?</div>
                     </div>
                     <div class="item" id="block-margin">
-                        <div class="image image-3"></div>
-                        <div class="title">
-                        	Рекламируем
-                        	<ul>
-                        		<li>В поисковых системах</li>
-                        		<li>В социальных сетях</li>
-                        		<li>По нашим партнерским каналам</li>
-                        	</ul>
-                        </div>
+                        <img src="public/images/contacts/diamond.png" alt="diamond" width="147px" height="176px">
+                        <div class="title">Дополнительная <a href="#">информация</a></div>
                     </div>
                 </div>
-        	</div>
-        </div>
-        <div class="pramo">
-        	<div class="layout-positioner">
-        	<img src="public/images/contacts/people-2.png" width="135px" height="180px">
-        	<img src="public/images/contacts/people-1.png" width="420px" height="160px">
-	        	<div class="pramo-text">
-	        			<div class="pramo-text-left">
-	        				<div class="padding">
-		        				Мы не только сделаем
-		        				<br>
-		        				<span style="color:rgb(69, 67, 67)">но и <span>будем</span></span>
-		        			</div>
-	        			</div>
-	        			<div class="pramo-text-right">
-	        				<div class="padding">
-		        				Вас популярнее,
-		        				<br>
-		        				<span>зарабатывать!</span>
-		        			</div>
-	        			</div>
-	        	</div>
-        	</div>
-        </div>
-        <div class="you">
-        	<div class="layout-positioner">
-        		<h1>Вы</h1>
-        		<hr>
-        		<img src="public/images/contacts/you-shelf.png">
-        		<ul>
-            		<li>Выбираете темы будущих видеокурсов</li>
-            		<li>Заполняете наш съемочный бриф</li>
-            		<li>Обсуждаете с нами условия договора</li>
-            		<li>Снимаетесь</li>
-            	</ul>
-            	<img src="public/images/contacts/you-woman.png">
-            	<div class="orange-place">
-            		<div class="gallery"> 
-            			<div class="item">
-            				<div class="title">Тратьте</div>
-                        	<div class="image image-1">
-                        		<img src="public/images/contacts/spend.png" height="250px" width="250px">
-                        	</div>
-                        </div>
-                        <div class="item">
-            				<div class="title">Зарабатывайте</div>
-                        	<div class="image image-2">
-                        		<img src="public/images/contacts/earn.png" height="250px" width="250px">
-                        	</div>
-                        </div>
-                        <div class="item">
-            				<div class="title">Получайте</div>
-                        	<div class="image image-3">
-                        		<img src="public/images/contacts/get.png" height="250px" width="250px">
-                        	</div>
-                        </div>
+                <form action="/echo" method="post">
+                    <div class="buttons">
+                        <input type="submit" value="Напишите нам">
                     </div>
-            	</div>
-        	</div>
-        </div>
-       	<div class="video-course">
-       		<div class="layout-positioner">
-       			<h1>Из чего состоит видеокурс?</h1>
-        		<hr>
-        		<div class="layout-column layout-column-1">
-        			<img src="public/images/contacts/video-course-video.png" height="350px" width="520px">
-        		</div>
-        		<div class="layout-column layout-column-2">
-        			<p>Каждый наш курс состоит из 5-8 видеоуроков</p>
-        			<p>Длительность курса составляет 2,5 - 3,5 часа</p>
-        			<p>Курс размещается внутри платформы HandyEd и сопровождается нашей командной на протяженности всего времени, прописанного в договоре</p>
-        			<p>Каждый курс проходит монтаж и добавление графического дизайна - иллюстраций, для вовлечения пользователя в процесс обучения</p>
-        			<div class="middle">
-	        			<div class="middle-text">
-							<span>
-						    	Узнайте больше
-							</span>
-						</div>
-						<div class="middle-buttons">
-							 <form action="/echo" method="post">
-                        		<div class="button-1">
-                            		<input type="submit" value="Направления »">
-                        		</div>
-                        		<div class="button-2">
-                            		<input type="submit" value="Партнерство »">
-                        		</div>
-                    		</form> 
-						</div>
-					</div>
-					<p>направление курсов: дизайн, рисование, кройка и шитье</p>
-					<p>дополнительные: кулинария, ювелирное дело</p>
-        		</div>
-       		</div>
-       	</div>
-       	<div class="statistics">
-       		<div class="layout-positioner">
-       			<div class="facts">
-	       			<span>Более <b>1107</b> довольных покупателей</span>
-	       			<span>Более <b>12847</b> зарегистрированных пользователей</span>
-	       			<span><b>16</b> крупных рекламных партнеров</span>
-	       		</div>
-       		</div>
-       	</div>
-       	<div class="connect">
-       		<div class="layout-positioner">
-       			<h1>Свяжитесь с нами</h1>
-        		<hr>
-        		<div class="slider-back">
-	        		<section>
-		        		<div class="slider">
-		        			<input type="radio" id="btn-1" name="toggle" checked>
-			                <input type="radio" id="btn-2" name="toggle">
-			                <input type="radio" id="btn-3" name="toggle">
-			                <div class="slider-controls">
-			                    <label for="btn-1"></label>
-			                    <label for="btn-2"></label>
-			                    <label for="btn-3"></label>
-		                    </div>
-		                    <div class="slider-inner">
-			                    <div class="slider-slides">
-			                        <img src="public/images/contacts/slider-1.png">
-			                        <img src="public/images/contacts/slider-2.png">
-			                        <img src="public/images/contacts/slider-3.png">
-			                    </div>                        
-		                	</div>        
-		        		</div>
-			       </section>
-			     </div>
-			     <form action="/echo" method="post">
-            		<div class="button">
-                		<input type="submit" value="Написать сообщение">
-            		</div>
-				</form>
-       		</div>
-       	</div>
-       	<footer class="page-footer">
-            <div class="layout-positioner">
-   
-                <img src="public/images/logo_footer.png" height="170px" width="175px">
-               
-               
-                <div class="layout-column">
-                    <table>
-                        <tr>
-                            <th>Handy Education</th>
-                            <th>Учитесь</th>
-                            <th>Сотрудничество</th>
-                            <th>Увидимся</th>
-                        </tr>
-                        <tr>
-                            <td><a href="/about.html">О компании</td>
-                            <td>Рисовать</td>
-                            <td><a href="/contacts.html">Зарабатывайте с нами</td>
-                            <td>Instagram</td>
-                        </tr>
-                        <tr>
-                            <td>Контакты</a></td>
-                            <td>Шить</td>
-                            <td>Партнерам</td>
-                            <td>Facebook</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Вязать</td>
-                            <td>С кем мы работаем?</td>
-                            <td>Вконтакте</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td colspan="2">Готовить</td>
-                            <td>Одноклассники</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3"></td>
-                            <td>YouTube</td>
-                        </tr>
-                    </table>
-                    <hr>
-                </div>
-                 
+                </form> 
             </div>
-            <div class="orange-line"></div>
-
-        </footer>
-
+        </div>
     </body>
 </html>

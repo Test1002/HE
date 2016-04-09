@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Статьи</title>
+        <meta charset="utf-8">
+       <link href="public/stylesheets/styles.css" rel="stylesheet" type="text/css">
+       <link href="public/stylesheets/style-articles.css" rel="stylesheet" type="text/css">
+       <script src="public/javascripts/scripts.js"></script>  
+       <script src="public/javascripts/jquery-1.12.1.min.js"></script>
+    </head>
+    <body onload="a()">
+        <div onclick="show('none')" id="wrap"></div>
+        <div id="window" class="sign-up">
+            <form action="/echo" method="post" id="form1" class="form_1">
+                <h1>Войти в аккаунт Handy Education</h1>
+                <h2>Присоединяйтесь к нам</h2>
+                <h2>Наши преподаватели ждут Вас</h2>
+                <div class="layout-column">
+                    <input type="text" id="login-sign-in" name="login" placeholder="Введите логин">
+                    <input type="password" id="password-sign-in" name="password" placeholder="Введите пароль">
+                    <div class="clearfix">
+                        <div class="floated-1">
+                            <input type="checkbox" class="checkbox" id="remember-me-radio">
+                            <label for="remember-me-radio">Запомнить меня</label>
+                        </div>
+                        <div class="floated-2">
+                            <input type="submit" value="Войти">
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Забыли пароль?</li>
+                        <li><a href="#" onclick="showForm('form1', 'form2')">Создать аккаунт</a></li>
+                    </ul>
+                </div>
+            </form>
+            <form action="/echo" method="post" id="form2">
+                <h1>Создайте аккаунт на Handy Education</h1>
+                <div class="layout-column">
+                    <input type="text" id="login" name="login" placeholder="Введите логин">
+                    <input type="password" id="password" name="password" placeholder="Введите пароль">
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="Повторите пароль">
+                    <input type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail">
+                    <div class="clearfix">
+                        <div class="floated-1">
+                            <p>при создании моего аккаунта я соглашаюсь с <span>пользовательским соглашением</span></p>
+                        </div>
+                        <div class="floated-2">
+                            <input type="submit" value="Создать">
+                        </div>
+                    </div>
+                    <ul>
+                        <li><a href="#" onclick="showForm('form2', 'form1')">Есть аккаунт</a></li>
+                        <li><a href="#"><img src="public/images/vk.png" alt="ВКонтакте" title="ВКонтакте"></a></li>
+                        <li><a href="#"><img src="public/images/fb.png" alt="Фейсбук" title="Фейсбук"></a></li>
+                        <li><a href="#"><img src="public/images/ok.png" alt="Одноклассники" title="Одноклассники"></a></li>
+                        <li><a href="#"><img src="public/images/inst.png" alt="Инстаграм" title="Инстаграм"></a></li>
+                    </ul>
+                </div>   
+            </form>  
+        </div>
+        <header class="page-header">
+            <div class="header-1">
+                <div class="layout-positioner">
+                    <div class="layout-column layout-column-1">
+                        <ul>
+                            <li><a href="#" onclick="show('block')">Войти</a></li>
+                        </ul>
+                    </div>
+                    <div class="layout-column layout-column-2">
+                        <ul style="margin-top: 32px;">
+                            <li><a href="#"><img src="public/images/youtube.png" alt="Поиск" title="YouTube"></a></li>
+                            <li><a href="#"><img src="public/images/vk.png" alt="Корзина" title="ВКонтакте"></a></li>
+                            <li><a href="#"><img src="public/images/fb.png" alt="Авторизация" title="Фейсбук"></a></li>
+                            <li><a href="#"><img src="public/images/ok.png" alt="Корзина" title="Одноклассники"></a></li>
+                            <li><a href="#"><img src="public/images/inst.png" alt="Поиск" title="Инстаграм"></a></li>
+                            <li>
+                                <form action="/echo" method="post" style="position: relative; top:-16px;">
+                                    <div class="search">
+                                        <input name="search" id="search-header" type="search" placeholder="Поиск">
+                                        <input type="submit" value="">
+                                   </div>
+                                </form> 
+                            </li>   
+                        </ul>
+                    </div>
+                </div>  
+            </div> 
+            <div class="header-2">
+                <div class="layout-positioner">
+                    <div class="orange-line-header"></div>
+                    <nav class="main-menu clearfix" id="main-menu-font">
+                        <div class="menu-left">
+                            <ul> 
+                                <li><a href="/courses">Курсы</a></li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Проекты</a></li>
+                                <li><a href="/articles">Статьи</a></li>
+                            </ul> 
+                        </div>
+                        <div class="menu-right">
+                            <ul> 
+                                <li>
+                                    <div class="buttons">
+                                        <input type="submit" value="Попробовать">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                     <div class="logo"> 
+                        <a href="index.html"><img src="public/images/logo1.png"></a>
+                    </div> 
+                </div>
+            </div> 
+        </header>
+        <div class="bread-pieces">
+            <div class="layout-positioner">
+                <div class="bread-pieces-line"></div>
+            </div>
+        </div>
+        <main role="main" class="main-contain">
+            <div class="layout-positioner">
+                <div class="slider">
+                    <img src="public/images/articles/slider.png" width="644" height="339">
+                </div>
+                <div class="right-block">
+                    <div class="join-us">
+                        <div class="middle">
+                            <div class="middle-text">
+                                <span>Присоединяйся!</span>
+                            </div>
+                            <div class="follow">
+                                <p>Следите за новыми статьями и курсами <span>#HandyEdпоможет</span></p>
+                                <p><span>Вконтакте, Одноклассниках, Facebook, Youtube</span> и <span>Instagram</span></p>
+                            </div>
+                            <div class="bread-pieces">
+                                <div class="bread-pieces-line"></div>
+                            </div>
+                            <div class="gallery">
+                                <div class="item">
+                                    <div class="image image-1"></div>
+                                    <div class="course-type">Шитье</div>
+                                </div>
+                                <div class="item">
+                                    <div class="image image-2"></div>
+                                    <div class="course-type">Кройка</div>
+                                </div>
+                                <div class="item">
+                                    <div class="image image-3"></div>
+                                    <div class="course-type">Рисование</div>
+                                </div>
+                                <div class="item item-big itemMargin">
+                                    <div class="image image-4"></div>
+                                    <div class="course-type">Рисование</div>
+                                </div>
+                                <div class="item item-big">
+                                    <div class="image image-5"></div>
+                                    <div class="course-type">Вязание</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section>
+            <div class="layout-positioner">
+                <div class="articles clearfix">
+                    <article class="article-left">
+                        <div class="article-info">
+                            <div class="time">
+                                <time datetime="2015-02-29 00:00"><p>ФЕВ <span>29</span></p></time>
+                            </div>
+                            <div class="title">
+                                <div class="article-title">Преображение сумочки своими руками</div>
+                                <ul>
+                                    <li><div class="article-author">От Алисы Претуевой //</div></li>
+                                    <li><div class="article-type">рукоделие</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="article-photo"></div>
+                        <div class="article-description">Сейчас я покажу Вам, как сшить сумочку своими руками, но она будет необычная, а из ковра. Поделюсь с Вами своим...</div>
+                        <div class="read-further"><a href="id1.html">читать далее >></a></div>
+                    </article>
+                    <article class="article-right">
+                        <div class="article-info">
+                            <div class="time">
+                                <time datetime="2015-02-29 00:00"><p>ФЕВ <span>29</span></p></time>
+                            </div>
+                            <div class="title">
+                                <div class="article-title">Украшаем вязанный шарф своими руками</div>
+                                <ul>
+                                    <li><div class="article-author">От Алисы Претуевой //</div></li>
+                                    <li><div class="article-type">рукоделие</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="article-photo"></div>
+                        <div class="article-description">Здесь можно подобрать и использоваться любые цвета для шарфа и пряжки. В этом проекте не используеются трудные...</div>
+                        <div class="read-further"><a href="">читать далее >></a></div>
+                    </article>
+                    <article class="article-left">
+                        <div class="article-info">
+                            <div class="time">
+                                <time datetime="2015-02-29 00:00"><p>ФЕВ <span>29</span></p></time>
+                            </div>
+                            <div class="title">
+                                <div class="article-title">Иллюстрации Ивана Беликова</div>
+                                <ul>
+                                    <li><div class="article-author">От Алисы Претуевой //</div></li>
+                                    <li><div class="article-type">рисование</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="article-photo"></div>
+                        <div class="article-description">На этот раз Иван решил показать нам свою картину под названием “dove” – голубь. Иван выставлялся на...</div>
+                        <div class="read-further"><a href="">читать далее >></a></div>
+                    </article>
+                    <article class="article-right">
+                        <div class="article-info">
+                            <div class="time">
+                                <time datetime="2015-02-29 00:00"><p>ФЕВ <span>29</span></p></time>
+                            </div>
+                            <div class="title">
+                                <div class="article-title">3 идеи для собственной фотогалереи</div>
+                                <ul>
+                                    <li><div class="article-author">От Алисы Претуевой //</div></li>
+                                    <li><div class="article-type">дизайн</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="article-photo"></div>
+                        <div class="article-description">Я покажу вам три простых и быстрых способа  украсить вашу комнату и создать свою собственную галерею...</div>
+                        <div class="read-further"><a href="">читать далее >></a></div>
+                    </article>
+                    <article class="article-left">
+                        <div class="article-info">
+                            <div class="time">
+                                <time datetime="2015-02-29 00:00"><p>ФЕВ <span>29</span></p></time>
+                            </div>
+                            <div class="title">
+                                <div class="article-title">Столкновение темного и светлого Саманты</div>
+                                <ul>
+                                    <li><div class="article-author">От Алисы Претуевой //</div></li>
+                                    <li><div class="article-type">рисование</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="article-photo"></div>
+                        <div class="article-description">Художница Саманта Кили Смит притворяет в жизнь фантастические столкновения темных и светлых оттенков. Огромные...</div>
+                        <div class="read-further"><a href="">читать далее >></a></div>
+                    </article>
+                    <article class="article-right">
+                        <div class="article-info">
+                            <div class="time">
+                                <time datetime="2015-02-29 00:00"><p>ФЕВ <span>29</span></p></time>
+                            </div>
+                            <div class="title">
+                                <div class="article-title">5 советов как рисовать быстрее</div>
+                                <ul>
+                                    <li><div class="article-author">От Алисы Претуевой //</div></li>
+                                    <li><div class="article-type">рисование</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="article-photo"></div>
+                        <div class="article-description">Многие люди начинают учиться рисовать карандашом с контуров или очертаний объекта.Такой подход...</div>
+                        <div class="read-further"><a href="">читать далее >></a></div>
+                    </article>
+                    <article class="article-left">
+                        <div class="article-info">
+                            <div class="time">
+                                <time datetime="2015-02-29 00:00"><p>ФЕВ <span>29</span></p></time>
+                            </div>
+                            <div class="title">
+                                <div class="article-title">Тропики Сергея Акрамова</div>
+                                <ul>
+                                    <li><div class="article-author">От Алисы Претуевой //</div></li>
+                                    <li><div class="article-type">рисование</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="article-photo"></div>
+                        <div class="article-description">Граффити, улица, стена. Сергей Акрамов из Екатеринбурга сделает из мрачной стены свое собственное окно в...</div>
+                        <div class="read-further"><a href="">читать далее >></a></div>
+                    </article>
+                    <article class="article-right">
+                        <div class="article-info">
+                            <div class="time">
+                                <time datetime="2015-02-29 00:00"><p>ФЕВ <span>29</span></p></time>
+                            </div>
+                            <div class="title">
+                                <div class="article-title">Добро пожаловать к нам!</div>
+                                <ul>
+                                    <li><div class="article-author">От Алисы Претуевой //</div></li>
+                                    <!--<li><div class="article-type"></div></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="article-photo"></div>
+                        <div class="article-description">Мы хотим вдохновлять вас на создание дорогих для вас вещей. Учитесь , создавайте и делитесь этим с ругими пользователями...</div>
+                        <div class="read-further"><a href="">читать далее >></a></div>
+                    </article>
+                </div>
+                <div class="articles-pages">
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>...</li>
+                        <li>Последняя</li>
+                        <li><img src="public/images/articles/articles/next-page.png" width="19px" height="19px"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="page-footer">
+            <div class="layout-positioner">
+   
+                <img src="public/images/logo_footer.png" height="170px" width="175px">
+               
+               
+                <div class="layout-column">
+                    <table>
+                        <tr>
+                            <th>Handy Education</th>
+                            <th>Учитесь</th>
+                            <th>Сотрудничество</th>
+                            <th>Увидимся</th>
+                        </tr>
+                        <tr>
+                            <td><a href="/about">О компании</td>
+                            <td>Рисовать</td>
+                            <td><a href="/contacts">Зарабатывайте с нами</td>
+                            <td>Instagram</td>
+                        </tr>
+                        <tr>
+                            <td>Контакты</a></td>
+                            <td>Шить</td>
+                            <td>Партнерам</td>
+                            <td>Facebook</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Вязать</td>
+                            <td>С кем мы работаем?</td>
+                            <td>Вконтакте</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="2">Готовить</td>
+                            <td>Одноклассники</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>YouTube</td>
+                        </tr>
+                    </table>
+                    <hr>
+                </div>
+                 <div class="copyright">
+                    <div class="text">
+                        <span>HandyEducation<sup>  2015-2016</sup></span>
+                        <span>пользовательское соглашение</span>
+                    </div>
+                </div>
+                <div class="footer-line">
+                    <ul>
+                        <li>помощь</li>
+                        <li>безопасность</li>
+                        <li>гарантии</li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="orange-line"></div>
+
+        </footer>
+    </body>
+</html>
